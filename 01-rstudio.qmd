@@ -8,18 +8,14 @@ At first, the screen may look busy. That is normal. You do not need to understan
 
 RStudio usually has four main areas:
 
-1. **Source Pane**
-2. **Console**
-3. **Environment Pane**
-4. **Files / Plots / Packages / Help Pane**
+1.  **Source Pane**
+2.  **Console**
+3.  **Environment Pane**
+4.  **Output Pane - Files / Plots / Packages / Help Pane**
 
-<div class="screenshot-placeholder">
 
-[Insert Screenshot: RStudio Interface]
+![Source: Posit PBC documentation (https://docs.posit.co/ide/user/ide/get-started/)](img/rstudio-panes-labeled.jpeg)
 
-Add a labeled screenshot showing the Source Pane, Console, Environment Pane, and Files/Plots/Packages/Help Pane.
-
-</div>
 
 ## Source Pane
 
@@ -29,13 +25,13 @@ You will usually write your code in a file called an **R script**. R scripts end
 
 Example file name:
 
-```text
+``` text
 first_script.R
 ```
 
 The Source Pane is useful because it lets you save your work and come back to it later.
 
-::: {.callout-tip}
+::: callout-tip
 ## Tip
 
 The Source Pane is like a notebook for your code.
@@ -49,19 +45,19 @@ You can type code directly into the Console and press Enter.
 
 For example:
 
-```r
+``` r
 2 + 2
 ```
 
 R will show the answer:
 
-```text
+``` text
 [1] 4
 ```
 
 The Console is useful for quick tests, but you usually should save important code in an R script.
 
-::: {.callout-warning}
+::: callout-warning
 ## Common Mistake
 
 Do not only type important work into the Console. If you close RStudio, that code may be hard to find later.
@@ -77,7 +73,7 @@ An object is something stored in R, such as a number, a word, or a dataset.
 
 For example, if you run:
 
-```r
+``` r
 score <- 95
 ```
 
@@ -111,32 +107,32 @@ For example, you can search for help about the `mean()` function.
 
 ## Try It Yourself
 
-::: {.callout-note}
+::: callout-note
 ## Practice
 
 Open RStudio and try the following:
 
-1. Find the Console.
-2. Type this command:
+1.  Find the Console.
+2.  Type this command:
 
-```r
+``` r
 10 + 5
 ```
 
-3. Press Enter.
-4. Look for the answer.
-5. Find the Environment Pane.
-6. Find the Files tab.
+3.  Press Enter.
+4.  Look for the answer.
+5.  Find the Environment Pane.
+6.  Find the Files tab.
 :::
 
 ## Check Your Understanding
 
 Answer these questions in your own words:
 
-1. Where do you write and save code?
-2. Where does R show the results of commands?
-3. Where can you see objects you created?
-4. Where do plots appear?
+1.  Where do you write and save code?
+2.  Where does R show the results of commands?
+3.  Where can you see objects you created?
+4.  Where do plots appear?
 
 ## Summary
 

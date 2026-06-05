@@ -8,19 +8,19 @@ An **R script** is a file where you write R code.
 
 R script files end with:
 
-```text
+``` text
 .R
 ```
 
 For example:
 
-```text
+``` text
 first_script.R
 ```
 
 An R script is useful because it saves your code. You can run the same code again later without retyping everything.
 
-::: {.callout-tip}
+::: callout-tip
 ## Tip
 
 Use an R script when you want to save your work.
@@ -32,17 +32,11 @@ Use the Console when you want to quickly test one command.
 
 In RStudio:
 
-1. Click **File**.
-2. Click **New File**.
-3. Click **R Script**.
+1.  Click **File**.
+2.  Click **New File**.
+3.  Click **R Script**.
 
-<div class="screenshot-placeholder">
-
-[Insert Screenshot: Creating a New R Script]
-
-Show File > New File > R Script.
-
-</div>
+![](img/create_file_menu.jpg)
 
 A blank script should open in the Source Pane.
 
@@ -59,23 +53,24 @@ Type the following into your script:
 20 / 4
 ```
 
+
 These symbols mean:
 
-| Symbol | Meaning |
-|---|---|
-| `+` | Add |
-| `-` | Subtract |
-| `*` | Multiply |
-| `/` | Divide |
+| Symbol | Meaning  |
+|--------|----------|
+| `+`    | Add      |
+| `-`    | Subtract |
+| `*`    | Multiply |
+| `/`    | Divide   |
 
-::: {.callout-note}
+::: callout-note
 ## Try It Yourself
 
 Change the numbers and run the code again.
 
 For example, try:
 
-```r
+``` r
 100 / 5
 12 * 3
 ```
@@ -92,11 +87,12 @@ age <- 18
 age
 ```
 
+
 The symbol `<-` means “store this value.”
 
 So this line:
 
-```r
+``` r
 age <- 18
 ```
 
@@ -118,12 +114,14 @@ quiz_score
 homework_score
 ```
 
+
 Now we can use those variables in a calculation:
 
 ```{r}
 final_score <- (quiz_score + homework_score) / 2
 final_score
 ```
+
 
 This code calculates the average of the quiz score and homework score.
 
@@ -137,28 +135,30 @@ You can use `print()`:
 print(final_score)
 ```
 
+
 For simple work, typing the object name also shows the value:
 
 ```{r}
 final_score
 ```
 
+
 Both are okay.
 
-::: {.callout-tip}
+::: callout-tip
 ## Tip
 
 In R, object names should not contain spaces.
 
 Use this:
 
-```r
+``` r
 quiz_score <- 92
 ```
 
 Not this:
 
-```r
+``` r
 quiz score <- 92
 ```
 :::
@@ -179,61 +179,60 @@ quiz_score <- 92
 quiz_score
 ```
 
+
 Comments are useful because they help explain what your code is doing.
 
 ## Saving Your Script
 
 To save your script:
 
-1. Click **File**.
-2. Click **Save**.
-3. Name your file:
+1.  Click **File**.
+2.  Click **Save**.
+3.  Name your file:
 
-```text
+``` text
 first_script.R
 ```
 
-4. Save it in your project folder.
+4.  Save it in your project folder.
 
-<div class="screenshot-placeholder">
 
-[Insert Screenshot: Saving an R Script]
+![](img/file_save.jpg)
 
 Show the Save button and file name `first_script.R`.
 
-</div>
 
-::: {.callout-warning}
+::: callout-warning
 ## Common Mistake
 
 Do not save your script with a name like:
 
-```text
+``` text
 Untitled1.R
 ```
 
 Use a clear name, such as:
 
-```text
+``` text
 first_script.R
 ```
 :::
 
 ## Practice Exercise
 
-::: {.callout-note}
+::: callout-note
 ## Practice
 
 Create a new R script and write code that:
 
-1. Stores your favorite number in a variable.
-2. Stores your age in another variable.
-3. Adds the two numbers together.
-4. Prints the result.
+1.  Stores your favorite number in a variable.
+2.  Stores your age in another variable.
+3.  Adds the two numbers together.
+4.  Prints the result.
 
 Example:
 
-```r
+``` r
 favorite_number <- 7
 age <- 18
 result <- favorite_number + age
@@ -245,12 +244,12 @@ print(result)
 
 Answer these questions in your own words:
 
-1. What is an R script?
-2. Why is it useful to save code in a script?
-3. What does `<-` do?
-4. What is the difference between these two lines?
+1.  What is an R script?
+2.  Why is it useful to save code in a script?
+3.  What does `<-` do?
+4.  What is the difference between these two lines?
 
-```r
+``` r
 score <- 90
 print(score)
 ```

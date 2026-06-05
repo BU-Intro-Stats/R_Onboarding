@@ -225,9 +225,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#method-1-use-the-run-button" id="toc-method-1-use-the-run-button" class="nav-link" data-scroll-target="#method-1-use-the-run-button">Method 1: Use the Run Button</a></li>
   <li><a href="#method-2-use-ctrl-enter-or-cmd-enter" id="toc-method-2-use-ctrl-enter-or-cmd-enter" class="nav-link" data-scroll-target="#method-2-use-ctrl-enter-or-cmd-enter">Method 2: Use Ctrl + Enter or Cmd + Enter</a></li>
   <li><a href="#method-3-run-selected-lines" id="toc-method-3-run-selected-lines" class="nav-link" data-scroll-target="#method-3-run-selected-lines">Method 3: Run Selected Lines</a></li>
-  <li><a href="#method-4-run-an-entire-script" id="toc-method-4-run-an-entire-script" class="nav-link" data-scroll-target="#method-4-run-an-entire-script">Method 4: Run an Entire Script</a></li>
+  <li><a href="#method-4-run-the-highlighted-script" id="toc-method-4-run-the-highlighted-script" class="nav-link" data-scroll-target="#method-4-run-the-highlighted-script">Method 4: Run the Highlighted Script</a></li>
   <li><a href="#example-order-matters" id="toc-example-order-matters" class="nav-link" data-scroll-target="#example-order-matters">Example: Order Matters</a></li>
-  <li><a href="#running-code-in-a-quarto-document" id="toc-running-code-in-a-quarto-document" class="nav-link" data-scroll-target="#running-code-in-a-quarto-document">Running Code in a Quarto Document</a></li>
+  <li><a href="#running-code-in-a-rmd-quarto-document" id="toc-running-code-in-a-rmd-quarto-document" class="nav-link" data-scroll-target="#running-code-in-a-rmd-quarto-document">Running Code in a Rmd / Quarto Document</a></li>
   <li><a href="#running-selected-code-vs.-rendering" id="toc-running-selected-code-vs.-rendering" class="nav-link" data-scroll-target="#running-selected-code-vs.-rendering">Running Selected Code vs.&nbsp;Rendering</a></li>
   <li><a href="#troubleshooting-common-errors" id="toc-troubleshooting-common-errors" class="nav-link" data-scroll-target="#troubleshooting-common-errors">Troubleshooting Common Errors</a>
   <ul class="collapse">
@@ -256,10 +256,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="method-1-use-the-run-button" class="level2">
 <h2 class="anchored" data-anchor-id="method-1-use-the-run-button">Method 1: Use the Run Button</h2>
 <p>If your cursor is on a line of code, you can click the <strong>Run</strong> button.</p>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Run Button in RStudio]</p>
-<p>Show the Run button in the Source Pane.</p>
-</div>
+<p><img src="img/run_r_1.jpg" class="img-fluid"></p>
 <p>Example:</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">3</span> <span class="sc">+</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
@@ -322,18 +319,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li><code>Cmd + Enter</code> on Mac</li>
 </ul>
 </section>
-<section id="method-4-run-an-entire-script" class="level2">
-<h2 class="anchored" data-anchor-id="method-4-run-an-entire-script">Method 4: Run an Entire Script</h2>
-<p>To run an entire script, you can:</p>
+<section id="method-4-run-the-highlighted-script" class="level2">
+<h2 class="anchored" data-anchor-id="method-4-run-the-highlighted-script">Method 4: Run the Highlighted Script</h2>
+<p>To run the highlighted script, you can:</p>
 <ol type="1">
 <li>Open your <code>.R</code> file.</li>
-<li>Click <strong>Source</strong>.</li>
-<li>RStudio will run the whole script from top to bottom.</li>
+<li>Highlight the code you want to run.</li>
+<li>Click <strong>Run</strong>.</li>
+<li>RStudio will run the highlighted code from top to bottom.</li>
 </ol>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Source Button]</p>
-<p>Show the Source button for running an entire R script.</p>
-</div>
+<p><img src="img/run_r_4.jpg" class="img-fluid"></p>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -362,8 +357,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>This would cause an error if <code>height</code> had not already been created:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>height <span class="sc">+</span> <span class="dv">2</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="running-code-in-a-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="running-code-in-a-quarto-document">Running Code in a Quarto Document</h2>
+<section id="running-code-in-a-rmd-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="running-code-in-a-rmd-quarto-document">Running Code in a Rmd / Quarto Document</h2>
 <p>In a Quarto document, code usually appears inside a code chunk.</p>
 <p>A code chunk looks like this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
@@ -383,12 +378,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a>:::</span>
 <span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>You can run code chunks using the small green play button near the chunk.</p>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Running a Quarto Code Chunk]</p>
-<p>Show the green play button next to a code chunk.</p>
-</div>
+<p><img src="img/run_rmd.jpg" class="img-fluid"></p>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -399,7 +392,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>When you render a Quarto document, R runs the code chunks from top to bottom.</p>
+<p>When you render a Rmd / Quarto document, R runs the code chunks from top to bottom.</p>
 </div>
 </div>
 </section>
@@ -648,7 +641,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/YonghoLim\.github\.io\/R_Onboarding\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

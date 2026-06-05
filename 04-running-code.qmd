@@ -8,19 +8,14 @@ In RStudio, there are several ways to run R code.
 
 If your cursor is on a line of code, you can click the **Run** button.
 
-<div class="screenshot-placeholder">
-
-[Insert Screenshot: Run Button in RStudio]
-
-Show the Run button in the Source Pane.
-
-</div>
+![](img/run_r_1.jpg)
 
 Example:
 
 ```{r}
 3 + 4
 ```
+
 
 
 ## Method 2: Use Ctrl + Enter or Cmd + Enter
@@ -53,26 +48,22 @@ x + y
 ```
 
 
+
 Then press:
 
 - `Ctrl + Enter` on Windows
 - `Cmd + Enter` on Mac
 
-## Method 4: Run an Entire Script
+## Method 4: Run the Highlighted Script
 
-To run an entire script, you can:
+To run the highlighted script, you can:
 
 1. Open your `.R` file.
-2. Click **Source**.
-3. RStudio will run the whole script from top to bottom.
+2. Highlight the code you want to run.
+3. Click **Run**.
+4. RStudio will run the highlighted code from top to bottom.
 
-<div class="screenshot-placeholder">
-
-[Insert Screenshot: Source Button]
-
-Show the Source button for running an entire R script.
-
-</div>
+![](img/run_r_4.jpg)
 
 ::: {.callout-warning}
 ## Important
@@ -92,13 +83,14 @@ height + 2
 ```
 
 
+
 This would cause an error if `height` had not already been created:
 
 ```r
 height + 2
 ```
 
-## Running Code in a Quarto Document
+## Running Code in a Rmd / Quarto Document
 
 In a Quarto document, code usually appears inside a code chunk.
 
@@ -110,22 +102,17 @@ A code chunk looks like this:
 2 + 2
 ```
 
+
 ````
 
 You can run code chunks using the small green play button near the chunk.
 
-<div class="screenshot-placeholder">
-
-[Insert Screenshot: Running a Quarto Code Chunk]
-
-Show the green play button next to a code chunk.
-
-</div>
+![](img/run_rmd.jpg)
 
 ::: {.callout-tip}
 ## Tip
 
-When you render a Quarto document, R runs the code chunks from top to bottom.
+When you render a Rmd / Quarto document, R runs the code chunks from top to bottom.
 :::
 
 ## Running Selected Code vs. Rendering

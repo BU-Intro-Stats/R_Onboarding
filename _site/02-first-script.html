@@ -277,10 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Click <strong>New File</strong>.</li>
 <li>Click <strong>R Script</strong>.</li>
 </ol>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Creating a New R Script]</p>
-<p>Show File &gt; New File &gt; R Script.</p>
-</div>
+<p><img src="img/create_file_menu.jpg" class="img-fluid"></p>
 <p>A blank script should open in the Source Pane.</p>
 </section>
 <section id="basic-arithmetic" class="level2">
@@ -460,10 +457,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol start="4" type="1">
 <li>Save it in your project folder.</li>
 </ol>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Saving an R Script]</p>
+<p><img src="img/file_save.jpg" class="img-fluid"></p>
 <p>Show the Save button and file name <code>first_script.R</code>.</p>
-</div>
 <div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -611,7 +606,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/YonghoLim\.github\.io\/R_Onboarding\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
