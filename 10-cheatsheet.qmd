@@ -1,0 +1,238 @@
+# Quick Reference Cheat Sheet
+
+This page summarizes the most important commands and tips from the guide.
+
+## RStudio Shortcuts
+
+| Action | Windows | Mac |
+|---|---|---|
+| Run current line | `Ctrl + Enter` | `Cmd + Enter` |
+| Save file | `Ctrl + S` | `Cmd + S` |
+| Find text | `Ctrl + F` | `Cmd + F` |
+| Comment/uncomment code | `Ctrl + Shift + C` | `Cmd + Shift + C` |
+
+## Important RStudio Panes
+
+| Pane | Purpose |
+|---|---|
+| Source | Write and save code |
+| Console | Run commands and see output |
+| Environment | See objects you created |
+| Files | Find files and folders |
+| Plots | View graphs |
+| Packages | Manage add-on tools |
+| Help | Search for help |
+
+## Common R Commands
+
+| Goal | Command |
+|---|---|
+| Add numbers | `2 + 3` |
+| Store a value | `x <- 10` |
+| Print a value | `print(x)` |
+| Check working directory | `getwd()` |
+| Check if a file exists | `file.exists("mydata.csv")` |
+| Import CSV | `data <- read.csv("mydata.csv")` |
+| View first rows | `head(data)` |
+| View structure | `str(data)` |
+| Summarize data | `summary(data)` |
+| View column names | `names(data)` |
+| Calculate a mean | `mean(data$quiz_score)` |
+| Make a frequency table | `table(data$major)` |
+| Make a plot | `plot(data$study_hours, data$quiz_score)` |
+
+## File Management Tips
+
+- Keep your script and data file in the same project folder.
+- Use clear file names.
+- Avoid spaces in file names.
+- Use underscores `_` instead of spaces.
+- Avoid saving important files only in Downloads.
+- Check your working directory with `getwd()`.
+- Check whether R can find your file with `file.exists()`.
+
+## Good File Names
+
+Good:
+
+```text
+first_script.R
+mydata.csv
+lab_report.qmd
+```
+
+Avoid:
+
+```text
+Untitled1.R
+my data final FINAL.csv
+lab report new version 2.qmd
+```
+
+## Importing Data
+
+Use:
+
+```r
+data <- read.csv("mydata.csv")
+```
+
+Then inspect it:
+
+```r
+head(data)
+str(data)
+summary(data)
+names(data)
+```
+
+## Simple Analysis Examples
+
+Mean:
+
+```r
+mean(data$quiz_score)
+```
+
+Frequency table:
+
+```r
+table(data$major)
+```
+
+Scatterplot:
+
+```r
+plot(
+  data$study_hours,
+  data$quiz_score,
+  main = "Study Hours and Quiz Score",
+  xlab = "Study Hours",
+  ylab = "Quiz Score"
+)
+```
+
+Histogram:
+
+```r
+hist(
+  data$quiz_score,
+  main = "Distribution of Quiz Scores",
+  xlab = "Quiz Score"
+)
+```
+
+## Common Errors and Quick Fixes
+
+| Problem | Possible Fix |
+|---|---|
+| File not found | Check `getwd()` and `file.exists("mydata.csv")` |
+| Object not found | Run the code that creates the object |
+| Typing mistake | Check spelling and capitalization |
+| Missing quote | Put file names in quotation marks |
+| Missing parenthesis | Make sure every `(` has a matching `)` |
+| Rendering error | Run the document from top to bottom and check earlier code |
+| Package problem | Check spelling, install the package, then load it with `library()` |
+
+## File Not Found Checklist
+
+If R cannot find your CSV file, try this:
+
+```r
+getwd()
+file.exists("mydata.csv")
+```
+
+If `file.exists("mydata.csv")` gives:
+
+```text
+[1] FALSE
+```
+
+then R cannot find the file in the current folder.
+
+Check that:
+
+- The file is saved in your project folder.
+- The file name is exactly `mydata.csv`.
+- The file is not accidentally named `mydata.csv.txt`.
+- You are working in the correct folder.
+
+## Object Names
+
+Good object names:
+
+```r
+quiz_score <- 90
+study_hours <- 6
+my_data <- read.csv("mydata.csv")
+```
+
+Avoid object names with spaces:
+
+```r
+quiz score <- 90
+study hours <- 6
+my data <- read.csv("mydata.csv")
+```
+
+## Useful Beginner Habits
+
+- Save your script often.
+- Run code one small piece at a time.
+- Read error messages slowly.
+- Check spelling carefully.
+- Keep your data and script in the same folder.
+- Write short comments to explain your code.
+- Explain your results in sentences.
+
+## A Complete First Workflow
+
+Here is a simple workflow from start to finish:
+
+```r
+# Check where R is looking for files
+getwd()
+
+# Check whether the data file exists
+file.exists("mydata.csv")
+
+# Import the data
+data <- read.csv("mydata.csv")
+
+# Look at the data
+head(data)
+str(data)
+summary(data)
+
+# Calculate results
+mean(data$quiz_score)
+table(data$major)
+
+# Make a plot
+plot(
+  data$study_hours,
+  data$quiz_score,
+  main = "Study Hours and Quiz Score",
+  xlab = "Study Hours",
+  ylab = "Quiz Score",
+  pch = 19,
+  col = "steelblue"
+)
+```
+
+## Final Reminder
+
+You now know how to complete a first basic R workflow:
+
+1. Open RStudio.
+2. Create a script.
+3. Write code.
+4. Save your work.
+5. Organize your files.
+6. Import a CSV dataset.
+7. Inspect the data.
+8. Calculate simple results.
+9. Explain what the results mean.
+
+That is a successful first R workflow!

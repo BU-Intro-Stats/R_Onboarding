@@ -1,0 +1,85 @@
+# Welcome
+
+Welcome to the **BU R Onboarding Guide**!
+
+This guide is for students who are using **R** and **RStudio** for the first time. You do not need any previous programming experience. We will go step by step.
+
+By the end of this guide, you will be able to:
+
+- Open RStudio.
+- Understand the main parts of the RStudio screen.
+- Write and run simple R code.
+- Save your work in an R script.
+- Understand the difference between R scripts, R Markdown, and Quarto documents.
+- Organize your project files.
+- Import a CSV dataset into R.
+- View and summarize your data.
+- Create simple results such as means, tables, and plots.
+
+## What is R?
+
+**R** is a programming language used for working with data.
+
+You can use R to:
+
+- Store data.
+- Clean data.
+- Summarize data.
+- Make graphs.
+- Run statistical analyses.
+- Create reports.
+
+In this course, we will use R because it helps us work carefully and clearly with data.
+
+## What is RStudio?
+
+**RStudio** is a program that makes R easier to use.
+
+Think of R as the engine, and RStudio as the dashboard. R does the calculations, while RStudio gives you buttons, panels, files, and tools that make your work easier to manage.
+
+::: callout-tip
+## Tip
+
+You need both **R** and **RStudio** installed.
+
+- R does the actual computing.
+- RStudio gives you a friendly place to write and run R code.
+:::
+
+## Why are we using R in this course?
+
+We are using R because it helps you learn how to work with real data.
+
+Instead of only doing calculations by hand, you will learn how to:
+
+- Ask questions about data.
+- Use code to answer those questions.
+- Check your work.
+- Share your results.
+
+You do not need to become a professional programmer. The goal is to become comfortable using R as a tool for learning and data analysis.
+
+## Learning Objectives
+
+After completing this onboarding guide, you should be able to:
+
+1.  Identify the main parts of RStudio.
+2.  Create and save an R script.
+3.  Run basic R commands.
+4.  Explain what a Quarto document is.
+5.  Set up a simple project folder.
+6.  Download and import a CSV file.
+7.  Use basic commands to inspect a dataset.
+8.  Calculate a mean, make a frequency table, and create a simple plot.
+
+::: callout-note
+## Before You Start
+
+It is okay if you make mistakes. Everyone does when learning R.
+
+A big part of learning R is reading error messages, fixing small problems, and trying again.
+:::
+
+## Next Step
+
+Go to **1. Getting Familiar with RStudio**.

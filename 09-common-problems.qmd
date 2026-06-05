@@ -1,0 +1,269 @@
+# Common Problems and Solutions
+
+Everyone gets errors in R. Errors are normal.
+
+The important skill is learning how to read the message and try a fix.
+
+## Problem 1: File Not Found
+
+### What You Might See
+
+```text
+Error in file(file, "rt") : cannot open the connection
+```
+
+or:
+
+```text
+No such file or directory
+```
+
+### What It Usually Means
+
+R cannot find your file.
+
+### What To Check
+
+Run:
+
+```{r}
+getwd()
+```
+
+
+
+Then check whether `mydata.csv` is inside that folder.
+
+Also run:
+
+```{r}
+file.exists("mydata.csv")
+```
+
+
+
+If the result is `FALSE`, R cannot find the file.
+
+### Possible Fixes
+
+- Move `mydata.csv` into your project folder.
+- Check the spelling of the file name.
+- Make sure the file ends in `.csv`.
+- Make sure you are working in the correct folder.
+
+::: {.callout-warning}
+## Common Mistake
+
+`mydata.csv` and `mydata (1).csv` are different file names.
+:::
+
+## Problem 2: Package Installation Issues
+
+Sometimes your instructor may ask you to install a package.
+
+Example:
+
+```r
+install.packages("ggplot2")
+```
+
+### What Can Go Wrong?
+
+- Internet connection problems.
+- Typing the package name incorrectly.
+- R asks you to restart.
+- You do not have permission to install software on the computer.
+
+### Possible Fixes
+
+- Check your internet connection.
+- Make sure the package name is inside quotation marks.
+- Restart RStudio and try again.
+- Ask your instructor or campus IT for help if you are on a lab computer.
+
+::: {.callout-tip}
+## Tip
+
+You only need to install a package once on your computer.
+
+But you need to load it with `library()` each time you start a new R session.
+:::
+
+## Problem 3: Typing Mistakes
+
+R is very picky about spelling.
+
+These are all different to R:
+
+```r
+quiz_score
+Quiz_score
+quizscore
+quiz.score
+```
+
+### Common Typing Mistakes
+
+| Mistake | Example | Fix |
+|---|---|---|
+| Missing quote | `read.csv(mydata.csv)` | `read.csv("mydata.csv")` |
+| Misspelled object | `quz_score` | `quiz_score` |
+| Missing parenthesis | `mean(data$quiz_score` | `mean(data$quiz_score)` |
+| Wrong capitalization | `Read.csv()` | `read.csv()` |
+
+## Problem 4: Working Directory Problems
+
+If R is looking in the wrong folder, it may not find your files.
+
+Check the working directory with:
+
+```{r}
+getwd()
+```
+
+
+
+In RStudio, using an RStudio Project can help keep your working directory organized.
+
+::: {.callout-tip}
+## Tip
+
+For each assignment or project, keep your script and data file in the same folder.
+:::
+
+## Problem 5: Rendering Errors
+
+When rendering a Quarto document, R runs the code from top to bottom.
+
+A document may fail to render if:
+
+- A file is missing.
+- A package is not loaded.
+- An object is used before it is created.
+- There is a typing mistake in a code chunk.
+
+### Example
+
+This can fail:
+
+```r
+mean(data$quiz_score)
+```
+
+if `data` was never created earlier in the document.
+
+### Fix
+
+Make sure this line appears first:
+
+```r
+data <- read.csv("mydata.csv")
+```
+
+## Problem 6: Object Not Found
+
+### What You Might See
+
+```text
+Error: object 'data' not found
+```
+
+### What It Means
+
+R does not know what `data` is.
+
+### Fix
+
+Create the object first:
+
+```r
+data <- read.csv("mydata.csv")
+```
+
+Then run your analysis.
+
+## Problem 7: Forgetting Quotation Marks
+
+This is incorrect:
+
+```r
+read.csv(mydata.csv)
+```
+
+This is correct:
+
+```r
+read.csv("mydata.csv")
+```
+
+File names must be in quotation marks.
+
+## Troubleshooting Checklist
+
+When something goes wrong, ask:
+
+1. Did I spell everything correctly?
+2. Did I use quotation marks around file names?
+3. Did I run the earlier lines of code?
+4. Is my file in the right folder?
+5. Does `file.exists("mydata.csv")` return `TRUE`?
+6. Did I close all parentheses?
+7. Did I restart RStudio and try again?
+
+::: {.callout-note}
+## Encouragement
+
+Errors do not mean you are bad at R.
+
+Errors are part of learning. Read the message, try one fix, and run the code again.
+:::
+
+## Practice: Diagnose the Problem
+
+::: {.callout-note}
+## Practice
+
+For each example, decide what the problem is.
+
+### Example 1
+
+```r
+read.csv(mydata.csv)
+```
+
+Question: What is missing?
+
+### Example 2
+
+```r
+mean(data$quiz_score
+```
+
+Question: What is missing?
+
+### Example 3
+
+```r
+Data <- read.csv("mydata.csv")
+head(data)
+```
+
+Question: Why might this fail?
+:::
+
+## Answers
+
+1. Example 1 is missing quotation marks around the file name.
+2. Example 2 is missing a closing parenthesis.
+3. Example 3 may fail because `Data` and `data` are different names in R.
+
+## Summary
+
+In this section, you learned how to troubleshoot common problems, including:
+
+- File not found errors.
+- Package installation issues.
+- Typing mistakes.
+- Working directory problems.
+- Rendering errors.
+- Object not found errors.

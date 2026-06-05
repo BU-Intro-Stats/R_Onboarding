@@ -1,0 +1,1272 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome",
+    "section": "",
+    "text": "Welcome to the BU R Onboarding Guide!\nThis guide is for students who are using R and RStudio for the first time. You do not need any previous programming experience. We will go step by step.\nBy the end of this guide, you will be able to:\n\nOpen RStudio.\nUnderstand the main parts of the RStudio screen.\nWrite and run simple R code.\nSave your work in an R script.\nUnderstand the difference between R scripts, R Markdown, and Quarto documents.\nOrganize your project files.\nImport a CSV dataset into R.\nView and summarize your data.\nCreate simple results such as means, tables, and plots.\n\n\n\nR is a programming language used for working with data.\nYou can use R to:\n\nStore data.\nClean data.\nSummarize data.\nMake graphs.\nRun statistical analyses.\nCreate reports.\n\nIn this course, we will use R because it helps us work carefully and clearly with data.\n\n\n\nRStudio is a program that makes R easier to use.\nThink of R as the engine, and RStudio as the dashboard. R does the calculations, while RStudio gives you buttons, panels, files, and tools that make your work easier to manage.\n\n\n\n\n\n\nTipTip\n\n\n\nYou need both R and RStudio installed.\n\nR does the actual computing.\nRStudio gives you a friendly place to write and run R code.\n\n\n\n\n\n\nWe are using R because it helps you learn how to work with real data.\nInstead of only doing calculations by hand, you will learn how to:\n\nAsk questions about data.\nUse code to answer those questions.\nCheck your work.\nShare your results.\n\nYou do not need to become a professional programmer. The goal is to become comfortable using R as a tool for learning and data analysis.\n\n\n\nAfter completing this onboarding guide, you should be able to:\n\nIdentify the main parts of RStudio.\nCreate and save an R script.\nRun basic R commands.\nExplain what a Quarto document is.\nSet up a simple project folder.\nDownload and import a CSV file.\nUse basic commands to inspect a dataset.\nCalculate a mean, make a frequency table, and create a simple plot.\n\n\n\n\n\n\n\nNoteBefore You Start\n\n\n\nIt is okay if you make mistakes. Everyone does when learning R.\nA big part of learning R is reading error messages, fixing small problems, and trying again.\n\n\n\n\n\nGo to 1. Getting Familiar with RStudio.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-r",
+    "href": "index.html#what-is-r",
+    "title": "Welcome",
+    "section": "",
+    "text": "R is a programming language used for working with data.\nYou can use R to:\n\nStore data.\nClean data.\nSummarize data.\nMake graphs.\nRun statistical analyses.\nCreate reports.\n\nIn this course, we will use R because it helps us work carefully and clearly with data.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#what-is-rstudio",
+    "href": "index.html#what-is-rstudio",
+    "title": "Welcome",
+    "section": "",
+    "text": "RStudio is a program that makes R easier to use.\nThink of R as the engine, and RStudio as the dashboard. R does the calculations, while RStudio gives you buttons, panels, files, and tools that make your work easier to manage.\n\n\n\n\n\n\nTipTip\n\n\n\nYou need both R and RStudio installed.\n\nR does the actual computing.\nRStudio gives you a friendly place to write and run R code.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#why-are-we-using-r-in-this-course",
+    "href": "index.html#why-are-we-using-r-in-this-course",
+    "title": "Welcome",
+    "section": "",
+    "text": "We are using R because it helps you learn how to work with real data.\nInstead of only doing calculations by hand, you will learn how to:\n\nAsk questions about data.\nUse code to answer those questions.\nCheck your work.\nShare your results.\n\nYou do not need to become a professional programmer. The goal is to become comfortable using R as a tool for learning and data analysis.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#learning-objectives",
+    "href": "index.html#learning-objectives",
+    "title": "Welcome",
+    "section": "",
+    "text": "After completing this onboarding guide, you should be able to:\n\nIdentify the main parts of RStudio.\nCreate and save an R script.\nRun basic R commands.\nExplain what a Quarto document is.\nSet up a simple project folder.\nDownload and import a CSV file.\nUse basic commands to inspect a dataset.\nCalculate a mean, make a frequency table, and create a simple plot.\n\n\n\n\n\n\n\nNoteBefore You Start\n\n\n\nIt is okay if you make mistakes. Everyone does when learning R.\nA big part of learning R is reading error messages, fixing small problems, and trying again.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "index.html#next-step",
+    "href": "index.html#next-step",
+    "title": "Welcome",
+    "section": "",
+    "text": "Go to 1. Getting Familiar with RStudio.",
+    "crumbs": [
+      "Welcome"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html",
+    "href": "08-getting-results.html",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "Now that your data is in R, you can start getting results.\nIn this section, we will calculate:\n\nA mean\nA frequency table\nA simple plot\n\nFirst, import the data again:\n\ndata &lt;- read.csv(\"mydata.csv\")\n\n\n\nThe mean is the average.\nLet’s calculate the average quiz score:\n\nmean(data$quiz_score)\n\n[1] 81.4\n\n\nThe $ symbol means:\n\nUse a column from this dataset.\n\nSo:\ndata$quiz_score\nmeans:\n\nThe quiz_score column inside the dataset called data.\n\n\n\n\nIf R gives you a number such as:\n[1] 82.4\nyou can write:\n\nThe average quiz score is 82.4.\n\n\n\n\n\n\n\nTipTip\n\n\n\nAlways explain results in words. Do not only show the code output.\n\n\n\n\n\nYou can also calculate the average number of study hours:\n\nmean(data$study_hours)\n\n[1] 6\n\n\nA sentence for this result might be:\n\nStudents studied an average of about 6 hours.\n\n\n\n\nA frequency table counts how many times each category appears.\nLet’s count the number of students in each major:\n\ntable(data$major)\n\n\n   Biology   Business Psychology \n         3          4          3 \n\n\nThis tells us how many students are listed for each major.\n\n\n\nIf R shows something like:\nBiology     Business     Psychology\n3           4            3\nyou can write:\n\nThere are 3 Biology students, 4 Business students, and 3 Psychology students in the dataset.\n\n\n\n\nWe can count attendance:\n\ntable(data$attendance)\n\n\n Absent Present \n      2       8 \n\n\nThis shows how many students were marked as Present or Absent.\n\n\n\nA plot helps us see patterns.\nLet’s make a scatterplot of study hours and quiz scores:\n\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\",\n  pch = 19,\n  col = \"steelblue\"\n)\n\n\n\n\n\n\n\n\nThis graph shows whether students who studied more hours tended to have higher quiz scores.\n\n\n\nWe can also make a histogram of quiz scores:\n\nhist(\n  data$quiz_score,\n  main = \"Distribution of Quiz Scores\",\n  xlab = \"Quiz Score\",\n  col = \"lightblue\",\n  border = \"white\"\n)\n\n\n\n\n\n\n\n\nA histogram shows how values are spread out.\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nUse the dataset to answer these questions:\n\nWhat is the average number of study hours?\nHow many students are in each attendance group?\nMake a plot of sleep hours and quiz score.\n\nUse these commands as a starting point:\nmean(data$study_hours)\ntable(data$attendance)\n\nplot(\n  data$sleep_hours,\n  data$quiz_score,\n  main = \"Sleep Hours and Quiz Score\",\n  xlab = \"Sleep Hours\",\n  ylab = \"Quiz Score\"\n)\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nAfter running your code, write one sentence for each result.\nExample:\n\nThe average quiz score was 81.4.\n\n\nMost students in this small dataset were present.\n\n\nThe scatterplot suggests that higher study hours may be related to higher quiz scores.\n\n\n\n\n\n\nGood results include both the number and an explanation.\nInstead of only writing:\n[1] 6.2\nwrite:\n\nThe average number of study hours was 6.2 hours.\n\nInstead of only showing a plot, write:\n\nThe plot suggests that students who studied more hours tended to have higher quiz scores.\n\n\n\n\n\n\n\nNoteReminder\n\n\n\nYour goal is not only to run code. Your goal is to understand and explain what the results mean.\n\n\n\n\n\nAnswer these questions:\n\nWhat does mean() calculate?\nWhat does table() create?\nWhat does the $ symbol do?\nWhy should you explain results in words?\n\n\n\n\nIn this section, you learned how to:\n\nCalculate a mean.\nCreate a frequency table.\nMake a simple scatterplot.\nMake a histogram.\nExplain results in plain language.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#calculating-a-mean",
+    "href": "08-getting-results.html#calculating-a-mean",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "The mean is the average.\nLet’s calculate the average quiz score:\n\nmean(data$quiz_score)\n\n[1] 81.4\n\n\nThe $ symbol means:\n\nUse a column from this dataset.\n\nSo:\ndata$quiz_score\nmeans:\n\nThe quiz_score column inside the dataset called data.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#interpreting-the-mean",
+    "href": "08-getting-results.html#interpreting-the-mean",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "If R gives you a number such as:\n[1] 82.4\nyou can write:\n\nThe average quiz score is 82.4.\n\n\n\n\n\n\n\nTipTip\n\n\n\nAlways explain results in words. Do not only show the code output.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#calculating-another-mean",
+    "href": "08-getting-results.html#calculating-another-mean",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "You can also calculate the average number of study hours:\n\nmean(data$study_hours)\n\n[1] 6\n\n\nA sentence for this result might be:\n\nStudents studied an average of about 6 hours.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#creating-a-frequency-table",
+    "href": "08-getting-results.html#creating-a-frequency-table",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "A frequency table counts how many times each category appears.\nLet’s count the number of students in each major:\n\ntable(data$major)\n\n\n   Biology   Business Psychology \n         3          4          3 \n\n\nThis tells us how many students are listed for each major.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#interpreting-a-frequency-table",
+    "href": "08-getting-results.html#interpreting-a-frequency-table",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "If R shows something like:\nBiology     Business     Psychology\n3           4            3\nyou can write:\n\nThere are 3 Biology students, 4 Business students, and 3 Psychology students in the dataset.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#another-frequency-table",
+    "href": "08-getting-results.html#another-frequency-table",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "We can count attendance:\n\ntable(data$attendance)\n\n\n Absent Present \n      2       8 \n\n\nThis shows how many students were marked as Present or Absent.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#creating-a-simple-plot",
+    "href": "08-getting-results.html#creating-a-simple-plot",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "A plot helps us see patterns.\nLet’s make a scatterplot of study hours and quiz scores:\n\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\",\n  pch = 19,\n  col = \"steelblue\"\n)\n\n\n\n\n\n\n\n\nThis graph shows whether students who studied more hours tended to have higher quiz scores.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#another-simple-plot",
+    "href": "08-getting-results.html#another-simple-plot",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "We can also make a histogram of quiz scores:\n\nhist(\n  data$quiz_score,\n  main = \"Distribution of Quiz Scores\",\n  xlab = \"Quiz Score\",\n  col = \"lightblue\",\n  border = \"white\"\n)\n\n\n\n\n\n\n\n\nA histogram shows how values are spread out.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#try-it-yourself",
+    "href": "08-getting-results.html#try-it-yourself",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "NotePractice\n\n\n\nUse the dataset to answer these questions:\n\nWhat is the average number of study hours?\nHow many students are in each attendance group?\nMake a plot of sleep hours and quiz score.\n\nUse these commands as a starting point:\nmean(data$study_hours)\ntable(data$attendance)\n\nplot(\n  data$sleep_hours,\n  data$quiz_score,\n  main = \"Sleep Hours and Quiz Score\",\n  xlab = \"Sleep Hours\",\n  ylab = \"Quiz Score\"\n)",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#practice-write-your-results",
+    "href": "08-getting-results.html#practice-write-your-results",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "NotePractice\n\n\n\nAfter running your code, write one sentence for each result.\nExample:\n\nThe average quiz score was 81.4.\n\n\nMost students in this small dataset were present.\n\n\nThe scatterplot suggests that higher study hours may be related to higher quiz scores.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#writing-results-in-sentences",
+    "href": "08-getting-results.html#writing-results-in-sentences",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "Good results include both the number and an explanation.\nInstead of only writing:\n[1] 6.2\nwrite:\n\nThe average number of study hours was 6.2 hours.\n\nInstead of only showing a plot, write:\n\nThe plot suggests that students who studied more hours tended to have higher quiz scores.\n\n\n\n\n\n\n\nNoteReminder\n\n\n\nYour goal is not only to run code. Your goal is to understand and explain what the results mean.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#check-your-understanding",
+    "href": "08-getting-results.html#check-your-understanding",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "Answer these questions:\n\nWhat does mean() calculate?\nWhat does table() create?\nWhat does the $ symbol do?\nWhy should you explain results in words?",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "08-getting-results.html#summary",
+    "href": "08-getting-results.html#summary",
+    "title": "8. Getting Results",
+    "section": "",
+    "text": "In this section, you learned how to:\n\nCalculate a mean.\nCreate a frequency table.\nMake a simple scatterplot.\nMake a histogram.\nExplain results in plain language.",
+    "crumbs": [
+      "8. Getting Results"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html",
+    "href": "06-download-csv.html",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "In this section, you will download a CSV dataset.\nA CSV file is a common type of data file. CSV stands for comma-separated values.\nA CSV file looks like a spreadsheet, but it is saved as plain text.\n\n\nFor this guide, we will use a small dataset called:\nmydata.csv\nIt contains information about imaginary students, including:\n\nStudy hours\nSleep hours\nAttendance\nQuiz score\nMajor\n\nIf you are viewing this guide as a website, use this link:\nDownload the sample CSV dataset\n\n\n\n\n\n\nTipTip\n\n\n\nIf your browser opens the CSV instead of downloading it, right-click the link and choose Save Link As…\n\n\n\n\n\nSave the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n[Insert Screenshot: Saving mydata.csv in the Project Folder]\nShow the CSV file saved in the same folder as the R script.\n\n\n\n\nIn R, you can check whether the file exists:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf R prints:\n[1] TRUE\nthat means R found the file.\nIf R prints:\n[1] FALSE\nthat means R did not find the file in the current working directory.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nThe file name must match exactly.\nThese are different to R:\nmydata.csv\nMyData.csv\nmydata (1).csv\n\n\n\n\n\nIf your instructor has not provided mydata.csv, you can create it yourself.\n\nOpen a plain text editor.\nCopy the text below.\nSave the file as mydata.csv.\nPut it in your project folder.\n\nstudent,study_hours,sleep_hours,attendance,quiz_score,major\nStudent 1,5,7,Present,78,Biology\nStudent 2,8,6,Present,91,Business\nStudent 3,3,8,Absent,65,Psychology\nStudent 4,6,7,Present,84,Biology\nStudent 5,7,6,Present,88,Business\nStudent 6,2,5,Absent,60,Psychology\nStudent 7,9,8,Present,95,Biology\nStudent 8,4,6,Present,72,Business\nStudent 9,6,7,Present,83,Psychology\nStudent 10,10,7,Present,98,Business\n\n\n\n\n\n\nTipTip\n\n\n\nMake sure the file name is exactly:\nmydata.csv\nnot:\nmydata.csv.txt\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nDownload or create mydata.csv.\nSave it in your project folder.\nRun:\n\nfile.exists(\"mydata.csv\")\n\nMake sure the result is TRUE.\n\n\n\n\n\n\nAnswer these questions:\n\nWhat does CSV stand for?\nWhere should you save mydata.csv?\nWhat does file.exists(\"mydata.csv\") check?\nWhat does it mean if the result is FALSE?\n\n\n\n\nIn this section, you learned that:\n\nA CSV file is a common data file.\nCSV files can be opened in spreadsheet programs and R.\nYour CSV file should be saved in your project folder.\nfile.exists() checks whether R can find the file.",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#sample-dataset",
+    "href": "06-download-csv.html#sample-dataset",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "For this guide, we will use a small dataset called:\nmydata.csv\nIt contains information about imaginary students, including:\n\nStudy hours\nSleep hours\nAttendance\nQuiz score\nMajor\n\nIf you are viewing this guide as a website, use this link:\nDownload the sample CSV dataset\n\n\n\n\n\n\nTipTip\n\n\n\nIf your browser opens the CSV instead of downloading it, right-click the link and choose Save Link As…",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#saving-the-csv-file",
+    "href": "06-download-csv.html#saving-the-csv-file",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "Save the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n[Insert Screenshot: Saving mydata.csv in the Project Folder]\nShow the CSV file saved in the same folder as the R script.",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#verifying-the-file-exists",
+    "href": "06-download-csv.html#verifying-the-file-exists",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "In R, you can check whether the file exists:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf R prints:\n[1] TRUE\nthat means R found the file.\nIf R prints:\n[1] FALSE\nthat means R did not find the file in the current working directory.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nThe file name must match exactly.\nThese are different to R:\nmydata.csv\nMyData.csv\nmydata (1).csv",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#if-you-do-not-have-the-file-yet",
+    "href": "06-download-csv.html#if-you-do-not-have-the-file-yet",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "If your instructor has not provided mydata.csv, you can create it yourself.\n\nOpen a plain text editor.\nCopy the text below.\nSave the file as mydata.csv.\nPut it in your project folder.\n\nstudent,study_hours,sleep_hours,attendance,quiz_score,major\nStudent 1,5,7,Present,78,Biology\nStudent 2,8,6,Present,91,Business\nStudent 3,3,8,Absent,65,Psychology\nStudent 4,6,7,Present,84,Biology\nStudent 5,7,6,Present,88,Business\nStudent 6,2,5,Absent,60,Psychology\nStudent 7,9,8,Present,95,Biology\nStudent 8,4,6,Present,72,Business\nStudent 9,6,7,Present,83,Psychology\nStudent 10,10,7,Present,98,Business\n\n\n\n\n\n\nTipTip\n\n\n\nMake sure the file name is exactly:\nmydata.csv\nnot:\nmydata.csv.txt",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#try-it-yourself",
+    "href": "06-download-csv.html#try-it-yourself",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "NotePractice\n\n\n\n\nDownload or create mydata.csv.\nSave it in your project folder.\nRun:\n\nfile.exists(\"mydata.csv\")\n\nMake sure the result is TRUE.",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#check-your-understanding",
+    "href": "06-download-csv.html#check-your-understanding",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "Answer these questions:\n\nWhat does CSV stand for?\nWhere should you save mydata.csv?\nWhat does file.exists(\"mydata.csv\") check?\nWhat does it mean if the result is FALSE?",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "06-download-csv.html#summary",
+    "href": "06-download-csv.html#summary",
+    "title": "6. Downloading a CSV Dataset",
+    "section": "",
+    "text": "In this section, you learned that:\n\nA CSV file is a common data file.\nCSV files can be opened in spreadsheet programs and R.\nYour CSV file should be saved in your project folder.\nfile.exists() checks whether R can find the file.",
+    "crumbs": [
+      "6. Downloading a CSV Dataset"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html",
+    "href": "04-running-code.html",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "Writing code is only the first step. You also need to run it.\nIn RStudio, there are several ways to run R code.\n\n\nIf your cursor is on a line of code, you can click the Run button.\n\n[Insert Screenshot: Run Button in RStudio]\nShow the Run button in the Source Pane.\n\nExample:\n\n3 + 4\n\n[1] 7\n\n\n\n\n\nYou can also use a keyboard shortcut.\n\n\n\nComputer\nShortcut\n\n\n\n\nWindows\nCtrl + Enter\n\n\nMac\nCmd + Enter\n\n\n\nThis runs the current line of code.\n\n\n\n\n\n\nTipTip\n\n\n\nKeyboard shortcuts make your work faster once you get used to them.\n\n\n\n\n\nYou can highlight several lines of code and run only those lines.\nTry highlighting this code:\n\nx &lt;- 10\ny &lt;- 5\nx + y\n\n[1] 15\n\n\nThen press:\n\nCtrl + Enter on Windows\nCmd + Enter on Mac\n\n\n\n\nTo run an entire script, you can:\n\nOpen your .R file.\nClick Source.\nRStudio will run the whole script from top to bottom.\n\n\n[Insert Screenshot: Source Button]\nShow the Source button for running an entire R script.\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.\n\n\n\n\n\nThis works because height is created before it is used:\n\nheight &lt;- 65\nheight + 2\n\n[1] 67\n\n\nThis would cause an error if height had not already been created:\nheight + 2\n\n\n\nIn a Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\nYou can run code chunks using the small green play button near the chunk.\n\n[Insert Screenshot: Running a Quarto Code Chunk]\nShow the green play button next to a code chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Quarto document, R runs the code chunks from top to bottom.\n\n\n\n\n\nRunning selected code is useful when you are practicing or testing something.\nRendering is useful when you want to create the final document.\n\n\n\nAction\nWhat It Does\n\n\n\n\nRun one line\nRuns only the current line\n\n\nRun selected lines\nRuns only the code you highlight\n\n\nSource script\nRuns the whole .R script\n\n\nRender document\nRuns the whole .qmd document and creates output\n\n\n\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nIf something works when you run one line but fails when you render, it may mean your document is missing an earlier line of code.\nRemember: Quarto starts fresh and runs the document from top to bottom.\n\n\n\n\n\n\n\nYou may see an error like:\nError: object 'quiz_score' not found\nThis means R does not know what quiz_score is.\nUsually this happens because:\n\nYou did not create the object yet.\nYou misspelled the object name.\nYou restarted R and need to run earlier code again.\n\nExample mistake:\nquiz_score + 5\nFix:\nquiz_score &lt;- 90\nquiz_score + 5\n\n\n\nYou may see:\nError: unexpected symbol\nThis often means there is a typing mistake.\nFor example:\nmy score &lt;- 90\nR does not like spaces in object names.\nUse:\nmy_score &lt;- 90\n\n\n\nYou may see:\nError: could not find function \"some_function\"\nThis may mean:\n\nThe function name is misspelled.\nYou forgot to load a package.\nThe package is not installed.\n\nFor now, check your spelling first.\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new script and type:\na &lt;- 12\nb &lt;- 3\na / b\nTry running the code using:\n\nThe Run button.\nThe keyboard shortcut.\nHighlighting all three lines.\nThe Source button.\n\n\n\n\n\n\nLook at this code:\nexam score &lt;- 85\nexam_score + 5\nThis code has two problems.\nTry to fix it before looking below.\nCorrected version:\nexam_score &lt;- 85\nexam_score + 5\nThe first problem was the space in exam score.\nThe second problem was that the object name was not written the same way both times.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nR is very exact.\nThese names are different to R:\nscore\nScore\nquiz_score\nquizscore\n\n\n\n\n\nAnswer these questions:\n\nWhat button can you use to run one line of code?\nWhat keyboard shortcut runs the current line?\nWhy does the order of code matter?\nWhat does “object not found” usually mean?\n\n\n\n\nIn this section, you learned how to:\n\nRun one line of code.\nRun selected lines of code.\nRun an entire script.\nRun code chunks in a Quarto document.\nUnderstand a few common error messages.\n\nYou are now ready to work with files and folders.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#method-1-use-the-run-button",
+    "href": "04-running-code.html#method-1-use-the-run-button",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "If your cursor is on a line of code, you can click the Run button.\n\n[Insert Screenshot: Run Button in RStudio]\nShow the Run button in the Source Pane.\n\nExample:\n\n3 + 4\n\n[1] 7",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#method-2-use-ctrl-enter-or-cmd-enter",
+    "href": "04-running-code.html#method-2-use-ctrl-enter-or-cmd-enter",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "You can also use a keyboard shortcut.\n\n\n\nComputer\nShortcut\n\n\n\n\nWindows\nCtrl + Enter\n\n\nMac\nCmd + Enter\n\n\n\nThis runs the current line of code.\n\n\n\n\n\n\nTipTip\n\n\n\nKeyboard shortcuts make your work faster once you get used to them.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#method-3-run-selected-lines",
+    "href": "04-running-code.html#method-3-run-selected-lines",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "You can highlight several lines of code and run only those lines.\nTry highlighting this code:\n\nx &lt;- 10\ny &lt;- 5\nx + y\n\n[1] 15\n\n\nThen press:\n\nCtrl + Enter on Windows\nCmd + Enter on Mac",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#method-4-run-an-entire-script",
+    "href": "04-running-code.html#method-4-run-an-entire-script",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "To run an entire script, you can:\n\nOpen your .R file.\nClick Source.\nRStudio will run the whole script from top to bottom.\n\n\n[Insert Screenshot: Source Button]\nShow the Source button for running an entire R script.\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#example-order-matters",
+    "href": "04-running-code.html#example-order-matters",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "This works because height is created before it is used:\n\nheight &lt;- 65\nheight + 2\n\n[1] 67\n\n\nThis would cause an error if height had not already been created:\nheight + 2",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#running-code-in-a-quarto-document",
+    "href": "04-running-code.html#running-code-in-a-quarto-document",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "In a Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\nYou can run code chunks using the small green play button near the chunk.\n\n[Insert Screenshot: Running a Quarto Code Chunk]\nShow the green play button next to a code chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Quarto document, R runs the code chunks from top to bottom.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#running-selected-code-vs.-rendering",
+    "href": "04-running-code.html#running-selected-code-vs.-rendering",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "Running selected code is useful when you are practicing or testing something.\nRendering is useful when you want to create the final document.\n\n\n\nAction\nWhat It Does\n\n\n\n\nRun one line\nRuns only the current line\n\n\nRun selected lines\nRuns only the code you highlight\n\n\nSource script\nRuns the whole .R script\n\n\nRender document\nRuns the whole .qmd document and creates output\n\n\n\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nIf something works when you run one line but fails when you render, it may mean your document is missing an earlier line of code.\nRemember: Quarto starts fresh and runs the document from top to bottom.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#troubleshooting-common-errors",
+    "href": "04-running-code.html#troubleshooting-common-errors",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "You may see an error like:\nError: object 'quiz_score' not found\nThis means R does not know what quiz_score is.\nUsually this happens because:\n\nYou did not create the object yet.\nYou misspelled the object name.\nYou restarted R and need to run earlier code again.\n\nExample mistake:\nquiz_score + 5\nFix:\nquiz_score &lt;- 90\nquiz_score + 5\n\n\n\nYou may see:\nError: unexpected symbol\nThis often means there is a typing mistake.\nFor example:\nmy score &lt;- 90\nR does not like spaces in object names.\nUse:\nmy_score &lt;- 90\n\n\n\nYou may see:\nError: could not find function \"some_function\"\nThis may mean:\n\nThe function name is misspelled.\nYou forgot to load a package.\nThe package is not installed.\n\nFor now, check your spelling first.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#try-it-yourself",
+    "href": "04-running-code.html#try-it-yourself",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "NotePractice\n\n\n\nCreate a new script and type:\na &lt;- 12\nb &lt;- 3\na / b\nTry running the code using:\n\nThe Run button.\nThe keyboard shortcut.\nHighlighting all three lines.\nThe Source button.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#practice-find-the-mistake",
+    "href": "04-running-code.html#practice-find-the-mistake",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "Look at this code:\nexam score &lt;- 85\nexam_score + 5\nThis code has two problems.\nTry to fix it before looking below.\nCorrected version:\nexam_score &lt;- 85\nexam_score + 5\nThe first problem was the space in exam score.\nThe second problem was that the object name was not written the same way both times.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nR is very exact.\nThese names are different to R:\nscore\nScore\nquiz_score\nquizscore",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#check-your-understanding",
+    "href": "04-running-code.html#check-your-understanding",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "Answer these questions:\n\nWhat button can you use to run one line of code?\nWhat keyboard shortcut runs the current line?\nWhy does the order of code matter?\nWhat does “object not found” usually mean?",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "04-running-code.html#summary",
+    "href": "04-running-code.html#summary",
+    "title": "4. Running Code in RStudio",
+    "section": "",
+    "text": "In this section, you learned how to:\n\nRun one line of code.\nRun selected lines of code.\nRun an entire script.\nRun code chunks in a Quarto document.\nUnderstand a few common error messages.\n\nYou are now ready to work with files and folders.",
+    "crumbs": [
+      "4. Running Code in RStudio"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html",
+    "href": "03-quarto-rmarkdown.html",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Quarto file, you may see something like this:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.\n\n\n\nYou can type normal sentences in a Quarto document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .qmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, Quarto can turn a .qmd file into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n[Insert Screenshot: Quarto Render Button]\nShow the Render button in RStudio.\n\n\n\n\nIn RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.\n\n\n[Insert Screenshot: Creating a New Quarto Document]\nShow File &gt; New File &gt; Quarto Document.\n\n\n\n\nAfter creating your document:\n\nSave the file.\nClick Render.\nWait for Quarto to run the code.\nView the finished document.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nIf your document does not render, check that:\n\nEach code chunk starts and ends correctly.\nYour R code works by itself.\nYour file is saved.\nAny data files needed by the document are in the right folder.\n\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new Quarto document in RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nAdd your name.\nAdd an R code chunk.\nInside the code chunk, write:\n\n100 / 4\n\nClick Render.\n\nAfter rendering, check that the result appears in the finished document.\n\n\n\n\n\nAnswer these questions in your own words:\n\nWhat is the purpose of a reproducible report?\nWhat type of file ends in .R?\nWhat type of file ends in .qmd?\nWhat does it mean to render a document?\n\n\n\n\nIn this section, you learned that:\n\nR scripts are mainly for writing code.\nR Markdown and Quarto documents combine text, code, and output.\nQuarto documents end in .qmd.\nRendering turns a Quarto file into a finished document.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#what-is-a-reproducible-report",
+    "href": "03-quarto-rmarkdown.html#what-is-a-reproducible-report",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "A reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#comparing-.r-.rmd-and-.qmd-files",
+    "href": "03-quarto-rmarkdown.html#comparing-.r-.rmd-and-.qmd-files",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "File Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#what-is-r-markdown",
+    "href": "03-quarto-rmarkdown.html#what-is-r-markdown",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "R Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#what-is-quarto",
+    "href": "03-quarto-rmarkdown.html#what-is-quarto",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "Quarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#parts-of-a-quarto-document",
+    "href": "03-quarto-rmarkdown.html#parts-of-a-quarto-document",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "A simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#example-title-section",
+    "href": "03-quarto-rmarkdown.html#example-title-section",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "At the top of a Quarto file, you may see something like this:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#regular-text",
+    "href": "03-quarto-rmarkdown.html#regular-text",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "You can type normal sentences in a Quarto document.\nFor example:\nThis report shows my first analysis in R.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#code-chunks",
+    "href": "03-quarto-rmarkdown.html#code-chunks",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "A code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .qmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#a-simple-quarto-document",
+    "href": "03-quarto-rmarkdown.html#a-simple-quarto-document",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "Here is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#what-is-rendering",
+    "href": "03-quarto-rmarkdown.html#what-is-rendering",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "To render a document means to turn it into a finished report.\nFor example, Quarto can turn a .qmd file into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n[Insert Screenshot: Quarto Render Button]\nShow the Render button in RStudio.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#creating-a-new-quarto-document",
+    "href": "03-quarto-rmarkdown.html#creating-a-new-quarto-document",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "In RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.\n\n\n[Insert Screenshot: Creating a New Quarto Document]\nShow File &gt; New File &gt; Quarto Document.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#rendering-your-document",
+    "href": "03-quarto-rmarkdown.html#rendering-your-document",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "After creating your document:\n\nSave the file.\nClick Render.\nWait for Quarto to run the code.\nView the finished document.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nIf your document does not render, check that:\n\nEach code chunk starts and ends correctly.\nYour R code works by itself.\nYour file is saved.\nAny data files needed by the document are in the right folder.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#try-it-yourself",
+    "href": "03-quarto-rmarkdown.html#try-it-yourself",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "NotePractice\n\n\n\nCreate a new Quarto document in RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nAdd your name.\nAdd an R code chunk.\nInside the code chunk, write:\n\n100 / 4\n\nClick Render.\n\nAfter rendering, check that the result appears in the finished document.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#check-your-understanding",
+    "href": "03-quarto-rmarkdown.html#check-your-understanding",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "Answer these questions in your own words:\n\nWhat is the purpose of a reproducible report?\nWhat type of file ends in .R?\nWhat type of file ends in .qmd?\nWhat does it mean to render a document?",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#summary",
+    "href": "03-quarto-rmarkdown.html#summary",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "In this section, you learned that:\n\nR scripts are mainly for writing code.\nR Markdown and Quarto documents combine text, code, and output.\nQuarto documents end in .qmd.\nRendering turns a Quarto file into a finished document.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html",
+    "href": "05-files-folders.html",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "When working with data, file organization matters.\nIf your files are organized, R can find them more easily.\n\n\nThe working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.\n\n\n\n\nYou can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.\n\n\n\n\n\nFor this guide, create a folder called:\nr-onboarding-guide\nInside that folder, you might have:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n\n\nA project folder keeps related files together.\nThis helps you avoid problems like:\n\nLosing your dataset.\nSaving files in random places.\nNot knowing which version of a file is correct.\nGetting file not found errors.\n\n\n\n\nIn RStudio, use the Files tab to find your project folder.\n\n[Insert Screenshot: Files Pane Showing Project Folder]\nShow the Files tab with the project folder open.\n\n\n\n\nFor a larger project, you may want folders like this:\nmy-project/\n├── data/\n├── scripts/\n├── reports/\n└── images/\nFor now, it is okay to keep things simple.\n\n\n\nGood file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.\n\n\n\n\n\nAnswer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?\n\n\n\n\nIn this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory.\nA project folder keeps your work organized.\nClear file names help prevent mistakes. `````",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html",
+    "href": "07-importing-data.html",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Now that the CSV file is saved in your project folder, we can import it into R.\nTo import data means to bring data from a file into R so we can work with it.\n\n\nUse this command:\n\ndata &lt;- read.csv(\"mydata.csv\")\n\nLet’s break it down.\n\n\n\nPart\nMeaning\n\n\n\n\ndata\nThe name we are giving the dataset in R\n\n\n&lt;-\nStores something in an object\n\n\nread.csv()\nA function that reads CSV files\n\n\n\"mydata.csv\"\nThe file name\n\n\n\nSo this line means:\n\nRead the file called mydata.csv and store it in an object called data.\n\n\n\n\n\n\n\nTipTip\n\n\n\nThe file name must be inside quotation marks.\n\n\n\n\n\nUse head() to see the first few rows:\n\nhead(data)\n\n    student study_hours sleep_hours attendance quiz_score      major\n1 Student 1           5           7    Present         78    Biology\n2 Student 2           8           6    Present         91   Business\n3 Student 3           3           8     Absent         65 Psychology\n4 Student 4           6           7    Present         84    Biology\n5 Student 5           7           6    Present         88   Business\n6 Student 6           2           5     Absent         60 Psychology\n\n\nThis helps you quickly check that the data imported correctly.\n\n\n\nUse str() to see the structure of the dataset:\n\nstr(data)\n\n'data.frame':   10 obs. of  6 variables:\n $ student    : chr  \"Student 1\" \"Student 2\" \"Student 3\" \"Student 4\" ...\n $ study_hours: int  5 8 3 6 7 2 9 4 6 10\n $ sleep_hours: int  7 6 8 7 6 5 8 6 7 7\n $ attendance : chr  \"Present\" \"Present\" \"Absent\" \"Present\" ...\n $ quiz_score : int  78 91 65 84 88 60 95 72 83 98\n $ major      : chr  \"Biology\" \"Business\" \"Psychology\" \"Biology\" ...\n\n\nThis tells you:\n\nHow many rows there are.\nHow many columns there are.\nThe names of the columns.\nThe type of information in each column.\n\nFor example:\n\nNumbers may be shown as int or num.\nWords or categories may be shown as chr.\n\n\n\n\nUse summary() to get a quick summary:\n\nsummary(data)\n\n   student           study_hours     sleep_hours   attendance       \n Length:10          Min.   : 2.00   Min.   :5.0   Length:10         \n Class :character   1st Qu.: 4.25   1st Qu.:6.0   Class :character  \n Mode  :character   Median : 6.00   Median :7.0   Mode  :character  \n                    Mean   : 6.00   Mean   :6.7                     \n                    3rd Qu.: 7.75   3rd Qu.:7.0                     \n                    Max.   :10.00   Max.   :8.0                     \n   quiz_score       major          \n Min.   :60.00   Length:10         \n 1st Qu.:73.50   Class :character  \n Median :83.50   Mode  :character  \n Mean   :81.40                     \n 3rd Qu.:90.25                     \n Max.   :98.00                     \n\n\nFor number columns, R may show:\n\nMinimum\nMedian\nMean\nMaximum\n\nFor text columns, R may show basic information about the values.\n\n\n\nYou can see the column names with:\n\nnames(data)\n\n[1] \"student\"     \"study_hours\" \"sleep_hours\" \"attendance\"  \"quiz_score\" \n[6] \"major\"      \n\n\n\n\n\nIf you run:\nhead(data)\nyou are asking:\n\nShow me the first few students in the dataset.\n\nIf you run:\nstr(data)\nyou are asking:\n\nWhat kind of information is stored in each column?\n\nIf you run:\nsummary(data)\nyou are asking:\n\nGive me a quick overview of the dataset.\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nImport the dataset and answer these questions:\n\nHow many columns are in the dataset?\nWhat are the column names?\nWhat is one number column?\nWhat is one category or text column?\n\nUse these commands:\ndata &lt;- read.csv(\"mydata.csv\")\nhead(data)\nstr(data)\nsummary(data)\nnames(data)\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nThis will not work if the file is not in your working directory:\ndata &lt;- read.csv(\"mydata.csv\")\nIf you get a file not found error, go back to Section 5 and check your working directory.\n\n\n\n\n\nAnswer these questions:\n\nWhat does it mean to import data?\nWhat does read.csv() do?\nWhy does \"mydata.csv\" need quotation marks?\nWhat does head(data) show?\nWhat does summary(data) show?\n\n\n\n\nIn this section, you learned how to:\n\nImport a CSV file into R.\nStore the dataset in an object called data.\nView the first few rows.\nCheck the structure of the dataset.\nSummarize the dataset.\nView column names.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#importing-a-csv-file",
+    "href": "07-importing-data.html#importing-a-csv-file",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Use this command:\n\ndata &lt;- read.csv(\"mydata.csv\")\n\nLet’s break it down.\n\n\n\nPart\nMeaning\n\n\n\n\ndata\nThe name we are giving the dataset in R\n\n\n&lt;-\nStores something in an object\n\n\nread.csv()\nA function that reads CSV files\n\n\n\"mydata.csv\"\nThe file name\n\n\n\nSo this line means:\n\nRead the file called mydata.csv and store it in an object called data.\n\n\n\n\n\n\n\nTipTip\n\n\n\nThe file name must be inside quotation marks.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#looking-at-the-first-few-rows",
+    "href": "07-importing-data.html#looking-at-the-first-few-rows",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Use head() to see the first few rows:\n\nhead(data)\n\n    student study_hours sleep_hours attendance quiz_score      major\n1 Student 1           5           7    Present         78    Biology\n2 Student 2           8           6    Present         91   Business\n3 Student 3           3           8     Absent         65 Psychology\n4 Student 4           6           7    Present         84    Biology\n5 Student 5           7           6    Present         88   Business\n6 Student 6           2           5     Absent         60 Psychology\n\n\nThis helps you quickly check that the data imported correctly.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#understanding-the-structure",
+    "href": "07-importing-data.html#understanding-the-structure",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Use str() to see the structure of the dataset:\n\nstr(data)\n\n'data.frame':   10 obs. of  6 variables:\n $ student    : chr  \"Student 1\" \"Student 2\" \"Student 3\" \"Student 4\" ...\n $ study_hours: int  5 8 3 6 7 2 9 4 6 10\n $ sleep_hours: int  7 6 8 7 6 5 8 6 7 7\n $ attendance : chr  \"Present\" \"Present\" \"Absent\" \"Present\" ...\n $ quiz_score : int  78 91 65 84 88 60 95 72 83 98\n $ major      : chr  \"Biology\" \"Business\" \"Psychology\" \"Biology\" ...\n\n\nThis tells you:\n\nHow many rows there are.\nHow many columns there are.\nThe names of the columns.\nThe type of information in each column.\n\nFor example:\n\nNumbers may be shown as int or num.\nWords or categories may be shown as chr.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#summarizing-the-dataset",
+    "href": "07-importing-data.html#summarizing-the-dataset",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Use summary() to get a quick summary:\n\nsummary(data)\n\n   student           study_hours     sleep_hours   attendance       \n Length:10          Min.   : 2.00   Min.   :5.0   Length:10         \n Class :character   1st Qu.: 4.25   1st Qu.:6.0   Class :character  \n Mode  :character   Median : 6.00   Median :7.0   Mode  :character  \n                    Mean   : 6.00   Mean   :6.7                     \n                    3rd Qu.: 7.75   3rd Qu.:7.0                     \n                    Max.   :10.00   Max.   :8.0                     \n   quiz_score       major          \n Min.   :60.00   Length:10         \n 1st Qu.:73.50   Class :character  \n Median :83.50   Mode  :character  \n Mean   :81.40                     \n 3rd Qu.:90.25                     \n Max.   :98.00                     \n\n\nFor number columns, R may show:\n\nMinimum\nMedian\nMean\nMaximum\n\nFor text columns, R may show basic information about the values.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#viewing-column-names",
+    "href": "07-importing-data.html#viewing-column-names",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "You can see the column names with:\n\nnames(data)\n\n[1] \"student\"     \"study_hours\" \"sleep_hours\" \"attendance\"  \"quiz_score\" \n[6] \"major\"",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#plain-language-explanation",
+    "href": "07-importing-data.html#plain-language-explanation",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "If you run:\nhead(data)\nyou are asking:\n\nShow me the first few students in the dataset.\n\nIf you run:\nstr(data)\nyou are asking:\n\nWhat kind of information is stored in each column?\n\nIf you run:\nsummary(data)\nyou are asking:\n\nGive me a quick overview of the dataset.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#practice-import-and-inspect",
+    "href": "07-importing-data.html#practice-import-and-inspect",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "NotePractice\n\n\n\nImport the dataset and answer these questions:\n\nHow many columns are in the dataset?\nWhat are the column names?\nWhat is one number column?\nWhat is one category or text column?\n\nUse these commands:\ndata &lt;- read.csv(\"mydata.csv\")\nhead(data)\nstr(data)\nsummary(data)\nnames(data)",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#common-mistake",
+    "href": "07-importing-data.html#common-mistake",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "WarningWarning\n\n\n\nThis will not work if the file is not in your working directory:\ndata &lt;- read.csv(\"mydata.csv\")\nIf you get a file not found error, go back to Section 5 and check your working directory.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#check-your-understanding",
+    "href": "07-importing-data.html#check-your-understanding",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "Answer these questions:\n\nWhat does it mean to import data?\nWhat does read.csv() do?\nWhy does \"mydata.csv\" need quotation marks?\nWhat does head(data) show?\nWhat does summary(data) show?",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "07-importing-data.html#summary",
+    "href": "07-importing-data.html#summary",
+    "title": "7. Importing Data into R",
+    "section": "",
+    "text": "In this section, you learned how to:\n\nImport a CSV file into R.\nStore the dataset in an object called data.\nView the first few rows.\nCheck the structure of the dataset.\nSummarize the dataset.\nView column names.",
+    "crumbs": [
+      "7. Importing Data into R"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html",
+    "href": "10-cheatsheet.html",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "This page summarizes the most important commands and tips from the guide.\n\n\n\n\n\nAction\nWindows\nMac\n\n\n\n\nRun current line\nCtrl + Enter\nCmd + Enter\n\n\nSave file\nCtrl + S\nCmd + S\n\n\nFind text\nCtrl + F\nCmd + F\n\n\nComment/uncomment code\nCtrl + Shift + C\nCmd + Shift + C\n\n\n\n\n\n\n\n\n\nPane\nPurpose\n\n\n\n\nSource\nWrite and save code\n\n\nConsole\nRun commands and see output\n\n\nEnvironment\nSee objects you created\n\n\nFiles\nFind files and folders\n\n\nPlots\nView graphs\n\n\nPackages\nManage add-on tools\n\n\nHelp\nSearch for help\n\n\n\n\n\n\n\n\n\nGoal\nCommand\n\n\n\n\nAdd numbers\n2 + 3\n\n\nStore a value\nx &lt;- 10\n\n\nPrint a value\nprint(x)\n\n\nCheck working directory\ngetwd()\n\n\nCheck if a file exists\nfile.exists(\"mydata.csv\")\n\n\nImport CSV\ndata &lt;- read.csv(\"mydata.csv\")\n\n\nView first rows\nhead(data)\n\n\nView structure\nstr(data)\n\n\nSummarize data\nsummary(data)\n\n\nView column names\nnames(data)\n\n\nCalculate a mean\nmean(data$quiz_score)\n\n\nMake a frequency table\ntable(data$major)\n\n\nMake a plot\nplot(data$study_hours, data$quiz_score)\n\n\n\n\n\n\n\nKeep your script and data file in the same project folder.\nUse clear file names.\nAvoid spaces in file names.\nUse underscores _ instead of spaces.\nAvoid saving important files only in Downloads.\nCheck your working directory with getwd().\nCheck whether R can find your file with file.exists().\n\n\n\n\nGood:\nfirst_script.R\nmydata.csv\nlab_report.qmd\nAvoid:\nUntitled1.R\nmy data final FINAL.csv\nlab report new version 2.qmd\n\n\n\nUse:\ndata &lt;- read.csv(\"mydata.csv\")\nThen inspect it:\nhead(data)\nstr(data)\nsummary(data)\nnames(data)\n\n\n\nMean:\nmean(data$quiz_score)\nFrequency table:\ntable(data$major)\nScatterplot:\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\"\n)\nHistogram:\nhist(\n  data$quiz_score,\n  main = \"Distribution of Quiz Scores\",\n  xlab = \"Quiz Score\"\n)\n\n\n\n\n\n\n\n\n\n\nProblem\nPossible Fix\n\n\n\n\nFile not found\nCheck getwd() and file.exists(\"mydata.csv\")\n\n\nObject not found\nRun the code that creates the object\n\n\nTyping mistake\nCheck spelling and capitalization\n\n\nMissing quote\nPut file names in quotation marks\n\n\nMissing parenthesis\nMake sure every ( has a matching )\n\n\nRendering error\nRun the document from top to bottom and check earlier code\n\n\nPackage problem\nCheck spelling, install the package, then load it with library()\n\n\n\n\n\n\nIf R cannot find your CSV file, try this:\ngetwd()\nfile.exists(\"mydata.csv\")\nIf file.exists(\"mydata.csv\") gives:\n[1] FALSE\nthen R cannot find the file in the current folder.\nCheck that:\n\nThe file is saved in your project folder.\nThe file name is exactly mydata.csv.\nThe file is not accidentally named mydata.csv.txt.\nYou are working in the correct folder.\n\n\n\n\nGood object names:\nquiz_score &lt;- 90\nstudy_hours &lt;- 6\nmy_data &lt;- read.csv(\"mydata.csv\")\nAvoid object names with spaces:\nquiz score &lt;- 90\nstudy hours &lt;- 6\nmy data &lt;- read.csv(\"mydata.csv\")\n\n\n\n\nSave your script often.\nRun code one small piece at a time.\nRead error messages slowly.\nCheck spelling carefully.\nKeep your data and script in the same folder.\nWrite short comments to explain your code.\nExplain your results in sentences.\n\n\n\n\nHere is a simple workflow from start to finish:\n# Check where R is looking for files\ngetwd()\n\n# Check whether the data file exists\nfile.exists(\"mydata.csv\")\n\n# Import the data\ndata &lt;- read.csv(\"mydata.csv\")\n\n# Look at the data\nhead(data)\nstr(data)\nsummary(data)\n\n# Calculate results\nmean(data$quiz_score)\ntable(data$major)\n\n# Make a plot\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\",\n  pch = 19,\n  col = \"steelblue\"\n)\n\n\n\nYou now know how to complete a first basic R workflow:\n\nOpen RStudio.\nCreate a script.\nWrite code.\nSave your work.\nOrganize your files.\nImport a CSV dataset.\nInspect the data.\nCalculate simple results.\nExplain what the results mean.\n\nThat is a successful first R workflow!",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html",
+    "href": "01-rstudio.html",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "When you open RStudio, you will see several panels. Each panel has a different job.\nAt first, the screen may look busy. That is normal. You do not need to understand everything right away.\n\n\nRStudio usually has four main areas:\n\nSource Pane\nConsole\nEnvironment Pane\nFiles / Plots / Packages / Help Pane\n\n\n[Insert Screenshot: RStudio Interface]\nAdd a labeled screenshot showing the Source Pane, Console, Environment Pane, and Files/Plots/Packages/Help Pane.\n\n\n\n\nThe Source Pane is where you write and save code.\nYou will usually write your code in a file called an R script. R scripts end with .R.\nExample file name:\nfirst_script.R\nThe Source Pane is useful because it lets you save your work and come back to it later.\n\n\n\n\n\n\nTipTip\n\n\n\nThe Source Pane is like a notebook for your code.\n\n\n\n\n\nThe Console is where R runs commands.\nYou can type code directly into the Console and press Enter.\nFor example:\n2 + 2\nR will show the answer:\n[1] 4\nThe Console is useful for quick tests, but you usually should save important code in an R script.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nDo not only type important work into the Console. If you close RStudio, that code may be hard to find later.\nUse an R script to save your work.\n\n\n\n\n\nThe Environment Pane shows objects you have created.\nAn object is something stored in R, such as a number, a word, or a dataset.\nFor example, if you run:\nscore &lt;- 95\nYou should see score appear in the Environment Pane.\n\n\n\nThis pane has several useful tabs.\n\n\nThe Files tab shows folders and files on your computer.\nYou can use it to find your project folder and open files.\n\n\n\nThe Plots tab shows graphs that you create in R.\n\n\n\nThe Packages tab shows extra R tools that are installed.\nA package is like an add-on for R.\n\n\n\nThe Help tab lets you search for information about R commands.\nFor example, you can search for help about the mean() function.\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nOpen RStudio and try the following:\n\nFind the Console.\nType this command:\n\n10 + 5\n\nPress Enter.\nLook for the answer.\nFind the Environment Pane.\nFind the Files tab.\n\n\n\n\n\n\nAnswer these questions in your own words:\n\nWhere do you write and save code?\nWhere does R show the results of commands?\nWhere can you see objects you created?\nWhere do plots appear?\n\n\n\n\nIn this section, you learned that RStudio has several main panes:\n\nThe Source Pane is where you write and save code.\nThe Console is where code runs and results appear.\nThe Environment Pane shows objects you created.\nThe Files / Plots / Packages / Help Pane helps you manage files, view graphs, use packages, and get help.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#the-rstudio-interface",
+    "href": "01-rstudio.html#the-rstudio-interface",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "RStudio usually has four main areas:\n\nSource Pane\nConsole\nEnvironment Pane\nFiles / Plots / Packages / Help Pane\n\n\n[Insert Screenshot: RStudio Interface]\nAdd a labeled screenshot showing the Source Pane, Console, Environment Pane, and Files/Plots/Packages/Help Pane.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#source-pane",
+    "href": "01-rstudio.html#source-pane",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "The Source Pane is where you write and save code.\nYou will usually write your code in a file called an R script. R scripts end with .R.\nExample file name:\nfirst_script.R\nThe Source Pane is useful because it lets you save your work and come back to it later.\n\n\n\n\n\n\nTipTip\n\n\n\nThe Source Pane is like a notebook for your code.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#console",
+    "href": "01-rstudio.html#console",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "The Console is where R runs commands.\nYou can type code directly into the Console and press Enter.\nFor example:\n2 + 2\nR will show the answer:\n[1] 4\nThe Console is useful for quick tests, but you usually should save important code in an R script.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nDo not only type important work into the Console. If you close RStudio, that code may be hard to find later.\nUse an R script to save your work.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#environment-pane",
+    "href": "01-rstudio.html#environment-pane",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "The Environment Pane shows objects you have created.\nAn object is something stored in R, such as a number, a word, or a dataset.\nFor example, if you run:\nscore &lt;- 95\nYou should see score appear in the Environment Pane.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#files-plots-packages-help-pane",
+    "href": "01-rstudio.html#files-plots-packages-help-pane",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "This pane has several useful tabs.\n\n\nThe Files tab shows folders and files on your computer.\nYou can use it to find your project folder and open files.\n\n\n\nThe Plots tab shows graphs that you create in R.\n\n\n\nThe Packages tab shows extra R tools that are installed.\nA package is like an add-on for R.\n\n\n\nThe Help tab lets you search for information about R commands.\nFor example, you can search for help about the mean() function.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#try-it-yourself",
+    "href": "01-rstudio.html#try-it-yourself",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "NotePractice\n\n\n\nOpen RStudio and try the following:\n\nFind the Console.\nType this command:\n\n10 + 5\n\nPress Enter.\nLook for the answer.\nFind the Environment Pane.\nFind the Files tab.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#check-your-understanding",
+    "href": "01-rstudio.html#check-your-understanding",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "Answer these questions in your own words:\n\nWhere do you write and save code?\nWhere does R show the results of commands?\nWhere can you see objects you created?\nWhere do plots appear?",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "01-rstudio.html#summary",
+    "href": "01-rstudio.html#summary",
+    "title": "1. Getting Familiar with RStudio",
+    "section": "",
+    "text": "In this section, you learned that RStudio has several main panes:\n\nThe Source Pane is where you write and save code.\nThe Console is where code runs and results appear.\nThe Environment Pane shows objects you created.\nThe Files / Plots / Packages / Help Pane helps you manage files, view graphs, use packages, and get help.",
+    "crumbs": [
+      "1. Getting Familiar with RStudio"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html",
+    "href": "02-first-script.html",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "In this section, you will create your first R script.\n\n\nAn R script is a file where you write R code.\nR script files end with:\n.R\nFor example:\nfirst_script.R\nAn R script is useful because it saves your code. You can run the same code again later without retyping everything.\n\n\n\n\n\n\nTipTip\n\n\n\nUse an R script when you want to save your work.\nUse the Console when you want to quickly test one command.\n\n\n\n\n\nIn RStudio:\n\nClick File.\nClick New File.\nClick R Script.\n\n\n[Insert Screenshot: Creating a New R Script]\nShow File &gt; New File &gt; R Script.\n\nA blank script should open in the Source Pane.\n\n\n\nBefore we work with data, let’s try R as a calculator.\nType the following into your script:\n\n2 + 3\n\n[1] 5\n\n10 - 4\n\n[1] 6\n\n5 * 6\n\n[1] 30\n\n20 / 4\n\n[1] 5\n\n\nThese symbols mean:\n\n\n\nSymbol\nMeaning\n\n\n\n\n+\nAdd\n\n\n-\nSubtract\n\n\n*\nMultiply\n\n\n/\nDivide\n\n\n\n\n\n\n\n\n\nNoteTry It Yourself\n\n\n\nChange the numbers and run the code again.\nFor example, try:\n100 / 5\n12 * 3\n\n\n\n\n\nA variable is a name that stores a value.\nFor example:\n\nage &lt;- 18\nage\n\n[1] 18\n\n\nThe symbol &lt;- means “store this value.”\nSo this line:\nage &lt;- 18\nmeans:\n\nStore the number 18 in a variable called age.\n\n\n\n\nVariables help us reuse information.\nFor example, instead of typing the same number many times, we can give it a name.\n\nquiz_score &lt;- 92\nhomework_score &lt;- 88\n\nquiz_score\n\n[1] 92\n\nhomework_score\n\n[1] 88\n\n\nNow we can use those variables in a calculation:\n\nfinal_score &lt;- (quiz_score + homework_score) / 2\nfinal_score\n\n[1] 90\n\n\nThis code calculates the average of the quiz score and homework score.\n\n\n\nSometimes you want to clearly print something.\nYou can use print():\n\nprint(final_score)\n\n[1] 90\n\n\nFor simple work, typing the object name also shows the value:\n\nfinal_score\n\n[1] 90\n\n\nBoth are okay.\n\n\n\n\n\n\nTipTip\n\n\n\nIn R, object names should not contain spaces.\nUse this:\nquiz_score &lt;- 92\nNot this:\nquiz score &lt;- 92\n\n\n\n\n\nA comment is a note to yourself or your reader.\nIn R, comments start with #.\nR ignores comments when running code.\n\n# This stores my quiz score\nquiz_score &lt;- 92\n\n# This prints the quiz score\nquiz_score\n\n[1] 92\n\n\nComments are useful because they help explain what your code is doing.\n\n\n\nTo save your script:\n\nClick File.\nClick Save.\nName your file:\n\nfirst_script.R\n\nSave it in your project folder.\n\n\n[Insert Screenshot: Saving an R Script]\nShow the Save button and file name first_script.R.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nDo not save your script with a name like:\nUntitled1.R\nUse a clear name, such as:\nfirst_script.R\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new R script and write code that:\n\nStores your favorite number in a variable.\nStores your age in another variable.\nAdds the two numbers together.\nPrints the result.\n\nExample:\nfavorite_number &lt;- 7\nage &lt;- 18\nresult &lt;- favorite_number + age\nprint(result)\n\n\n\n\n\nAnswer these questions in your own words:\n\nWhat is an R script?\nWhy is it useful to save code in a script?\nWhat does &lt;- do?\nWhat is the difference between these two lines?\n\nscore &lt;- 90\nprint(score)\n\n\n\nIn this section, you learned how to:\n\nCreate a new R script.\nUse R for basic arithmetic.\nStore values in variables.\nPrint results.\nAdd comments.\nSave your script.\n\nYou have now written your first R code!",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#what-is-an-r-script",
+    "href": "02-first-script.html#what-is-an-r-script",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "An R script is a file where you write R code.\nR script files end with:\n.R\nFor example:\nfirst_script.R\nAn R script is useful because it saves your code. You can run the same code again later without retyping everything.\n\n\n\n\n\n\nTipTip\n\n\n\nUse an R script when you want to save your work.\nUse the Console when you want to quickly test one command.",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#creating-a-new-r-script",
+    "href": "02-first-script.html#creating-a-new-r-script",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "In RStudio:\n\nClick File.\nClick New File.\nClick R Script.\n\n\n[Insert Screenshot: Creating a New R Script]\nShow File &gt; New File &gt; R Script.\n\nA blank script should open in the Source Pane.",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#basic-arithmetic",
+    "href": "02-first-script.html#basic-arithmetic",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "Before we work with data, let’s try R as a calculator.\nType the following into your script:\n\n2 + 3\n\n[1] 5\n\n10 - 4\n\n[1] 6\n\n5 * 6\n\n[1] 30\n\n20 / 4\n\n[1] 5\n\n\nThese symbols mean:\n\n\n\nSymbol\nMeaning\n\n\n\n\n+\nAdd\n\n\n-\nSubtract\n\n\n*\nMultiply\n\n\n/\nDivide\n\n\n\n\n\n\n\n\n\nNoteTry It Yourself\n\n\n\nChange the numbers and run the code again.\nFor example, try:\n100 / 5\n12 * 3",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#creating-variables",
+    "href": "02-first-script.html#creating-variables",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "A variable is a name that stores a value.\nFor example:\n\nage &lt;- 18\nage\n\n[1] 18\n\n\nThe symbol &lt;- means “store this value.”\nSo this line:\nage &lt;- 18\nmeans:\n\nStore the number 18 in a variable called age.",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#why-use-variables",
+    "href": "02-first-script.html#why-use-variables",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "Variables help us reuse information.\nFor example, instead of typing the same number many times, we can give it a name.\n\nquiz_score &lt;- 92\nhomework_score &lt;- 88\n\nquiz_score\n\n[1] 92\n\nhomework_score\n\n[1] 88\n\n\nNow we can use those variables in a calculation:\n\nfinal_score &lt;- (quiz_score + homework_score) / 2\nfinal_score\n\n[1] 90\n\n\nThis code calculates the average of the quiz score and homework score.",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#printing-output",
+    "href": "02-first-script.html#printing-output",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "Sometimes you want to clearly print something.\nYou can use print():\n\nprint(final_score)\n\n[1] 90\n\n\nFor simple work, typing the object name also shows the value:\n\nfinal_score\n\n[1] 90\n\n\nBoth are okay.\n\n\n\n\n\n\nTipTip\n\n\n\nIn R, object names should not contain spaces.\nUse this:\nquiz_score &lt;- 92\nNot this:\nquiz score &lt;- 92",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#adding-comments",
+    "href": "02-first-script.html#adding-comments",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "A comment is a note to yourself or your reader.\nIn R, comments start with #.\nR ignores comments when running code.\n\n# This stores my quiz score\nquiz_score &lt;- 92\n\n# This prints the quiz score\nquiz_score\n\n[1] 92\n\n\nComments are useful because they help explain what your code is doing.",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#saving-your-script",
+    "href": "02-first-script.html#saving-your-script",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "To save your script:\n\nClick File.\nClick Save.\nName your file:\n\nfirst_script.R\n\nSave it in your project folder.\n\n\n[Insert Screenshot: Saving an R Script]\nShow the Save button and file name first_script.R.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nDo not save your script with a name like:\nUntitled1.R\nUse a clear name, such as:\nfirst_script.R",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#practice-exercise",
+    "href": "02-first-script.html#practice-exercise",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "NotePractice\n\n\n\nCreate a new R script and write code that:\n\nStores your favorite number in a variable.\nStores your age in another variable.\nAdds the two numbers together.\nPrints the result.\n\nExample:\nfavorite_number &lt;- 7\nage &lt;- 18\nresult &lt;- favorite_number + age\nprint(result)",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#check-your-understanding",
+    "href": "02-first-script.html#check-your-understanding",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "Answer these questions in your own words:\n\nWhat is an R script?\nWhy is it useful to save code in a script?\nWhat does &lt;- do?\nWhat is the difference between these two lines?\n\nscore &lt;- 90\nprint(score)",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "02-first-script.html#summary",
+    "href": "02-first-script.html#summary",
+    "title": "2. Creating Your First R Script",
+    "section": "",
+    "text": "In this section, you learned how to:\n\nCreate a new R script.\nUse R for basic arithmetic.\nStore values in variables.\nPrint results.\nAdd comments.\nSave your script.\n\nYou have now written your first R code!",
+    "crumbs": [
+      "2. Creating Your First R Script"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#what-is-a-working-directory",
+    "href": "05-files-folders.html#what-is-a-working-directory",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "The working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#checking-your-working-directory",
+    "href": "05-files-folders.html#checking-your-working-directory",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "You can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#creating-a-project-folder",
+    "href": "05-files-folders.html#creating-a-project-folder",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "For this guide, create a folder called:\nr-onboarding-guide\nInside that folder, you might have:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#why-use-a-project-folder",
+    "href": "05-files-folders.html#why-use-a-project-folder",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "A project folder keeps related files together.\nThis helps you avoid problems like:\n\nLosing your dataset.\nSaving files in random places.\nNot knowing which version of a file is correct.\nGetting file not found errors.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#finding-the-project-folder",
+    "href": "05-files-folders.html#finding-the-project-folder",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "In RStudio, use the Files tab to find your project folder.\n\n[Insert Screenshot: Files Pane Showing Project Folder]\nShow the Files tab with the project folder open.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#recommended-file-organization",
+    "href": "05-files-folders.html#recommended-file-organization",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "For a larger project, you may want folders like this:\nmy-project/\n├── data/\n├── scripts/\n├── reports/\n└── images/\nFor now, it is okay to keep things simple.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#file-names-matter",
+    "href": "05-files-folders.html#file-names-matter",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "Good file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#try-it-yourself",
+    "href": "05-files-folders.html#try-it-yourself",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "NotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#common-mistake",
+    "href": "05-files-folders.html#common-mistake",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "WarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#check-your-understanding",
+    "href": "05-files-folders.html#check-your-understanding",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "Answer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "05-files-folders.html#summary",
+    "href": "05-files-folders.html#summary",
+    "title": "5. Working with Files and Folders",
+    "section": "",
+    "text": "In this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory.\nA project folder keeps your work organized.\nClear file names help prevent mistakes. `````",
+    "crumbs": [
+      "5. Working with Files and Folders"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html",
+    "href": "09-common-problems.html",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "Everyone gets errors in R. Errors are normal.\nThe important skill is learning how to read the message and try a fix.\n\n\n\n\nError in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.\n\n\n\n\n\n\nSometimes your instructor may ask you to install a package.\nExample:\ninstall.packages(\"ggplot2\")\n\n\n\nInternet connection problems.\nTyping the package name incorrectly.\nR asks you to restart.\nYou do not have permission to install software on the computer.\n\n\n\n\n\nCheck your internet connection.\nMake sure the package name is inside quotation marks.\nRestart RStudio and try again.\nAsk your instructor or campus IT for help if you are on a lab computer.\n\n\n\n\n\n\n\nTipTip\n\n\n\nYou only need to install a package once on your computer.\nBut you need to load it with library() each time you start a new R session.\n\n\n\n\n\n\nR is very picky about spelling.\nThese are all different to R:\nquiz_score\nQuiz_score\nquizscore\nquiz.score\n\n\n\n\n\n\n\n\n\n\nMistake\nExample\nFix\n\n\n\n\nMissing quote\nread.csv(mydata.csv)\nread.csv(\"mydata.csv\")\n\n\nMisspelled object\nquz_score\nquiz_score\n\n\nMissing parenthesis\nmean(data$quiz_score\nmean(data$quiz_score)\n\n\nWrong capitalization\nRead.csv()\nread.csv()\n\n\n\n\n\n\n\nIf R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.\n\n\n\n\n\nWhen rendering a Quarto document, R runs the code from top to bottom.\nA document may fail to render if:\n\nA file is missing.\nA package is not loaded.\nAn object is used before it is created.\nThere is a typing mistake in a code chunk.\n\n\n\nThis can fail:\nmean(data$quiz_score)\nif data was never created earlier in the document.\n\n\n\nMake sure this line appears first:\ndata &lt;- read.csv(\"mydata.csv\")\n\n\n\n\n\n\nError: object 'data' not found\n\n\n\nR does not know what data is.\n\n\n\nCreate the object first:\ndata &lt;- read.csv(\"mydata.csv\")\nThen run your analysis.\n\n\n\n\nThis is incorrect:\nread.csv(mydata.csv)\nThis is correct:\nread.csv(\"mydata.csv\")\nFile names must be in quotation marks.\n\n\n\nWhen something goes wrong, ask:\n\nDid I spell everything correctly?\nDid I use quotation marks around file names?\nDid I run the earlier lines of code?\nIs my file in the right folder?\nDoes file.exists(\"mydata.csv\") return TRUE?\nDid I close all parentheses?\nDid I restart RStudio and try again?\n\n\n\n\n\n\n\nNoteEncouragement\n\n\n\nErrors do not mean you are bad at R.\nErrors are part of learning. Read the message, try one fix, and run the code again.\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nFor each example, decide what the problem is.\n\n\nread.csv(mydata.csv)\nQuestion: What is missing?\n\n\n\nmean(data$quiz_score\nQuestion: What is missing?\n\n\n\nData &lt;- read.csv(\"mydata.csv\")\nhead(data)\nQuestion: Why might this fail?\n\n\n\n\n\n\n\nExample 1 is missing quotation marks around the file name.\nExample 2 is missing a closing parenthesis.\nExample 3 may fail because Data and data are different names in R.\n\n\n\n\nIn this section, you learned how to troubleshoot common problems, including:\n\nFile not found errors.\nPackage installation issues.\nTyping mistakes.\nWorking directory problems.\nRendering errors.\nObject not found errors.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-1-file-not-found",
+    "href": "09-common-problems.html#problem-1-file-not-found",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "Error in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-2-package-installation-issues",
+    "href": "09-common-problems.html#problem-2-package-installation-issues",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "Sometimes your instructor may ask you to install a package.\nExample:\ninstall.packages(\"ggplot2\")\n\n\n\nInternet connection problems.\nTyping the package name incorrectly.\nR asks you to restart.\nYou do not have permission to install software on the computer.\n\n\n\n\n\nCheck your internet connection.\nMake sure the package name is inside quotation marks.\nRestart RStudio and try again.\nAsk your instructor or campus IT for help if you are on a lab computer.\n\n\n\n\n\n\n\nTipTip\n\n\n\nYou only need to install a package once on your computer.\nBut you need to load it with library() each time you start a new R session.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-3-typing-mistakes",
+    "href": "09-common-problems.html#problem-3-typing-mistakes",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "R is very picky about spelling.\nThese are all different to R:\nquiz_score\nQuiz_score\nquizscore\nquiz.score\n\n\n\n\n\n\n\n\n\n\nMistake\nExample\nFix\n\n\n\n\nMissing quote\nread.csv(mydata.csv)\nread.csv(\"mydata.csv\")\n\n\nMisspelled object\nquz_score\nquiz_score\n\n\nMissing parenthesis\nmean(data$quiz_score\nmean(data$quiz_score)\n\n\nWrong capitalization\nRead.csv()\nread.csv()",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-4-working-directory-problems",
+    "href": "09-common-problems.html#problem-4-working-directory-problems",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "If R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/r-onboarding-guide\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-5-rendering-errors",
+    "href": "09-common-problems.html#problem-5-rendering-errors",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "When rendering a Quarto document, R runs the code from top to bottom.\nA document may fail to render if:\n\nA file is missing.\nA package is not loaded.\nAn object is used before it is created.\nThere is a typing mistake in a code chunk.\n\n\n\nThis can fail:\nmean(data$quiz_score)\nif data was never created earlier in the document.\n\n\n\nMake sure this line appears first:\ndata &lt;- read.csv(\"mydata.csv\")",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-6-object-not-found",
+    "href": "09-common-problems.html#problem-6-object-not-found",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "Error: object 'data' not found\n\n\n\nR does not know what data is.\n\n\n\nCreate the object first:\ndata &lt;- read.csv(\"mydata.csv\")\nThen run your analysis.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#problem-7-forgetting-quotation-marks",
+    "href": "09-common-problems.html#problem-7-forgetting-quotation-marks",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "This is incorrect:\nread.csv(mydata.csv)\nThis is correct:\nread.csv(\"mydata.csv\")\nFile names must be in quotation marks.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#troubleshooting-checklist",
+    "href": "09-common-problems.html#troubleshooting-checklist",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "When something goes wrong, ask:\n\nDid I spell everything correctly?\nDid I use quotation marks around file names?\nDid I run the earlier lines of code?\nIs my file in the right folder?\nDoes file.exists(\"mydata.csv\") return TRUE?\nDid I close all parentheses?\nDid I restart RStudio and try again?\n\n\n\n\n\n\n\nNoteEncouragement\n\n\n\nErrors do not mean you are bad at R.\nErrors are part of learning. Read the message, try one fix, and run the code again.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#practice-diagnose-the-problem",
+    "href": "09-common-problems.html#practice-diagnose-the-problem",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "NotePractice\n\n\n\nFor each example, decide what the problem is.\n\n\nread.csv(mydata.csv)\nQuestion: What is missing?\n\n\n\nmean(data$quiz_score\nQuestion: What is missing?\n\n\n\nData &lt;- read.csv(\"mydata.csv\")\nhead(data)\nQuestion: Why might this fail?",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#answers",
+    "href": "09-common-problems.html#answers",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "Example 1 is missing quotation marks around the file name.\nExample 2 is missing a closing parenthesis.\nExample 3 may fail because Data and data are different names in R.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "09-common-problems.html#summary",
+    "href": "09-common-problems.html#summary",
+    "title": "Common Problems and Solutions",
+    "section": "",
+    "text": "In this section, you learned how to troubleshoot common problems, including:\n\nFile not found errors.\nPackage installation issues.\nTyping mistakes.\nWorking directory problems.\nRendering errors.\nObject not found errors.",
+    "crumbs": [
+      "Common Problems and Solutions"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#rstudio-shortcuts",
+    "href": "10-cheatsheet.html#rstudio-shortcuts",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Action\nWindows\nMac\n\n\n\n\nRun current line\nCtrl + Enter\nCmd + Enter\n\n\nSave file\nCtrl + S\nCmd + S\n\n\nFind text\nCtrl + F\nCmd + F\n\n\nComment/uncomment code\nCtrl + Shift + C\nCmd + Shift + C",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#important-rstudio-panes",
+    "href": "10-cheatsheet.html#important-rstudio-panes",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Pane\nPurpose\n\n\n\n\nSource\nWrite and save code\n\n\nConsole\nRun commands and see output\n\n\nEnvironment\nSee objects you created\n\n\nFiles\nFind files and folders\n\n\nPlots\nView graphs\n\n\nPackages\nManage add-on tools\n\n\nHelp\nSearch for help",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#common-r-commands",
+    "href": "10-cheatsheet.html#common-r-commands",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Goal\nCommand\n\n\n\n\nAdd numbers\n2 + 3\n\n\nStore a value\nx &lt;- 10\n\n\nPrint a value\nprint(x)\n\n\nCheck working directory\ngetwd()\n\n\nCheck if a file exists\nfile.exists(\"mydata.csv\")\n\n\nImport CSV\ndata &lt;- read.csv(\"mydata.csv\")\n\n\nView first rows\nhead(data)\n\n\nView structure\nstr(data)\n\n\nSummarize data\nsummary(data)\n\n\nView column names\nnames(data)\n\n\nCalculate a mean\nmean(data$quiz_score)\n\n\nMake a frequency table\ntable(data$major)\n\n\nMake a plot\nplot(data$study_hours, data$quiz_score)",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#file-management-tips",
+    "href": "10-cheatsheet.html#file-management-tips",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Keep your script and data file in the same project folder.\nUse clear file names.\nAvoid spaces in file names.\nUse underscores _ instead of spaces.\nAvoid saving important files only in Downloads.\nCheck your working directory with getwd().\nCheck whether R can find your file with file.exists().",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#good-file-names",
+    "href": "10-cheatsheet.html#good-file-names",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Good:\nfirst_script.R\nmydata.csv\nlab_report.qmd\nAvoid:\nUntitled1.R\nmy data final FINAL.csv\nlab report new version 2.qmd",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#importing-data",
+    "href": "10-cheatsheet.html#importing-data",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Use:\ndata &lt;- read.csv(\"mydata.csv\")\nThen inspect it:\nhead(data)\nstr(data)\nsummary(data)\nnames(data)",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#simple-analysis-examples",
+    "href": "10-cheatsheet.html#simple-analysis-examples",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Mean:\nmean(data$quiz_score)\nFrequency table:\ntable(data$major)\nScatterplot:\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\"\n)\nHistogram:\nhist(\n  data$quiz_score,\n  main = \"Distribution of Quiz Scores\",\n  xlab = \"Quiz Score\"\n)",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#common-errors-and-quick-fixes",
+    "href": "10-cheatsheet.html#common-errors-and-quick-fixes",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Problem\nPossible Fix\n\n\n\n\nFile not found\nCheck getwd() and file.exists(\"mydata.csv\")\n\n\nObject not found\nRun the code that creates the object\n\n\nTyping mistake\nCheck spelling and capitalization\n\n\nMissing quote\nPut file names in quotation marks\n\n\nMissing parenthesis\nMake sure every ( has a matching )\n\n\nRendering error\nRun the document from top to bottom and check earlier code\n\n\nPackage problem\nCheck spelling, install the package, then load it with library()",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#file-not-found-checklist",
+    "href": "10-cheatsheet.html#file-not-found-checklist",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "If R cannot find your CSV file, try this:\ngetwd()\nfile.exists(\"mydata.csv\")\nIf file.exists(\"mydata.csv\") gives:\n[1] FALSE\nthen R cannot find the file in the current folder.\nCheck that:\n\nThe file is saved in your project folder.\nThe file name is exactly mydata.csv.\nThe file is not accidentally named mydata.csv.txt.\nYou are working in the correct folder.",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#object-names",
+    "href": "10-cheatsheet.html#object-names",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Good object names:\nquiz_score &lt;- 90\nstudy_hours &lt;- 6\nmy_data &lt;- read.csv(\"mydata.csv\")\nAvoid object names with spaces:\nquiz score &lt;- 90\nstudy hours &lt;- 6\nmy data &lt;- read.csv(\"mydata.csv\")",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#useful-beginner-habits",
+    "href": "10-cheatsheet.html#useful-beginner-habits",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Save your script often.\nRun code one small piece at a time.\nRead error messages slowly.\nCheck spelling carefully.\nKeep your data and script in the same folder.\nWrite short comments to explain your code.\nExplain your results in sentences.",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#a-complete-first-workflow",
+    "href": "10-cheatsheet.html#a-complete-first-workflow",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "Here is a simple workflow from start to finish:\n# Check where R is looking for files\ngetwd()\n\n# Check whether the data file exists\nfile.exists(\"mydata.csv\")\n\n# Import the data\ndata &lt;- read.csv(\"mydata.csv\")\n\n# Look at the data\nhead(data)\nstr(data)\nsummary(data)\n\n# Calculate results\nmean(data$quiz_score)\ntable(data$major)\n\n# Make a plot\nplot(\n  data$study_hours,\n  data$quiz_score,\n  main = \"Study Hours and Quiz Score\",\n  xlab = \"Study Hours\",\n  ylab = \"Quiz Score\",\n  pch = 19,\n  col = \"steelblue\"\n)",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  },
+  {
+    "objectID": "10-cheatsheet.html#final-reminder",
+    "href": "10-cheatsheet.html#final-reminder",
+    "title": "Quick Reference Cheat Sheet",
+    "section": "",
+    "text": "You now know how to complete a first basic R workflow:\n\nOpen RStudio.\nCreate a script.\nWrite code.\nSave your work.\nOrganize your files.\nImport a CSV dataset.\nInspect the data.\nCalculate simple results.\nExplain what the results mean.\n\nThat is a successful first R workflow!",
+    "crumbs": [
+      "Quick Reference Cheat Sheet"
+    ]
+  }
+]

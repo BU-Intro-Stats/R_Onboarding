@@ -1,0 +1,165 @@
+# 6. Downloading a CSV Dataset
+
+In this section, you will download a CSV dataset.
+
+A **CSV file** is a common type of data file. CSV stands for **comma-separated values**.
+
+A CSV file looks like a spreadsheet, but it is saved as plain text.
+
+## Sample Dataset
+
+For this guide, we will use a small dataset called:
+
+```text
+mydata.csv
+```
+
+It contains information about imaginary students, including:
+
+- Study hours
+- Sleep hours
+- Attendance
+- Quiz score
+- Major
+
+If you are viewing this guide as a website, use this link:
+
+[Download the sample CSV dataset](mydata.csv)
+
+::: {.callout-tip}
+## Tip
+
+If your browser opens the CSV instead of downloading it, right-click the link and choose **Save Link As...**
+:::
+
+## Saving the CSV File
+
+Save the file in your project folder.
+
+Your folder should look like this:
+
+```text
+r-onboarding-guide/
+├── first_script.R
+├── first_report.qmd
+└── mydata.csv
+```
+
+<div class="screenshot-placeholder">
+
+[Insert Screenshot: Saving mydata.csv in the Project Folder]
+
+Show the CSV file saved in the same folder as the R script.
+
+</div>
+
+## Verifying the File Exists
+
+In R, you can check whether the file exists:
+
+```{r}
+file.exists("mydata.csv")
+```
+
+If R prints:
+
+```text
+[1] TRUE
+```
+
+that means R found the file.
+
+If R prints:
+
+```text
+[1] FALSE
+```
+
+that means R did not find the file in the current working directory.
+
+::: {.callout-warning}
+## Common Mistake
+
+The file name must match exactly.
+
+These are different to R:
+
+```text
+mydata.csv
+MyData.csv
+mydata (1).csv
+```
+:::
+
+## If You Do Not Have the File Yet
+
+If your instructor has not provided `mydata.csv`, you can create it yourself.
+
+1. Open a plain text editor.
+2. Copy the text below.
+3. Save the file as `mydata.csv`.
+4. Put it in your project folder.
+
+```csv
+student,study_hours,sleep_hours,attendance,quiz_score,major
+Student 1,5,7,Present,78,Biology
+Student 2,8,6,Present,91,Business
+Student 3,3,8,Absent,65,Psychology
+Student 4,6,7,Present,84,Biology
+Student 5,7,6,Present,88,Business
+Student 6,2,5,Absent,60,Psychology
+Student 7,9,8,Present,95,Biology
+Student 8,4,6,Present,72,Business
+Student 9,6,7,Present,83,Psychology
+Student 10,10,7,Present,98,Business
+```
+
+::: {.callout-tip}
+## Tip
+
+Make sure the file name is exactly:
+
+```text
+mydata.csv
+```
+
+not:
+
+```text
+mydata.csv.txt
+```
+:::
+
+## Try It Yourself
+
+::: {.callout-note}
+## Practice
+
+1. Download or create `mydata.csv`.
+2. Save it in your project folder.
+3. Run:
+
+```r
+file.exists("mydata.csv")
+```
+
+4. Make sure the result is `TRUE`.
+:::
+
+## Check Your Understanding
+
+Answer these questions:
+
+1. What does CSV stand for?
+2. Where should you save `mydata.csv`?
+3. What does `file.exists("mydata.csv")` check?
+4. What does it mean if the result is `FALSE`?
+
+## Summary
+
+In this section, you learned that:
+
+- A CSV file is a common data file.
+- CSV files can be opened in spreadsheet programs and R.
+- Your CSV file should be saved in your project folder.
+- `file.exists()` checks whether R can find the file.

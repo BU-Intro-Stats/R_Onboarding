@@ -1,0 +1,177 @@
+# 7. Importing Data into R
+
+Now that the CSV file is saved in your project folder, we can import it into R.
+
+To **import data** means to bring data from a file into R so we can work with it.
+
+## Importing a CSV File
+
+Use this command:
+
+```{r}
+data <- read.csv("mydata.csv")
+```
+
+Let’s break it down.
+
+| Part | Meaning |
+|---|---|
+| `data` | The name we are giving the dataset in R |
+| `<-` | Stores something in an object |
+| `read.csv()` | A function that reads CSV files |
+| `"mydata.csv"` | The file name |
+
+So this line means:
+
+> Read the file called `mydata.csv` and store it in an object called `data`.
+
+::: {.callout-tip}
+## Tip
+
+The file name must be inside quotation marks.
+:::
+
+## Looking at the First Few Rows
+
+Use `head()` to see the first few rows:
+
+```{r}
+head(data)
+```
+
+This helps you quickly check that the data imported correctly.
+
+## Understanding the Structure
+
+Use `str()` to see the structure of the dataset:
+
+```{r}
+str(data)
+```
+
+This tells you:
+
+- How many rows there are.
+- How many columns there are.
+- The names of the columns.
+- The type of information in each column.
+
+For example:
+
+- Numbers may be shown as `int` or `num`.
+- Words or categories may be shown as `chr`.
+
+## Summarizing the Dataset
+
+Use `summary()` to get a quick summary:
+
+```{r}
+summary(data)
+```
+
+For number columns, R may show:
+
+- Minimum
+- Median
+- Mean
+- Maximum
+
+For text columns, R may show basic information about the values.
+
+## Viewing Column Names
+
+You can see the column names with:
+
+```{r}
+names(data)
+```
+
+## Plain-Language Explanation
+
+If you run:
+
+```r
+head(data)
+```
+
+you are asking:
+
+> Show me the first few students in the dataset.
+
+If you run:
+
+```r
+str(data)
+```
+
+you are asking:
+
+> What kind of information is stored in each column?
+
+If you run:
+
+```r
+summary(data)
+```
+
+you are asking:
+
+> Give me a quick overview of the dataset.
+
+## Practice: Import and Inspect
+
+::: {.callout-note}
+## Practice
+
+Import the dataset and answer these questions:
+
+1. How many columns are in the dataset?
+2. What are the column names?
+3. What is one number column?
+4. What is one category or text column?
+
+Use these commands:
+
+```r
+data <- read.csv("mydata.csv")
+head(data)
+str(data)
+summary(data)
+names(data)
+```
+:::
+
+## Common Mistake
+
+::: {.callout-warning}
+## Warning
+
+This will not work if the file is not in your working directory:
+
+```r
+data <- read.csv("mydata.csv")
+```
+
+If you get a file not found error, go back to Section 5 and check your working directory.
+:::
+
+## Check Your Understanding
+
+Answer these questions:
+
+1. What does it mean to import data?
+2. What does `read.csv()` do?
+3. Why does `"mydata.csv"` need quotation marks?
+4. What does `head(data)` show?
+5. What does `summary(data)` show?
+
+## Summary
+
+In this section, you learned how to:
+
+- Import a CSV file into R.
+- Store the dataset in an object called `data`.
+- View the first few rows.
+- Check the structure of the dataset.
+- Summarize the dataset.
+- View column names.

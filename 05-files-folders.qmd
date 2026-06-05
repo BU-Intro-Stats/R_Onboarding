@@ -1,0 +1,171 @@
+# 5. Working with Files and Folders
+
+When working with data, file organization matters.
+
+If your files are organized, R can find them more easily.
+
+## What is a Working Directory?
+
+The **working directory** is the folder where R is currently looking for files.
+
+If you ask R to open a file, R first looks in the working directory.
+
+For example:
+
+```r
+read.csv("mydata.csv")
+```
+
+This tells R:
+
+> Look in the current working directory for a file called `mydata.csv`.
+
+## Checking Your Working Directory
+
+You can check your working directory with:
+
+```{r}
+getwd()
+```
+
+
+This prints the folder where R is currently working.
+
+::: {.callout-tip}
+## Tip
+
+If R cannot find your file, checking `getwd()` is often the first thing to do.
+:::
+
+## Creating a Project Folder
+
+For this guide, create a folder called:
+
+```text
+r-onboarding-guide
+```
+
+Inside that folder, you might have:
+
+```text
+r-onboarding-guide/
+├── first_script.R
+├── first_report.qmd
+└── mydata.csv
+```
+
+## Why Use a Project Folder?
+
+A project folder keeps related files together.
+
+This helps you avoid problems like:
+
+- Losing your dataset.
+- Saving files in random places.
+- Not knowing which version of a file is correct.
+- Getting file not found errors.
+
+## Finding the Project Folder
+
+In RStudio, use the **Files** tab to find your project folder.
+
+<div class="screenshot-placeholder">
+
+[Insert Screenshot: Files Pane Showing Project Folder]
+
+Show the Files tab with the project folder open.
+
+</div>
+
+## Recommended File Organization
+
+For a larger project, you may want folders like this:
+
+```text
+my-project/
+├── data/
+├── scripts/
+├── reports/
+└── images/
+```
+
+For now, it is okay to keep things simple.
+
+## File Names Matter
+
+Good file names are short and clear.
+
+Good examples:
+
+```text
+mydata.csv
+first_script.R
+lab_report.qmd
+```
+
+Less helpful examples:
+
+```text
+Untitled1.R
+final final data copy.csv
+my data file.csv
+```
+
+::: {.callout-tip}
+## Tip
+
+Avoid spaces in file names.
+
+Use underscores `_` instead:
+
+```text
+my_data.csv
+lab_report.qmd
+```
+:::
+
+## Try It Yourself
+
+::: {.callout-note}
+## Practice
+
+1. Create a folder for this course.
+2. Inside it, create a folder for this assignment or lab.
+3. Save your R script in that folder.
+4. In RStudio, run:
+
+```r
+getwd()
+```
+
+5. Check whether R is working in the folder you expected.
+:::
+
+## Common Mistake
+
+::: {.callout-warning}
+## Warning
+
+Avoid saving course files only in your Downloads folder.
+
+The Downloads folder can become messy quickly, and files may be hard to find later.
+:::
+
+## Check Your Understanding
+
+Answer these questions:
+
+1. What is a working directory?
+2. Why is it helpful to keep your script and data file in the same folder?
+3. What command shows the current working directory?
+4. Why should you avoid unclear file names?
+
+## Summary
+
+In this section, you learned that:
+
+- The working directory is where R looks for files.
+- `getwd()` shows your current working directory.
+- A project folder keeps your work organized.
+- Clear file names help prevent mistakes.
+`````

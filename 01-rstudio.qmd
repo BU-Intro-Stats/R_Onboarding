@@ -1,0 +1,148 @@
+# 1. Getting Familiar with RStudio
+
+When you open RStudio, you will see several panels. Each panel has a different job.
+
+At first, the screen may look busy. That is normal. You do not need to understand everything right away.
+
+## The RStudio Interface
+
+RStudio usually has four main areas:
+
+1. **Source Pane**
+2. **Console**
+3. **Environment Pane**
+4. **Files / Plots / Packages / Help Pane**
+
+<div class="screenshot-placeholder">
+
+[Insert Screenshot: RStudio Interface]
+
+Add a labeled screenshot showing the Source Pane, Console, Environment Pane, and Files/Plots/Packages/Help Pane.
+
+</div>
+
+## Source Pane
+
+The **Source Pane** is where you write and save code.
+
+You will usually write your code in a file called an **R script**. R scripts end with `.R`.
+
+Example file name:
+
+```text
+first_script.R
+```
+
+The Source Pane is useful because it lets you save your work and come back to it later.
+
+::: {.callout-tip}
+## Tip
+
+The Source Pane is like a notebook for your code.
+:::
+
+## Console
+
+The **Console** is where R runs commands.
+
+You can type code directly into the Console and press Enter.
+
+For example:
+
+```r
+2 + 2
+```
+
+R will show the answer:
+
+```text
+[1] 4
+```
+
+The Console is useful for quick tests, but you usually should save important code in an R script.
+
+::: {.callout-warning}
+## Common Mistake
+
+Do not only type important work into the Console. If you close RStudio, that code may be hard to find later.
+
+Use an R script to save your work.
+:::
+
+## Environment Pane
+
+The **Environment Pane** shows objects you have created.
+
+An object is something stored in R, such as a number, a word, or a dataset.
+
+For example, if you run:
+
+```r
+score <- 95
+```
+
+You should see `score` appear in the Environment Pane.
+
+## Files / Plots / Packages / Help Pane
+
+This pane has several useful tabs.
+
+### Files
+
+The **Files** tab shows folders and files on your computer.
+
+You can use it to find your project folder and open files.
+
+### Plots
+
+The **Plots** tab shows graphs that you create in R.
+
+### Packages
+
+The **Packages** tab shows extra R tools that are installed.
+
+A package is like an add-on for R.
+
+### Help
+
+The **Help** tab lets you search for information about R commands.
+
+For example, you can search for help about the `mean()` function.
+
+## Try It Yourself
+
+::: {.callout-note}
+## Practice
+
+Open RStudio and try the following:
+
+1. Find the Console.
+2. Type this command:
+
+```r
+10 + 5
+```
+
+3. Press Enter.
+4. Look for the answer.
+5. Find the Environment Pane.
+6. Find the Files tab.
+:::
+
+## Check Your Understanding
+
+Answer these questions in your own words:
+
+1. Where do you write and save code?
+2. Where does R show the results of commands?
+3. Where can you see objects you created?
+4. Where do plots appear?
+
+## Summary
+
+In this section, you learned that RStudio has several main panes:
+
+- The **Source Pane** is where you write and save code.
+- The **Console** is where code runs and results appear.
+- The **Environment Pane** shows objects you created.
+- The **Files / Plots / Packages / Help Pane** helps you manage files, view graphs, use packages, and get help.

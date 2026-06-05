@@ -1,0 +1,60 @@
+---
+title: "R Onboarding Guide"
+subtitle: "A Beginner-Friendly Introduction to R, RStudio, and Data"
+author: "Course Team"
+format:
+  pdf:
+    documentclass: scrartcl
+    toc: true
+    number-sections: true
+    colorlinks: true
+  html:
+    toc: true
+    theme: cosmo
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+{{< include index.qmd >}}
+
+\newpage
+
+{{< include 01-rstudio.qmd >}}
+
+\newpage
+
+{{< include 02-first-script.qmd >}}
+
+\newpage
+
+{{< include 03-quarto-rmarkdown.qmd >}}
+
+\newpage
+
+{{< include 04-running-code.qmd >}}
+
+\newpage
+
+{{< include 05-files-folders.qmd >}}
+
+\newpage
+
+{{< include 06-download-csv.qmd >}}
+
+\newpage
+
+{{< include 07-importing-data.qmd >}}
+
+\newpage
+
+{{< include 08-getting-results.qmd >}}
+
+\newpage
+
+{{< include 09-common-problems.qmd >}}
+
+\newpage
+
+{{< include 10-cheatsheet.qmd >}}
