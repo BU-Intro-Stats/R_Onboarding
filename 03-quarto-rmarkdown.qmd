@@ -183,6 +183,7 @@ In RStudio, you can usually click the **Render** button.
 ## Interface in Rmd/Quarto Documents
 
 When you open a `.Rmd` or `.qmd` file in RStudio, you will see:
+
 ### Source View
 Click **Source** to see the raw text and code in your document.
 ![](img/source_view.jpg)
@@ -198,6 +199,3 @@ Click **Visual** to see a more polished version of your document, with formatted
 Click **Show in new window** to see the rendered document in a separate window.
 
 ![](img/seperate_view.jpg)
-
-
-

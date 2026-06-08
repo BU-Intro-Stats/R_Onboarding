@@ -610,6 +610,86 @@
     ]
   },
   {
+    "objectID": "00-Install-rstudio.html",
+    "href": "00-Install-rstudio.html",
+    "title": "Install R and RStudio",
+    "section": "",
+    "text": "Before starting the tutorials, you need to install two programs:\n\nR — the programming language we will use.\nRStudio Desktop — an easier interface for writing and running R code.\n\n\nImportant: Install R first, then install RStudio.\n\n\n\n\n\nR download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#install-links",
+    "href": "00-Install-rstudio.html#install-links",
+    "title": "Install R and RStudio",
+    "section": "",
+    "text": "R download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac",
+    "href": "00-Install-rstudio.html#mac",
+    "title": "Install R and RStudio",
+    "section": "Mac",
+    "text": "Mac\n\nGo to the R download page:\nhttps://cran.r-project.org/\nClick:\nDownload R for macOS\n\n\n\nDownload the latest .pkg installer.\n\nThe file name will look something like:\nR-4.x.x-arm64.pkg\nor\nR-4.x.x.pkg\n\nChoose the appropriate installer for your Mac (M1/M2 or Intel).\n\nOpen the downloaded .pkg file and follow the installation instructions.\nWhen the installation is complete, you can verify that R is installed by opening the Terminal and typing:\n\nR --version\nYou should see the version of R that you installed.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows",
+    "href": "00-Install-rstudio.html#windows",
+    "title": "Install R and RStudio",
+    "section": "Windows",
+    "text": "Windows\n\nGo to the R download page:\nhttps://cran.r-project.org/\n\nClick:\nDownload R for Windows\n\n\n\nClick:\nbase\n\n\n\nClick the link to download the latest version of R (e.g., R-4.x.x-win.exe).\nOpen the downloaded .exe file and follow the installation instructions.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac-1",
+    "href": "00-Install-rstudio.html#mac-1",
+    "title": "Install R and RStudio",
+    "section": "MAC",
+    "text": "MAC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nClick Install Rstudio and choose the Mac version.\n\n\n\nClick the DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++ button. \nOpen the downloaded .dmg file from your Downloads folder.\nDrag the RStudio icon into the Applications folder.\nOpen RStudio from your Applications folder.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows-pc",
+    "href": "00-Install-rstudio.html#windows-pc",
+    "title": "Install R and RStudio",
+    "section": "Windows / PC",
+    "text": "Windows / PC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nDownload the Windows installer.\n\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\nOpen the downloaded .exe file.\n\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.\n\n\nAlternatively, you can directly download the Windows installer using this link:\nhttps://download1.rstudio.org/electron/windows/RStudio-2026.05.0-218.exe\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\n\nOpen the downloaded .exe file.\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac-2",
+    "href": "00-Install-rstudio.html#mac-2",
+    "title": "Install R and RStudio",
+    "section": "Mac",
+    "text": "Mac\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Get Info.\nIn the “Get Info” window, find the “Open with:” section.\nClick the dropdown menu and select RStudio.\nClick the Change All… button to apply this setting to all R or Rmd files.\nConfirm the change when prompted.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows-1",
+    "href": "00-Install-rstudio.html#windows-1",
+    "title": "Install R and RStudio",
+    "section": "Windows",
+    "text": "Windows\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Open with &gt; Choose another app.\nIn the “How do you want to open this file?” window, select RStudio.\nCheck the box that says Always use this app to open .R/.Rmd files.\nClick OK to apply the change.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Welcome",
@@ -764,7 +844,7 @@
     "href": "03-quarto-rmarkdown.html",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.\n\n\n\nYou can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n\n\nWhen you open a .Rmd or .qmd file in RStudio, you will see: ### Source View Click Source to see the raw text and code in your document. \n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
+    "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.\n\n\n\nYou can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n\n\nWhen you open a .Rmd or .qmd file in RStudio, you will see:\n\n\nClick Source to see the raw text and code in your document. \n\n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -810,8 +890,8 @@
     ]
   },
   {
-    "objectID": "03-quarto-rmarkdown.html#parts-of-a-quarto-document",
-    "href": "03-quarto-rmarkdown.html#parts-of-a-quarto-document",
+    "objectID": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
+    "href": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
     "text": "A simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.",
@@ -870,51 +950,11 @@
     ]
   },
   {
-    "objectID": "03-quarto-rmarkdown.html#creating-a-new-quarto-document",
-    "href": "03-quarto-rmarkdown.html#creating-a-new-quarto-document",
+    "objectID": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
+    "href": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "In RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.",
-    "crumbs": [
-      "3. R Markdown and Quarto"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#rendering-your-document",
-    "href": "03-quarto-rmarkdown.html#rendering-your-document",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "After creating your document:\n\nSave the file.\nClick Render.\nWait for Quarto to run the code.\nView the finished document.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nIf your document does not render, check that:\n\nEach code chunk starts and ends correctly.\nYour R code works by itself.\nYour file is saved.\nAny data files needed by the document are in the right folder.",
-    "crumbs": [
-      "3. R Markdown and Quarto"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#try-it-yourself",
-    "href": "03-quarto-rmarkdown.html#try-it-yourself",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "NotePractice\n\n\n\nCreate a new Quarto document in RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nAdd your name.\nAdd an R code chunk.\nInside the code chunk, write:\n\n100 / 4\n\nClick Render.\n\nAfter rendering, check that the result appears in the finished document.",
-    "crumbs": [
-      "3. R Markdown and Quarto"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#check-your-understanding",
-    "href": "03-quarto-rmarkdown.html#check-your-understanding",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "Answer these questions in your own words:\n\nWhat is the purpose of a reproducible report?\nWhat type of file ends in .R?\nWhat type of file ends in .qmd?\nWhat does it mean to render a document?",
-    "crumbs": [
-      "3. R Markdown and Quarto"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#summary",
-    "href": "03-quarto-rmarkdown.html#summary",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "In this section, you learned that:\n\nR scripts are mainly for writing code.\nR Markdown and Quarto documents combine text, code, and output.\nQuarto documents end in .qmd.\nRendering turns a Quarto file into a finished document.",
+    "text": "When you open a .Rmd or .qmd file in RStudio, you will see:\n\n\nClick Source to see the raw text and code in your document. \n\n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -945,46 +985,6 @@
     "title": "5. Working with Files and Folders",
     "section": "",
     "text": "You can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.",
-    "crumbs": [
-      "5. Working with Files and Folders"
-    ]
-  },
-  {
-    "objectID": "05-files-folders.html#creating-a-project-folder",
-    "href": "05-files-folders.html#creating-a-project-folder",
-    "title": "5. Working with Files and Folders",
-    "section": "",
-    "text": "For this guide, create a folder called:\nr-onboarding-guide\nInside that folder, you might have:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv",
-    "crumbs": [
-      "5. Working with Files and Folders"
-    ]
-  },
-  {
-    "objectID": "05-files-folders.html#why-use-a-project-folder",
-    "href": "05-files-folders.html#why-use-a-project-folder",
-    "title": "5. Working with Files and Folders",
-    "section": "",
-    "text": "A project folder keeps related files together.\nThis helps you avoid problems like:\n\nLosing your dataset.\nSaving files in random places.\nNot knowing which version of a file is correct.\nGetting file not found errors.",
-    "crumbs": [
-      "5. Working with Files and Folders"
-    ]
-  },
-  {
-    "objectID": "05-files-folders.html#finding-the-project-folder",
-    "href": "05-files-folders.html#finding-the-project-folder",
-    "title": "5. Working with Files and Folders",
-    "section": "",
-    "text": "In RStudio, use the Files tab to find your project folder.\n\n[Insert Screenshot: Files Pane Showing Project Folder]\nShow the Files tab with the project folder open.",
-    "crumbs": [
-      "5. Working with Files and Folders"
-    ]
-  },
-  {
-    "objectID": "05-files-folders.html#recommended-file-organization",
-    "href": "05-files-folders.html#recommended-file-organization",
-    "title": "5. Working with Files and Folders",
-    "section": "",
-    "text": "For a larger project, you may want folders like this:\nmy-project/\n├── data/\n├── scripts/\n├── reports/\n└── images/\nFor now, it is okay to keep things simple.",
     "crumbs": [
       "5. Working with Files and Folders"
     ]
@@ -1267,106 +1267,6 @@
     "text": "In this section, you learned how to troubleshoot common problems, including:\n\nFile not found errors.\nPackage installation issues.\nTyping mistakes.\nWorking directory problems.\nRendering errors.\nObject not found errors.",
     "crumbs": [
       "Common Problems and Solutions"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html",
-    "href": "00-Install-rstudio.html",
-    "title": "Install R and RStudio",
-    "section": "",
-    "text": "Before starting the tutorials, you need to install two programs:\n\nR — the programming language we will use.\nRStudio Desktop — an easier interface for writing and running R code.\n\n\nImportant: Install R first, then install RStudio.\n\n\n\n\n\nR download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#install-links",
-    "href": "00-Install-rstudio.html#install-links",
-    "title": "Install R and RStudio",
-    "section": "",
-    "text": "R download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#mac",
-    "href": "00-Install-rstudio.html#mac",
-    "title": "Install R and RStudio",
-    "section": "Mac",
-    "text": "Mac\n\nGo to the R download page:\nhttps://cran.r-project.org/\nClick:\nDownload R for macOS\n\n\n\nDownload the latest .pkg installer.\n\nThe file name will look something like:\nR-4.x.x-arm64.pkg\nor\nR-4.x.x.pkg\n\nChoose the appropriate installer for your Mac (M1/M2 or Intel).\n\nOpen the downloaded .pkg file and follow the installation instructions.\nWhen the installation is complete, you can verify that R is installed by opening the Terminal and typing:\n\nR --version\nYou should see the version of R that you installed.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#windows",
-    "href": "00-Install-rstudio.html#windows",
-    "title": "Install R and RStudio",
-    "section": "Windows",
-    "text": "Windows\n\nGo to the R download page:\nhttps://cran.r-project.org/\n\nClick:\nDownload R for Windows\n\n\n\nClick:\nbase\n\n\n\nClick the link to download the latest version of R (e.g., R-4.x.x-win.exe).\nOpen the downloaded .exe file and follow the installation instructions.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#windows-pc",
-    "href": "00-Install-rstudio.html#windows-pc",
-    "title": "Install R and RStudio",
-    "section": "Windows / PC",
-    "text": "Windows / PC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nDownload the Windows installer.\n\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\nOpen the downloaded .exe file.\n\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.\n\n\nAlternatively, you can directly download the Windows installer using this link:\nhttps://download1.rstudio.org/electron/windows/RStudio-2026.05.0-218.exe\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\n\nOpen the downloaded .exe file.\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#mac-1",
-    "href": "00-Install-rstudio.html#mac-1",
-    "title": "Install R and RStudio",
-    "section": "MAC",
-    "text": "MAC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nClick Install Rstudio and choose the Mac version.\n\n\n\nClick the DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++ button. \nOpen the downloaded .dmg file from your Downloads folder.\nDrag the RStudio icon into the Applications folder.\nOpen RStudio from your Applications folder.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#windows-1",
-    "href": "00-Install-rstudio.html#windows-1",
-    "title": "Install R and RStudio",
-    "section": "Windows",
-    "text": "Windows\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Open with &gt; Choose another app.\nIn the “How do you want to open this file?” window, select RStudio.\nCheck the box that says Always use this app to open .R/.Rmd files.\nClick OK to apply the change.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "00-Install-rstudio.html#mac-2",
-    "href": "00-Install-rstudio.html#mac-2",
-    "title": "Install R and RStudio",
-    "section": "Mac",
-    "text": "Mac\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Get Info.\nIn the “Get Info” window, find the “Open with:” section.\nClick the dropdown menu and select RStudio.\nClick the Change All… button to apply this setting to all R or Rmd files.\nConfirm the change when prompted.",
-    "crumbs": [
-      "0. Installing R and RStudio"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
-    "href": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "A simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.",
-    "crumbs": [
-      "3. R Markdown and Quarto"
-    ]
-  },
-  {
-    "objectID": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
-    "href": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
-    "title": "3. What is an R Markdown / Quarto Document?",
-    "section": "",
-    "text": "When you open a .Rmd or .qmd file in RStudio, you will see: ### Source View Click Source to see the raw text and code in your document. \n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
-    "crumbs": [
-      "3. R Markdown and Quarto"
     ]
   }
 ]
