@@ -45,13 +45,13 @@ r-onboarding-guide/
 └── mydata.csv
 ```
 
-<div class="screenshot-placeholder">
+<!-- <div class="screenshot-placeholder">
 
 [Insert Screenshot: Saving mydata.csv in the Project Folder]
 
 Show the CSV file saved in the same folder as the R script.
 
-</div>
+</div> -->
 
 ## Verifying the File Exists
 
@@ -60,6 +60,7 @@ In R, you can check whether the file exists:
 ```{r}
 file.exists("mydata.csv")
 ```
+
 
 If R prints:
 

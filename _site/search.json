@@ -284,7 +284,7 @@
     "href": "06-download-csv.html",
     "title": "6. Downloading a CSV Dataset",
     "section": "",
-    "text": "In this section, you will download a CSV dataset.\nA CSV file is a common type of data file. CSV stands for comma-separated values.\nA CSV file looks like a spreadsheet, but it is saved as plain text.\n\n\nFor this guide, we will use a small dataset called:\nmydata.csv\nIt contains information about imaginary students, including:\n\nStudy hours\nSleep hours\nAttendance\nQuiz score\nMajor\n\nIf you are viewing this guide as a website, use this link:\nDownload the sample CSV dataset\n\n\n\n\n\n\nTipTip\n\n\n\nIf your browser opens the CSV instead of downloading it, right-click the link and choose Save Link As…\n\n\n\n\n\nSave the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n[Insert Screenshot: Saving mydata.csv in the Project Folder]\nShow the CSV file saved in the same folder as the R script.\n\n\n\n\nIn R, you can check whether the file exists:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf R prints:\n[1] TRUE\nthat means R found the file.\nIf R prints:\n[1] FALSE\nthat means R did not find the file in the current working directory.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nThe file name must match exactly.\nThese are different to R:\nmydata.csv\nMyData.csv\nmydata (1).csv\n\n\n\n\n\nIf your instructor has not provided mydata.csv, you can create it yourself.\n\nOpen a plain text editor.\nCopy the text below.\nSave the file as mydata.csv.\nPut it in your project folder.\n\nstudent,study_hours,sleep_hours,attendance,quiz_score,major\nStudent 1,5,7,Present,78,Biology\nStudent 2,8,6,Present,91,Business\nStudent 3,3,8,Absent,65,Psychology\nStudent 4,6,7,Present,84,Biology\nStudent 5,7,6,Present,88,Business\nStudent 6,2,5,Absent,60,Psychology\nStudent 7,9,8,Present,95,Biology\nStudent 8,4,6,Present,72,Business\nStudent 9,6,7,Present,83,Psychology\nStudent 10,10,7,Present,98,Business\n\n\n\n\n\n\nTipTip\n\n\n\nMake sure the file name is exactly:\nmydata.csv\nnot:\nmydata.csv.txt\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nDownload or create mydata.csv.\nSave it in your project folder.\nRun:\n\nfile.exists(\"mydata.csv\")\n\nMake sure the result is TRUE.\n\n\n\n\n\n\nAnswer these questions:\n\nWhat does CSV stand for?\nWhere should you save mydata.csv?\nWhat does file.exists(\"mydata.csv\") check?\nWhat does it mean if the result is FALSE?\n\n\n\n\nIn this section, you learned that:\n\nA CSV file is a common data file.\nCSV files can be opened in spreadsheet programs and R.\nYour CSV file should be saved in your project folder.\nfile.exists() checks whether R can find the file.",
+    "text": "In this section, you will download a CSV dataset.\nA CSV file is a common type of data file. CSV stands for comma-separated values.\nA CSV file looks like a spreadsheet, but it is saved as plain text.\n\n\nFor this guide, we will use a small dataset called:\nmydata.csv\nIt contains information about imaginary students, including:\n\nStudy hours\nSleep hours\nAttendance\nQuiz score\nMajor\n\nIf you are viewing this guide as a website, use this link:\nDownload the sample CSV dataset\n\n\n\n\n\n\nTipTip\n\n\n\nIf your browser opens the CSV instead of downloading it, right-click the link and choose Save Link As…\n\n\n\n\n\nSave the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n\n\n\nIn R, you can check whether the file exists:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf R prints:\n[1] TRUE\nthat means R found the file.\nIf R prints:\n[1] FALSE\nthat means R did not find the file in the current working directory.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nThe file name must match exactly.\nThese are different to R:\nmydata.csv\nMyData.csv\nmydata (1).csv\n\n\n\n\n\nIf your instructor has not provided mydata.csv, you can create it yourself.\n\nOpen a plain text editor.\nCopy the text below.\nSave the file as mydata.csv.\nPut it in your project folder.\n\nstudent,study_hours,sleep_hours,attendance,quiz_score,major\nStudent 1,5,7,Present,78,Biology\nStudent 2,8,6,Present,91,Business\nStudent 3,3,8,Absent,65,Psychology\nStudent 4,6,7,Present,84,Biology\nStudent 5,7,6,Present,88,Business\nStudent 6,2,5,Absent,60,Psychology\nStudent 7,9,8,Present,95,Biology\nStudent 8,4,6,Present,72,Business\nStudent 9,6,7,Present,83,Psychology\nStudent 10,10,7,Present,98,Business\n\n\n\n\n\n\nTipTip\n\n\n\nMake sure the file name is exactly:\nmydata.csv\nnot:\nmydata.csv.txt\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nDownload or create mydata.csv.\nSave it in your project folder.\nRun:\n\nfile.exists(\"mydata.csv\")\n\nMake sure the result is TRUE.\n\n\n\n\n\n\nAnswer these questions:\n\nWhat does CSV stand for?\nWhere should you save mydata.csv?\nWhat does file.exists(\"mydata.csv\") check?\nWhat does it mean if the result is FALSE?\n\n\n\n\nIn this section, you learned that:\n\nA CSV file is a common data file.\nCSV files can be opened in spreadsheet programs and R.\nYour CSV file should be saved in your project folder.\nfile.exists() checks whether R can find the file.",
     "crumbs": [
       "6. Downloading a CSV Dataset"
     ]
@@ -304,7 +304,7 @@
     "href": "06-download-csv.html#saving-the-csv-file",
     "title": "6. Downloading a CSV Dataset",
     "section": "",
-    "text": "Save the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n[Insert Screenshot: Saving mydata.csv in the Project Folder]\nShow the CSV file saved in the same folder as the R script.",
+    "text": "Save the file in your project folder.\nYour folder should look like this:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv",
     "crumbs": [
       "6. Downloading a CSV Dataset"
     ]
@@ -364,7 +364,7 @@
     "href": "04-running-code.html",
     "title": "4. Running Code in RStudio",
     "section": "",
-    "text": "Writing code is only the first step. You also need to run it.\nIn RStudio, there are several ways to run R code.\n\n\nIf your cursor is on a line of code, you can click the Run button.\n\nExample:\n\n3 + 4\n\n[1] 7\n\n\n\n\n\nYou can also use a keyboard shortcut.\n\n\n\nComputer\nShortcut\n\n\n\n\nWindows\nCtrl + Enter\n\n\nMac\nCmd + Enter\n\n\n\nThis runs the current line of code.\n\n\n\n\n\n\nTipTip\n\n\n\nKeyboard shortcuts make your work faster once you get used to them.\n\n\n\n\n\nYou can highlight several lines of code and run only those lines.\nTry highlighting this code:\n\nx &lt;- 10\ny &lt;- 5\nx + y\n\n[1] 15\n\n\nThen press:\n\nCtrl + Enter on Windows\nCmd + Enter on Mac\n\n\n\n\nTo run the highlighted script, you can:\n\nOpen your .R file.\nHighlight the code you want to run.\nClick Run.\nRStudio will run the highlighted code from top to bottom.\n\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.\n\n\n\n\n\nThis works because height is created before it is used:\n\nheight &lt;- 65\nheight + 2\n\n[1] 67\n\n\nThis would cause an error if height had not already been created:\nheight + 2\n\n\n\nIn a Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\nYou can run code chunks using the small green play button near the chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Rmd / Quarto document, R runs the code chunks from top to bottom.\n\n\n\n\n\nRunning selected code is useful when you are practicing or testing something.\nRendering is useful when you want to create the final document.\n\n\n\nAction\nWhat It Does\n\n\n\n\nRun one line\nRuns only the current line\n\n\nRun selected lines\nRuns only the code you highlight\n\n\nSource script\nRuns the whole .R script\n\n\nRender document\nRuns the whole .qmd document and creates output\n\n\n\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nIf something works when you run one line but fails when you render, it may mean your document is missing an earlier line of code.\nRemember: Quarto starts fresh and runs the document from top to bottom.\n\n\n\n\n\n\n\nYou may see an error like:\nError: object 'quiz_score' not found\nThis means R does not know what quiz_score is.\nUsually this happens because:\n\nYou did not create the object yet.\nYou misspelled the object name.\nYou restarted R and need to run earlier code again.\n\nExample mistake:\nquiz_score + 5\nFix:\nquiz_score &lt;- 90\nquiz_score + 5\n\n\n\nYou may see:\nError: unexpected symbol\nThis often means there is a typing mistake.\nFor example:\nmy score &lt;- 90\nR does not like spaces in object names.\nUse:\nmy_score &lt;- 90\n\n\n\nYou may see:\nError: could not find function \"some_function\"\nThis may mean:\n\nThe function name is misspelled.\nYou forgot to load a package.\nThe package is not installed.\n\nFor now, check your spelling first.\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new script and type:\na &lt;- 12\nb &lt;- 3\na / b\nTry running the code using:\n\nThe Run button.\nThe keyboard shortcut.\nHighlighting all three lines.\nThe Source button.\n\n\n\n\n\n\nLook at this code:\nexam score &lt;- 85\nexam_score + 5\nThis code has two problems.\nTry to fix it before looking below.\nCorrected version:\nexam_score &lt;- 85\nexam_score + 5\nThe first problem was the space in exam score.\nThe second problem was that the object name was not written the same way both times.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nR is very exact.\nThese names are different to R:\nscore\nScore\nquiz_score\nquizscore\n\n\n\n\n\nAnswer these questions:\n\nWhat button can you use to run one line of code?\nWhat keyboard shortcut runs the current line?\nWhy does the order of code matter?\nWhat does “object not found” usually mean?\n\n\n\n\nIn this section, you learned how to:\n\nRun one line of code.\nRun selected lines of code.\nRun an entire script.\nRun code chunks in a Quarto document.\nUnderstand a few common error messages.\n\nYou are now ready to work with files and folders.",
+    "text": "Writing code is only the first step. You also need to run it.\nIn RStudio, there are several ways to run R code.\n\n\nIf your cursor is on a line of code, you can click the Run button.\n\nExample:\n\n3 + 4\n\n[1] 7\n\n\n\n\n\nYou can also use a keyboard shortcut.\n\n\n\nComputer\nShortcut\n\n\n\n\nWindows\nCtrl + Enter\n\n\nMac\nCmd + Enter\n\n\n\nThis runs the current line of code.\n\n\n\n\n\n\nTipTip\n\n\n\nKeyboard shortcuts make your work faster once you get used to them.\n\n\n\n\n\nYou can highlight several lines of code and run only those lines.\nTry highlighting this code:\n\nx &lt;- 10\ny &lt;- 5\nx + y\n\n[1] 15\n\n\nThen press:\n\nCtrl + Enter on Windows\nCmd + Enter on Mac\n\n\n\n\nTo run the highlighted script, you can:\n\nOpen your .R file.\nHighlight the code you want to run.\nClick Run.\nRStudio will run the highlighted code from top to bottom.\n\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.\n\n\n\n\n\nThis works because height is created before it is used:\n\nheight &lt;- 65\nheight + 2\n\n[1] 67\n\n\nThis would cause an error if height had not already been created:\nheight + 2\n\n\n\nIn a Rmd or Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n2 + 2\n\n[1] 4\n\n\nYou can run code chunks using the small green play button near the chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Rmd / Quarto document, R runs the code chunks from top to bottom.\n\n\n\n\n\nRunning selected code is useful when you are practicing or testing something.\nRendering is useful when you want to create the final document.\n\n\n\nAction\nWhat It Does\n\n\n\n\nRun one line\nRuns only the current line\n\n\nRun selected lines\nRuns only the code you highlight\n\n\nSource script\nRuns the whole .R script\n\n\nRender document\nRuns the whole .qmd document and creates output\n\n\n\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nIf something works when you run one line but fails when you render, it may mean your document is missing an earlier line of code.\nRemember: Quarto starts fresh and runs the document from top to bottom.\n\n\n\n\n\n\n\nYou may see an error like:\nError: object 'quiz_score' not found\nThis means R does not know what quiz_score is.\nUsually this happens because:\n\nYou did not create the object yet.\nYou misspelled the object name.\nYou restarted R and need to run earlier code again.\n\nExample mistake:\nquiz_score + 5\nFix:\nquiz_score &lt;- 90\nquiz_score + 5\n\n\n\nYou may see:\nError: unexpected symbol\nThis often means there is a typing mistake.\nFor example:\nmy score &lt;- 90\nR does not like spaces in object names.\nUse:\nmy_score &lt;- 90\n\n\n\nYou may see:\nError: could not find function \"some_function\"\nThis may mean:\n\nThe function name is misspelled.\nYou forgot to load a package.\nThe package is not installed.\n\nFor now, check your spelling first.\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new script and type:\na &lt;- 12\nb &lt;- 3\na / b\nTry running the code using:\n\nThe Run button.\nThe keyboard shortcut.\nHighlighting all three lines.\nThe Source button.\n\n\n\n\n\n\nLook at this code:\nexam score &lt;- 85\nexam_score + 5\nThis code has two problems.\nTry to fix it before looking below.\nCorrected version:\nexam_score &lt;- 85\nexam_score + 5\nThe first problem was the space in exam score.\nThe second problem was that the object name was not written the same way both times.\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nR is very exact.\nThese names are different to R:\nscore\nScore\nquiz_score\nquizscore\n\n\n\n\n\nAnswer these questions:\n\nWhat button can you use to run one line of code?\nWhat keyboard shortcut runs the current line?\nWhy does the order of code matter?\nWhat does “object not found” usually mean?\n\n\n\n\nIn this section, you learned how to:\n\nRun one line of code.\nRun selected lines of code.\nRun an entire script.\nRun code chunks in a Quarto document.\nUnderstand a few common error messages.\n\nYou are now ready to work with files and folders.",
     "crumbs": [
       "4. Running Code in RStudio"
     ]
@@ -400,11 +400,11 @@
     ]
   },
   {
-    "objectID": "04-running-code.html#method-4-run-an-entire-script",
-    "href": "04-running-code.html#method-4-run-an-entire-script",
+    "objectID": "04-running-code.html#method-4-run-the-highlighted-script",
+    "href": "04-running-code.html#method-4-run-the-highlighted-script",
     "title": "4. Running Code in RStudio",
     "section": "",
-    "text": "To run an entire script, you can:\n\nOpen your .R file.\nClick Source.\nRStudio will run the whole script from top to bottom.\n\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.",
+    "text": "To run the highlighted script, you can:\n\nOpen your .R file.\nHighlight the code you want to run.\nClick Run.\nRStudio will run the highlighted code from top to bottom.\n\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.",
     "crumbs": [
       "4. Running Code in RStudio"
     ]
@@ -420,11 +420,11 @@
     ]
   },
   {
-    "objectID": "04-running-code.html#running-code-in-a-quarto-document",
-    "href": "04-running-code.html#running-code-in-a-quarto-document",
+    "objectID": "04-running-code.html#running-code-in-a-rmd-quarto-document",
+    "href": "04-running-code.html#running-code-in-a-rmd-quarto-document",
     "title": "4. Running Code in RStudio",
     "section": "",
-    "text": "In a Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\nYou can run code chunks using the small green play button near the chunk.\n\n[Insert Screenshot: Running a Quarto Code Chunk]\nShow the green play button next to a code chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Quarto document, R runs the code chunks from top to bottom.",
+    "text": "In a Rmd or Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n2 + 2\n\n[1] 4\n\n\nYou can run code chunks using the small green play button near the chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Rmd / Quarto document, R runs the code chunks from top to bottom.",
     "crumbs": [
       "4. Running Code in RStudio"
     ]
@@ -764,7 +764,7 @@
     "href": "03-quarto-rmarkdown.html",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Quarto file, you may see something like this:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.\n\n\n\nYou can type normal sentences in a Quarto document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .qmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, Quarto can turn a .qmd file into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n[Insert Screenshot: Quarto Render Button]\nShow the Render button in RStudio.\n\n\n\n\nIn RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.\n\n\n[Insert Screenshot: Creating a New Quarto Document]\nShow File &gt; New File &gt; Quarto Document.\n\n\n\n\nAfter creating your document:\n\nSave the file.\nClick Render.\nWait for Quarto to run the code.\nView the finished document.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nIf your document does not render, check that:\n\nEach code chunk starts and ends correctly.\nYour R code works by itself.\nYour file is saved.\nAny data files needed by the document are in the right folder.\n\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nCreate a new Quarto document in RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nAdd your name.\nAdd an R code chunk.\nInside the code chunk, write:\n\n100 / 4\n\nClick Render.\n\nAfter rendering, check that the result appears in the finished document.\n\n\n\n\n\nAnswer these questions in your own words:\n\nWhat is the purpose of a reproducible report?\nWhat type of file ends in .R?\nWhat type of file ends in .qmd?\nWhat does it mean to render a document?\n\n\n\n\nIn this section, you learned that:\n\nR scripts are mainly for writing code.\nR Markdown and Quarto documents combine text, code, and output.\nQuarto documents end in .qmd.\nRendering turns a Quarto file into a finished document.",
+    "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.\n\n\n\nYou can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n\n\nWhen you open a .Rmd or .qmd file in RStudio, you will see: ### Source View Click Source to see the raw text and code in your document. \n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -824,7 +824,7 @@
     "href": "03-quarto-rmarkdown.html#example-title-section",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "At the top of a Quarto file, you may see something like this:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.",
+    "text": "At the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -834,7 +834,7 @@
     "href": "03-quarto-rmarkdown.html#regular-text",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "You can type normal sentences in a Quarto document.\nFor example:\nThis report shows my first analysis in R.",
+    "text": "You can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -844,7 +844,7 @@
     "href": "03-quarto-rmarkdown.html#code-chunks",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "A code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .qmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.",
+    "text": "A code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -864,7 +864,7 @@
     "href": "03-quarto-rmarkdown.html#what-is-rendering",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "To render a document means to turn it into a finished report.\nFor example, Quarto can turn a .qmd file into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n[Insert Screenshot: Quarto Render Button]\nShow the Render button in RStudio.",
+    "text": "To render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -874,7 +874,7 @@
     "href": "03-quarto-rmarkdown.html#creating-a-new-quarto-document",
     "title": "3. What is an R Markdown / Quarto Document?",
     "section": "",
-    "text": "In RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.\n\n\n[Insert Screenshot: Creating a New Quarto Document]\nShow File &gt; New File &gt; Quarto Document.",
+    "text": "In RStudio:\n\nClick File.\nClick New File.\nClick Quarto Document.\nEnter a title.\nEnter your name.\nChoose an output format, such as HTML.\nClick Create.",
     "crumbs": [
       "3. R Markdown and Quarto"
     ]
@@ -924,7 +924,7 @@
     "href": "05-files-folders.html",
     "title": "5. Working with Files and Folders",
     "section": "",
-    "text": "When working with data, file organization matters.\nIf your files are organized, R can find them more easily.\n\n\nThe working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.\n\n\n\n\nYou can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.\n\n\n\n\n\nFor this guide, create a folder called:\nr-onboarding-guide\nInside that folder, you might have:\nr-onboarding-guide/\n├── first_script.R\n├── first_report.qmd\n└── mydata.csv\n\n\n\nA project folder keeps related files together.\nThis helps you avoid problems like:\n\nLosing your dataset.\nSaving files in random places.\nNot knowing which version of a file is correct.\nGetting file not found errors.\n\n\n\n\nIn RStudio, use the Files tab to find your project folder.\n\n[Insert Screenshot: Files Pane Showing Project Folder]\nShow the Files tab with the project folder open.\n\n\n\n\nFor a larger project, you may want folders like this:\nmy-project/\n├── data/\n├── scripts/\n├── reports/\n└── images/\nFor now, it is okay to keep things simple.\n\n\n\nGood file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.\n\n\n\n\n\nAnswer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?\n\n\n\n\nIn this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory.\nA project folder keeps your work organized.\nClear file names help prevent mistakes. `````",
+    "text": "When working with data, file organization matters.\nIf your files are organized, R can find them more easily.\n\n\nThe working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.\n\n\n\n\nYou can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.\n\n\n\n\n\n\nGood file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.\n\n\n\n\n\nAnswer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?\n\n\n\n\nIn this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory. \nClear file names help prevent mistakes. `````",
     "crumbs": [
       "5. Working with Files and Folders"
     ]
@@ -1034,7 +1034,7 @@
     "href": "05-files-folders.html#summary",
     "title": "5. Working with Files and Folders",
     "section": "",
-    "text": "In this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory.\nA project folder keeps your work organized.\nClear file names help prevent mistakes. `````",
+    "text": "In this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory. \nClear file names help prevent mistakes. `````",
     "crumbs": [
       "5. Working with Files and Folders"
     ]
@@ -1270,23 +1270,103 @@
     ]
   },
   {
-    "objectID": "04-running-code.html#method-4-run-the-highlighted-script",
-    "href": "04-running-code.html#method-4-run-the-highlighted-script",
-    "title": "4. Running Code in RStudio",
+    "objectID": "00-Install-rstudio.html",
+    "href": "00-Install-rstudio.html",
+    "title": "Install R and RStudio",
     "section": "",
-    "text": "To run the highlighted script, you can:\n\nOpen your .R file.\nHighlight the code you want to run.\nClick Run.\nRStudio will run the highlighted code from top to bottom.\n\n\n\n\n\n\n\n\nWarningImportant\n\n\n\nR runs code from top to bottom.\nIf a later line depends on an earlier line, make sure the earlier line has already been run.",
+    "text": "Before starting the tutorials, you need to install two programs:\n\nR — the programming language we will use.\nRStudio Desktop — an easier interface for writing and running R code.\n\n\nImportant: Install R first, then install RStudio.\n\n\n\n\n\nR download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
     "crumbs": [
-      "4. Running Code in RStudio"
+      "0. Installing R and RStudio"
     ]
   },
   {
-    "objectID": "04-running-code.html#running-code-in-a-rmd-quarto-document",
-    "href": "04-running-code.html#running-code-in-a-rmd-quarto-document",
-    "title": "4. Running Code in RStudio",
+    "objectID": "00-Install-rstudio.html#install-links",
+    "href": "00-Install-rstudio.html#install-links",
+    "title": "Install R and RStudio",
     "section": "",
-    "text": "In a Quarto document, code usually appears inside a code chunk.\nA code chunk looks like this:\n\n\n::: {.cell}\n\n```{.r .cell-code}\n2 + 2\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 4\n```\n\n\n:::\n:::\n\n\nYou can run code chunks using the small green play button near the chunk.\n\n\n\n\n\n\n\nTipTip\n\n\n\nWhen you render a Rmd / Quarto document, R runs the code chunks from top to bottom.",
+    "text": "R download — available for Windows, Mac, and Linux\nRStudio Desktop download — available for Windows, Mac, and Linux",
     "crumbs": [
-      "4. Running Code in RStudio"
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac",
+    "href": "00-Install-rstudio.html#mac",
+    "title": "Install R and RStudio",
+    "section": "Mac",
+    "text": "Mac\n\nGo to the R download page:\nhttps://cran.r-project.org/\nClick:\nDownload R for macOS\n\n\n\nDownload the latest .pkg installer.\n\nThe file name will look something like:\nR-4.x.x-arm64.pkg\nor\nR-4.x.x.pkg\n\nChoose the appropriate installer for your Mac (M1/M2 or Intel).\n\nOpen the downloaded .pkg file and follow the installation instructions.\nWhen the installation is complete, you can verify that R is installed by opening the Terminal and typing:\n\nR --version\nYou should see the version of R that you installed.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows",
+    "href": "00-Install-rstudio.html#windows",
+    "title": "Install R and RStudio",
+    "section": "Windows",
+    "text": "Windows\n\nGo to the R download page:\nhttps://cran.r-project.org/\n\nClick:\nDownload R for Windows\n\n\n\nClick:\nbase\n\n\n\nClick the link to download the latest version of R (e.g., R-4.x.x-win.exe).\nOpen the downloaded .exe file and follow the installation instructions.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows-pc",
+    "href": "00-Install-rstudio.html#windows-pc",
+    "title": "Install R and RStudio",
+    "section": "Windows / PC",
+    "text": "Windows / PC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nDownload the Windows installer.\n\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\nOpen the downloaded .exe file.\n\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.\n\n\nAlternatively, you can directly download the Windows installer using this link:\nhttps://download1.rstudio.org/electron/windows/RStudio-2026.05.0-218.exe\nThe file name will look something like:\nRStudio-202x.xx.x-xxx.exe\n\nOpen the downloaded .exe file.\nFollow the installation steps using the default options.\nOpen RStudio from the Start Menu.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac-1",
+    "href": "00-Install-rstudio.html#mac-1",
+    "title": "Install R and RStudio",
+    "section": "MAC",
+    "text": "MAC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nClick Install Rstudio and choose the Mac version.\n\n\n\nClick the DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++ button. \nOpen the downloaded .dmg file from your Downloads folder.\nDrag the RStudio icon into the Applications folder.\nOpen RStudio from your Applications folder.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#windows-1",
+    "href": "00-Install-rstudio.html#windows-1",
+    "title": "Install R and RStudio",
+    "section": "Windows",
+    "text": "Windows\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Open with &gt; Choose another app.\nIn the “How do you want to open this file?” window, select RStudio.\nCheck the box that says Always use this app to open .R/.Rmd files.\nClick OK to apply the change.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "00-Install-rstudio.html#mac-2",
+    "href": "00-Install-rstudio.html#mac-2",
+    "title": "Install R and RStudio",
+    "section": "Mac",
+    "text": "Mac\n\nFind an R or Rmd file on your computer (e.g., in your Downloads folder).\nRight-click the file and select Get Info.\nIn the “Get Info” window, find the “Open with:” section.\nClick the dropdown menu and select RStudio.\nClick the Change All… button to apply this setting to all R or Rmd files.\nConfirm the change when prompted.",
+    "crumbs": [
+      "0. Installing R and RStudio"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
+    "href": "03-quarto-rmarkdown.html#parts-of-a-rmd-quarto-document",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "A simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
+    ]
+  },
+  {
+    "objectID": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
+    "href": "03-quarto-rmarkdown.html#interface-in-rmdquarto-documents",
+    "title": "3. What is an R Markdown / Quarto Document?",
+    "section": "",
+    "text": "When you open a .Rmd or .qmd file in RStudio, you will see: ### Source View Click Source to see the raw text and code in your document. \n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
+    "crumbs": [
+      "3. R Markdown and Quarto"
     ]
   }
 ]

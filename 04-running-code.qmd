@@ -18,6 +18,9 @@ Example:
 
 
 
+
+
+
 ## Method 2: Use Ctrl + Enter or Cmd + Enter
 
 You can also use a keyboard shortcut.
@@ -46,6 +49,9 @@ x <- 10
 y <- 5
 x + y
 ```
+
+
+
 
 
 
@@ -84,6 +90,9 @@ height + 2
 
 
 
+
+
+
 This would cause an error if `height` had not already been created:
 
 ```r
@@ -92,18 +101,16 @@ height + 2
 
 ## Running Code in a Rmd / Quarto Document
 
-In a Quarto document, code usually appears inside a code chunk.
+In a Rmd or Quarto document, code usually appears inside a code chunk.
 
 A code chunk looks like this:
 
-````markdown
+
 
 ```{r}
 2 + 2
 ```
 
-
-````
 
 You can run code chunks using the small green play button near the chunk.
 

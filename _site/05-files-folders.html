@@ -152,6 +152,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./00-Install-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">0. Installing R and RStudio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./01-rstudio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Getting Familiar with RStudio</span></a>
   </div>
@@ -224,10 +230,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#what-is-a-working-directory" id="toc-what-is-a-working-directory" class="nav-link" data-scroll-target="#what-is-a-working-directory">What is a Working Directory?</a></li>
   <li><a href="#checking-your-working-directory" id="toc-checking-your-working-directory" class="nav-link" data-scroll-target="#checking-your-working-directory">Checking Your Working Directory</a></li>
-  <li><a href="#creating-a-project-folder" id="toc-creating-a-project-folder" class="nav-link" data-scroll-target="#creating-a-project-folder">Creating a Project Folder</a></li>
-  <li><a href="#why-use-a-project-folder" id="toc-why-use-a-project-folder" class="nav-link" data-scroll-target="#why-use-a-project-folder">Why Use a Project Folder?</a></li>
-  <li><a href="#finding-the-project-folder" id="toc-finding-the-project-folder" class="nav-link" data-scroll-target="#finding-the-project-folder">Finding the Project Folder</a></li>
-  <li><a href="#recommended-file-organization" id="toc-recommended-file-organization" class="nav-link" data-scroll-target="#recommended-file-organization">Recommended File Organization</a></li>
   <li><a href="#file-names-matter" id="toc-file-names-matter" class="nav-link" data-scroll-target="#file-names-matter">File Names Matter</a></li>
   <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">Try It Yourself</a></li>
   <li><a href="#common-mistake" id="toc-common-mistake" class="nav-link" data-scroll-target="#common-mistake">Common Mistake</a></li>
@@ -281,45 +283,59 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>If R cannot find your file, checking <code>getwd()</code> is often the first thing to do.</p>
 </div>
 </div>
-</section>
-<section id="creating-a-project-folder" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-project-folder">Creating a Project Folder</h2>
-<p>For this guide, create a folder called:</p>
-<pre class="text"><code>r-onboarding-guide</code></pre>
-<p>Inside that folder, you might have:</p>
-<pre class="text"><code>r-onboarding-guide/
+<!-- ## Creating a Project Folder
+
+For this guide, create a folder called:
+
+```text
+r-onboarding-guide
+```
+
+Inside that folder, you might have:
+
+```text
+r-onboarding-guide/
 ├── first_script.R
 ├── first_report.qmd
-└── mydata.csv</code></pre>
-</section>
-<section id="why-use-a-project-folder" class="level2">
-<h2 class="anchored" data-anchor-id="why-use-a-project-folder">Why Use a Project Folder?</h2>
-<p>A project folder keeps related files together.</p>
-<p>This helps you avoid problems like:</p>
-<ul>
-<li>Losing your dataset.</li>
-<li>Saving files in random places.</li>
-<li>Not knowing which version of a file is correct.</li>
-<li>Getting file not found errors.</li>
-</ul>
-</section>
-<section id="finding-the-project-folder" class="level2">
-<h2 class="anchored" data-anchor-id="finding-the-project-folder">Finding the Project Folder</h2>
-<p>In RStudio, use the <strong>Files</strong> tab to find your project folder.</p>
+└── mydata.csv
+```
+
+## Why Use a Project Folder?
+
+A project folder keeps related files together.
+
+This helps you avoid problems like:
+
+- Losing your dataset.
+- Saving files in random places.
+- Not knowing which version of a file is correct.
+- Getting file not found errors.
+
+## Finding the Project Folder
+
+In RStudio, use the **Files** tab to find your project folder.
+
 <div class="screenshot-placeholder">
-<p>[Insert Screenshot: Files Pane Showing Project Folder]</p>
-<p>Show the Files tab with the project folder open.</p>
+
+[Insert Screenshot: Files Pane Showing Project Folder]
+
+Show the Files tab with the project folder open.
+
 </div>
-</section>
-<section id="recommended-file-organization" class="level2">
-<h2 class="anchored" data-anchor-id="recommended-file-organization">Recommended File Organization</h2>
-<p>For a larger project, you may want folders like this:</p>
-<pre class="text"><code>my-project/
+
+## Recommended File Organization
+
+For a larger project, you may want folders like this:
+
+```text
+my-project/
 ├── data/
 ├── scripts/
 ├── reports/
-└── images/</code></pre>
-<p>For now, it is okay to keep things simple.</p>
+└── images/
+```
+
+For now, it is okay to keep things simple. -->
 </section>
 <section id="file-names-matter" class="level2">
 <h2 class="anchored" data-anchor-id="file-names-matter">File Names Matter</h2>
@@ -367,7 +383,7 @@ lab_report.qmd</code></pre>
 <li>Save your R script in that folder.</li>
 <li>In RStudio, run:</li>
 </ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">getwd</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ol start="5" type="1">
 <li>Check whether R is working in the folder you expected.</li>
 </ol>
@@ -406,8 +422,7 @@ lab_report.qmd</code></pre>
 <p>In this section, you learned that:</p>
 <ul>
 <li>The working directory is where R looks for files.</li>
-<li><code>getwd()</code> shows your current working directory.</li>
-<li>A project folder keeps your work organized.</li>
+<li><code>getwd()</code> shows your current working directory. <!-- - A project folder keeps your work organized. --></li>
 <li>Clear file names help prevent mistakes. `````</li>
 </ul>
 

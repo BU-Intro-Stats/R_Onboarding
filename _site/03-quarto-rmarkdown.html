@@ -152,6 +152,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./00-Install-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">0. Installing R and RStudio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./01-rstudio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Getting Familiar with RStudio</span></a>
   </div>
@@ -226,17 +232,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#comparing-.r-.rmd-and-.qmd-files" id="toc-comparing-.r-.rmd-and-.qmd-files" class="nav-link" data-scroll-target="#comparing-.r-.rmd-and-.qmd-files">Comparing <code>.R</code>, <code>.Rmd</code>, and <code>.qmd</code> Files</a></li>
   <li><a href="#what-is-r-markdown" id="toc-what-is-r-markdown" class="nav-link" data-scroll-target="#what-is-r-markdown">What is R Markdown?</a></li>
   <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link" data-scroll-target="#what-is-quarto">What is Quarto?</a></li>
-  <li><a href="#parts-of-a-quarto-document" id="toc-parts-of-a-quarto-document" class="nav-link" data-scroll-target="#parts-of-a-quarto-document">Parts of a Quarto Document</a></li>
+  <li><a href="#parts-of-a-rmd-quarto-document" id="toc-parts-of-a-rmd-quarto-document" class="nav-link" data-scroll-target="#parts-of-a-rmd-quarto-document">Parts of a Rmd /Quarto Document</a></li>
   <li><a href="#example-title-section" id="toc-example-title-section" class="nav-link" data-scroll-target="#example-title-section">Example Title Section</a></li>
   <li><a href="#regular-text" id="toc-regular-text" class="nav-link" data-scroll-target="#regular-text">Regular Text</a></li>
   <li><a href="#code-chunks" id="toc-code-chunks" class="nav-link" data-scroll-target="#code-chunks">Code Chunks</a></li>
   <li><a href="#a-simple-quarto-document" id="toc-a-simple-quarto-document" class="nav-link" data-scroll-target="#a-simple-quarto-document">A Simple Quarto Document</a></li>
   <li><a href="#what-is-rendering" id="toc-what-is-rendering" class="nav-link" data-scroll-target="#what-is-rendering">What is Rendering?</a></li>
-  <li><a href="#creating-a-new-quarto-document" id="toc-creating-a-new-quarto-document" class="nav-link" data-scroll-target="#creating-a-new-quarto-document">Creating a New Quarto Document</a></li>
-  <li><a href="#rendering-your-document" id="toc-rendering-your-document" class="nav-link" data-scroll-target="#rendering-your-document">Rendering Your Document</a></li>
-  <li><a href="#try-it-yourself" id="toc-try-it-yourself" class="nav-link" data-scroll-target="#try-it-yourself">Try It Yourself</a></li>
-  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding">Check Your Understanding</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#interface-in-rmdquarto-documents" id="toc-interface-in-rmdquarto-documents" class="nav-link" data-scroll-target="#interface-in-rmdquarto-documents">Interface in Rmd/Quarto Documents</a>
+  <ul class="collapse">
+  <li><a href="#visual-view" id="toc-visual-view" class="nav-link" data-scroll-target="#visual-view">Visual View</a></li>
+  <li><a href="#show-in-a-new-window" id="toc-show-in-a-new-window" class="nav-link" data-scroll-target="#show-in-a-new-window">Show in a new window</a></li>
+  </ul></li>
   </ul></li>
   </ul>
 </nav>
@@ -355,8 +361,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </section>
-<section id="parts-of-a-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="parts-of-a-quarto-document">Parts of a Quarto Document</h2>
+<section id="parts-of-a-rmd-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="parts-of-a-rmd-quarto-document">Parts of a Rmd /Quarto Document</h2>
 <p>A simple Quarto document usually has:</p>
 <ol type="1">
 <li>A title section at the top.</li>
@@ -366,18 +372,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="example-title-section" class="level2">
 <h2 class="anchored" data-anchor-id="example-title-section">Example Title Section</h2>
-<p>At the top of a Quarto file, you may see something like this:</p>
+<p>At the top of a Rmd/Quarto file, you may see something like this:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My First Quarto Document"</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My First Rmd Document"</span></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> html</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>This part is called the <strong>YAML header</strong>.</p>
-<p>You do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.</p>
+<p>You do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.</p>
 </section>
 <section id="regular-text" class="level2">
 <h2 class="anchored" data-anchor-id="regular-text">Regular Text</h2>
-<p>You can type normal sentences in a Quarto document.</p>
+<p>You can type normal sentences in a Rmd document.</p>
 <p>For example:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>This report shows my first analysis in R.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
@@ -390,7 +396,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>One or more lines of R code.</li>
 <li>An ending line with three backticks.</li>
 </ol>
-<p>For example, a code chunk that calculates <code>2 + 2</code> would look like this in your <code>.qmd</code> file:</p>
+<p>For example, a code chunk that calculates <code>2 + 2</code> would look like this in your <code>.Rmd</code> file:</p>
 <pre class="text"><code>Line 1: three backticks followed by {r}
 Line 2: 2 + 2
 Line 3: three backticks</code></pre>
@@ -436,114 +442,28 @@ After rendering, the answer appears below the code.</code></pre>
 <section id="what-is-rendering" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-rendering">What is Rendering?</h2>
 <p>To <strong>render</strong> a document means to turn it into a finished report.</p>
-<p>For example, Quarto can turn a <code>.qmd</code> file into:</p>
+<p>For example, In Quarto and R Markdown, <code>.qmd</code> or <code>.Rmd</code> file can turn into:</p>
 <ul>
 <li>an HTML webpage,</li>
 <li>a PDF document,</li>
 <li>or a Word document.</li>
 </ul>
 <p>In RStudio, you can usually click the <strong>Render</strong> button.</p>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Quarto Render Button]</p>
-<p>Show the Render button in RStudio.</p>
-</div>
 </section>
-<section id="creating-a-new-quarto-document" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-new-quarto-document">Creating a New Quarto Document</h2>
-<p>In RStudio:</p>
-<ol type="1">
-<li>Click <strong>File</strong>.</li>
-<li>Click <strong>New File</strong>.</li>
-<li>Click <strong>Quarto Document</strong>.</li>
-<li>Enter a title.</li>
-<li>Enter your name.</li>
-<li>Choose an output format, such as HTML.</li>
-<li>Click <strong>Create</strong>.</li>
-</ol>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Creating a New Quarto Document]</p>
-<p>Show File &gt; New File &gt; Quarto Document.</p>
-</div>
+<section id="interface-in-rmdquarto-documents" class="level2">
+<h2 class="anchored" data-anchor-id="interface-in-rmdquarto-documents">Interface in Rmd/Quarto Documents</h2>
+<p>When you open a <code>.Rmd</code> or <code>.qmd</code> file in RStudio, you will see: ### Source View Click <strong>Source</strong> to see the raw text and code in your document. <img src="img/source_view.jpg" class="img-fluid"></p>
+<section id="visual-view" class="level3">
+<h3 class="anchored" data-anchor-id="visual-view">Visual View</h3>
+<p>Click <strong>Visual</strong> to see a more polished version of your document, with formatted text and rendered code chunks. <img src="img/visual_view.jpg" class="img-fluid"></p>
 </section>
-<section id="rendering-your-document" class="level2">
-<h2 class="anchored" data-anchor-id="rendering-your-document">Rendering Your Document</h2>
-<p>After creating your document:</p>
-<ol type="1">
-<li>Save the file.</li>
-<li>Click <strong>Render</strong>.</li>
-<li>Wait for Quarto to run the code.</li>
-<li>View the finished document.</li>
-</ol>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Common Mistake
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>If your document does not render, check that:</p>
-<ul>
-<li>Each code chunk starts and ends correctly.</li>
-<li>Your R code works by itself.</li>
-<li>Your file is saved.</li>
-<li>Any data files needed by the document are in the right folder.</li>
-</ul>
-</div>
-</div>
-</section>
-<section id="try-it-yourself" class="level2">
-<h2 class="anchored" data-anchor-id="try-it-yourself">Try It Yourself</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Practice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Create a new Quarto document in RStudio:</p>
-<ol type="1">
-<li>Click <strong>File</strong>.</li>
-<li>Click <strong>New File</strong>.</li>
-<li>Click <strong>Quarto Document</strong>.</li>
-<li>Add your name.</li>
-<li>Add an R code chunk.</li>
-<li>Inside the code chunk, write:</li>
-</ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">/</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<ol start="7" type="1">
-<li>Click <strong>Render</strong>.</li>
-</ol>
-<p>After rendering, check that the result appears in the finished document.</p>
-</div>
-</div>
-</section>
-<section id="check-your-understanding" class="level2">
-<h2 class="anchored" data-anchor-id="check-your-understanding">Check Your Understanding</h2>
-<p>Answer these questions in your own words:</p>
-<ol type="1">
-<li>What is the purpose of a reproducible report?</li>
-<li>What type of file ends in <code>.R</code>?</li>
-<li>What type of file ends in <code>.qmd</code>?</li>
-<li>What does it mean to render a document?</li>
-</ol>
-</section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>In this section, you learned that:</p>
-<ul>
-<li>R scripts are mainly for writing code.</li>
-<li>R Markdown and Quarto documents combine text, code, and output.</li>
-<li>Quarto documents end in <code>.qmd</code>.</li>
-<li>Rendering turns a Quarto file into a finished document.</li>
-</ul>
+<section id="show-in-a-new-window" class="level3">
+<h3 class="anchored" data-anchor-id="show-in-a-new-window">Show in a new window</h3>
+<p><img src="img/seperate_view0.jpg" class="img-fluid"> Click <strong>Show in new window</strong> to see the rendered document in a separate window.</p>
+<p><img src="img/seperate_view.jpg" class="img-fluid"></p>
 
 
+</section>
 </section>
 </section>
 

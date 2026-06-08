@@ -3,6 +3,7 @@ project:
   output-dir: _site
   render:
     - index.qmd
+    - 00-Install-rstudio.qmd
     - 01-rstudio.qmd
     - 02-first-script.qmd
     - 03-quarto-rmarkdown.qmd
@@ -23,6 +24,8 @@ website:
     contents:
       - text: "Welcome"
         href: index.qmd
+      - text: "0. Installing R and RStudio"
+        href: 00-Install-rstudio.qmd
       - text: "1. Getting Familiar with RStudio"
         href: 01-rstudio.qmd
       - text: "2. Creating Your First R Script"

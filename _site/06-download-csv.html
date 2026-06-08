@@ -152,6 +152,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./00-Install-rstudio.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">0. Installing R and RStudio</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./01-rstudio.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">1. Getting Familiar with RStudio</span></a>
   </div>
@@ -280,10 +286,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 ├── first_script.R
 ├── first_report.qmd
 └── mydata.csv</code></pre>
-<div class="screenshot-placeholder">
-<p>[Insert Screenshot: Saving mydata.csv in the Project Folder]</p>
-<p>Show the CSV file saved in the same folder as the R script.</p>
-</div>
+<!-- <div class="screenshot-placeholder">
+
+[Insert Screenshot: Saving mydata.csv in the Project Folder]
+
+Show the CSV file saved in the same folder as the R script.
+
+</div> -->
 </section>
 <section id="verifying-the-file-exists" class="level2">
 <h2 class="anchored" data-anchor-id="verifying-the-file-exists">Verifying the File Exists</h2>
@@ -477,7 +486,7 @@ Student 10,10,7,Present,98,Business</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/YonghoLim\.github\.io\/R_Onboarding\/");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

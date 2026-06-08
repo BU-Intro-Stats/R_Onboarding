@@ -78,7 +78,7 @@ For this course, focus on this idea:
 > A Quarto document lets you write explanations, run code, and show results in one file.
 :::
 
-## Parts of a Quarto Document
+## Parts of a Rmd /Quarto Document
 
 A simple Quarto document usually has:
 
@@ -88,11 +88,11 @@ A simple Quarto document usually has:
 
 ## Example Title Section
 
-At the top of a Quarto file, you may see something like this:
+At the top of a Rmd/Quarto file, you may see something like this:
 
 ```yaml
 ---
-title: "My First Quarto Document"
+title: "My First Rmd Document"
 author: "Your Name"
 format: html
 ---
@@ -100,11 +100,11 @@ format: html
 
 This part is called the **YAML header**.
 
-You do not need to write complicated YAML right now. It simply tells Quarto basic information about the document.
+You do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.
 
 ## Regular Text
 
-You can type normal sentences in a Quarto document.
+You can type normal sentences in a Rmd document.
 
 For example:
 
@@ -122,7 +122,7 @@ In a real Quarto document, an R code chunk has three parts:
 2. One or more lines of R code.
 3. An ending line with three backticks.
 
-For example, a code chunk that calculates `2 + 2` would look like this in your `.qmd` file:
+For example, a code chunk that calculates `2 + 2` would look like this in your `.Rmd` file:
 
 ```text
 Line 1: three backticks followed by {r}
@@ -172,7 +172,7 @@ In your actual `.qmd` file, the R code chunk would start with three backticks fo
 
 To **render** a document means to turn it into a finished report.
 
-For example, Quarto can turn a `.qmd` file into:
+For example, In Quarto and R Markdown, `.qmd` or `.Rmd` file can turn into:
 
 - an HTML webpage,
 - a PDF document,
@@ -180,91 +180,24 @@ For example, Quarto can turn a `.qmd` file into:
 
 In RStudio, you can usually click the **Render** button.
 
-<div class="screenshot-placeholder">
+## Interface in Rmd/Quarto Documents
 
-[Insert Screenshot: Quarto Render Button]
+When you open a `.Rmd` or `.qmd` file in RStudio, you will see:
+### Source View
+Click **Source** to see the raw text and code in your document.
+![](img/source_view.jpg)
 
-Show the Render button in RStudio.
 
-</div>
+### Visual View
+Click **Visual** to see a more polished version of your document, with formatted text and rendered code chunks.
+![](img/visual_view.jpg)
 
-## Creating a New Quarto Document
 
-In RStudio:
+### Show in a new window
+![](img/seperate_view0.jpg)
+Click **Show in new window** to see the rendered document in a separate window.
 
-1. Click **File**.
-2. Click **New File**.
-3. Click **Quarto Document**.
-4. Enter a title.
-5. Enter your name.
-6. Choose an output format, such as HTML.
-7. Click **Create**.
+![](img/seperate_view.jpg)
 
-<div class="screenshot-placeholder">
 
-[Insert Screenshot: Creating a New Quarto Document]
 
-Show File > New File > Quarto Document.
-
-</div>
-
-## Rendering Your Document
-
-After creating your document:
-
-1. Save the file.
-2. Click **Render**.
-3. Wait for Quarto to run the code.
-4. View the finished document.
-
-::: {.callout-warning}
-## Common Mistake
-
-If your document does not render, check that:
-
-- Each code chunk starts and ends correctly.
-- Your R code works by itself.
-- Your file is saved.
-- Any data files needed by the document are in the right folder.
-:::
-
-## Try It Yourself
-
-::: {.callout-note}
-## Practice
-
-Create a new Quarto document in RStudio:
-
-1. Click **File**.
-2. Click **New File**.
-3. Click **Quarto Document**.
-4. Add your name.
-5. Add an R code chunk.
-6. Inside the code chunk, write:
-
-```r
-100 / 4
-```
-
-7. Click **Render**.
-
-After rendering, check that the result appears in the finished document.
-:::
-
-## Check Your Understanding
-
-Answer these questions in your own words:
-
-1. What is the purpose of a reproducible report?
-2. What type of file ends in `.R`?
-3. What type of file ends in `.qmd`?
-4. What does it mean to render a document?
-
-## Summary
-
-In this section, you learned that:
-
-- R scripts are mainly for writing code.
-- R Markdown and Quarto documents combine text, code, and output.
-- Quarto documents end in `.qmd`.
-- Rendering turns a Quarto file into a finished document.

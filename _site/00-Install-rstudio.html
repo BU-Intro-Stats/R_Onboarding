@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>first-script – R Onboarding Guide</title>
+<title>install-rstudio – R Onboarding Guide</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -119,7 +119,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./02-first-script.html">2. Creating Your First R Script</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./00-Install-rstudio.html">0. Installing R and RStudio</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -152,7 +152,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./00-Install-rstudio.html" class="sidebar-item-text sidebar-link">
+  <a href="./00-Install-rstudio.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">0. Installing R and RStudio</span></a>
   </div>
 </li>
@@ -164,7 +164,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./02-first-script.html" class="sidebar-item-text sidebar-link active">
+  <a href="./02-first-script.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">2. Creating Your First R Script</span></a>
   </div>
 </li>
@@ -226,19 +226,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#creating-your-first-r-script" id="toc-creating-your-first-r-script" class="nav-link active" data-scroll-target="#creating-your-first-r-script">2. Creating Your First R Script</a>
+  <li><a href="#install-r-and-rstudio" id="toc-install-r-and-rstudio" class="nav-link active" data-scroll-target="#install-r-and-rstudio">Install R and RStudio</a>
   <ul class="collapse">
-  <li><a href="#what-is-an-r-script" id="toc-what-is-an-r-script" class="nav-link" data-scroll-target="#what-is-an-r-script">What is an R Script?</a></li>
-  <li><a href="#creating-a-new-r-script" id="toc-creating-a-new-r-script" class="nav-link" data-scroll-target="#creating-a-new-r-script">Creating a New R Script</a></li>
-  <li><a href="#basic-arithmetic" id="toc-basic-arithmetic" class="nav-link" data-scroll-target="#basic-arithmetic">Basic Arithmetic</a></li>
-  <li><a href="#creating-variables" id="toc-creating-variables" class="nav-link" data-scroll-target="#creating-variables">Creating Variables</a></li>
-  <li><a href="#why-use-variables" id="toc-why-use-variables" class="nav-link" data-scroll-target="#why-use-variables">Why Use Variables?</a></li>
-  <li><a href="#printing-output" id="toc-printing-output" class="nav-link" data-scroll-target="#printing-output">Printing Output</a></li>
-  <li><a href="#adding-comments" id="toc-adding-comments" class="nav-link" data-scroll-target="#adding-comments">Adding Comments</a></li>
-  <li><a href="#saving-your-script" id="toc-saving-your-script" class="nav-link" data-scroll-target="#saving-your-script">Saving Your Script</a></li>
-  <li><a href="#practice-exercise" id="toc-practice-exercise" class="nav-link" data-scroll-target="#practice-exercise">Practice Exercise</a></li>
-  <li><a href="#check-your-understanding" id="toc-check-your-understanding" class="nav-link" data-scroll-target="#check-your-understanding">Check Your Understanding</a></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#install-links" id="toc-install-links" class="nav-link" data-scroll-target="#install-links">Install Links</a></li>
+  </ul></li>
+  <li><a href="#install-r" id="toc-install-r" class="nav-link" data-scroll-target="#install-r">Install R</a>
+  <ul class="collapse">
+  <li><a href="#mac" id="toc-mac" class="nav-link" data-scroll-target="#mac">Mac</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  </ul></li>
+  <li><a href="#install-rstudio" id="toc-install-rstudio" class="nav-link" data-scroll-target="#install-rstudio">Install RStudio</a>
+  <ul class="collapse">
+  <li><a href="#mac-1" id="toc-mac-1" class="nav-link" data-scroll-target="#mac-1">MAC</a></li>
+  <li><a href="#windows-pc" id="toc-windows-pc" class="nav-link" data-scroll-target="#windows-pc">Windows / PC</a>
+  <ul class="collapse">
+  <li><a href="#alternatively-you-can-directly-download-the-windows-installer-using-this-link" id="toc-alternatively-you-can-directly-download-the-windows-installer-using-this-link" class="nav-link" data-scroll-target="#alternatively-you-can-directly-download-the-windows-installer-using-this-link">Alternatively, you can directly download the Windows installer using this link:</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#setup-r-and-rmd-files-to-be-opened-in-rstudio" id="toc-setup-r-and-rmd-files-to-be-opened-in-rstudio" class="nav-link" data-scroll-target="#setup-r-and-rmd-files-to-be-opened-in-rstudio">Setup R and Rmd files to be opened in RStudio</a>
+  <ul class="collapse">
+  <li><a href="#mac-2" id="toc-mac-2" class="nav-link" data-scroll-target="#mac-2">Mac</a></li>
+  <li><a href="#windows-1" id="toc-windows-1" class="nav-link" data-scroll-target="#windows-1">Windows</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -249,290 +257,146 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 
-<section id="creating-your-first-r-script" class="level1">
-<h1>2. Creating Your First R Script</h1>
-<p>In this section, you will create your first R script.</p>
-<section id="what-is-an-r-script" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-an-r-script">What is an R Script?</h2>
-<p>An <strong>R script</strong> is a file where you write R code.</p>
-<p>R script files end with:</p>
-<pre class="text"><code>.R</code></pre>
-<p>For example:</p>
-<pre class="text"><code>first_script.R</code></pre>
-<p>An R script is useful because it saves your code. You can run the same code again later without retyping everything.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Use an R script when you want to save your work.</p>
-<p>Use the Console when you want to quickly test one command.</p>
-</div>
-</div>
-</section>
-<section id="creating-a-new-r-script" class="level2">
-<h2 class="anchored" data-anchor-id="creating-a-new-r-script">Creating a New R Script</h2>
-<p>In RStudio:</p>
+<section id="install-r-and-rstudio" class="level1">
+<h1>Install R and RStudio</h1>
+<p>Before starting the tutorials, you need to install two programs:</p>
 <ol type="1">
-<li>Click <strong>File</strong>.</li>
-<li>Click <strong>New File</strong>.</li>
-<li>Click <strong>R Script</strong>.</li>
+<li><strong>R</strong> — the programming language we will use.</li>
+<li><strong>RStudio Desktop</strong> — an easier interface for writing and running R code.</li>
 </ol>
-<p><img src="img/create_file_menu.jpg" class="img-fluid"></p>
-<p>A blank script should open in the Source Pane.</p>
-</section>
-<section id="basic-arithmetic" class="level2">
-<h2 class="anchored" data-anchor-id="basic-arithmetic">Basic Arithmetic</h2>
-<p>Before we work with data, let’s try R as a calculator.</p>
-<p>Type the following into your script:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dv">2</span> <span class="sc">+</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="dv">10</span> <span class="sc">-</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 6</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dv">5</span> <span class="sc">*</span> <span class="dv">6</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 30</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="dv">20</span> <span class="sc">/</span> <span class="dv">4</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 5</code></pre>
-</div>
-</div>
-<p>These symbols mean:</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Symbol</th>
-<th>Meaning</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>+</code></td>
-<td>Add</td>
-</tr>
-<tr class="even">
-<td><code>-</code></td>
-<td>Subtract</td>
-</tr>
-<tr class="odd">
-<td><code>*</code></td>
-<td>Multiply</td>
-</tr>
-<tr class="even">
-<td><code>/</code></td>
-<td>Divide</td>
-</tr>
-</tbody>
-</table>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Try It Yourself
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Change the numbers and run the code again.</p>
-<p>For example, try:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="dv">100</span> <span class="sc">/</span> <span class="dv">5</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="dv">12</span> <span class="sc">*</span> <span class="dv">3</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</section>
-<section id="creating-variables" class="level2">
-<h2 class="anchored" data-anchor-id="creating-variables">Creating Variables</h2>
-<p>A <strong>variable</strong> is a name that stores a value.</p>
-<p>For example:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">18</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>age</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 18</code></pre>
-</div>
-</div>
-<p>The symbol <code>&lt;-</code> means “store this value.”</p>
-<p>So this line:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">18</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>means:</p>
 <blockquote class="blockquote">
-<p>Store the number 18 in a variable called <code>age</code>.</p>
+<p><strong>Important:</strong> Install <strong>R first</strong>, then install <strong>RStudio</strong>.</p>
 </blockquote>
-</section>
-<section id="why-use-variables" class="level2">
-<h2 class="anchored" data-anchor-id="why-use-variables">Why Use Variables?</h2>
-<p>Variables help us reuse information.</p>
-<p>For example, instead of typing the same number many times, we can give it a name.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>quiz_score <span class="ot">&lt;-</span> <span class="dv">92</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>homework_score <span class="ot">&lt;-</span> <span class="dv">88</span></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>quiz_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 92</code></pre>
-</div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>homework_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 88</code></pre>
-</div>
-</div>
-<p>Now we can use those variables in a calculation:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>final_score <span class="ot">&lt;-</span> (quiz_score <span class="sc">+</span> homework_score) <span class="sc">/</span> <span class="dv">2</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>final_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 90</code></pre>
-</div>
-</div>
-<p>This code calculates the average of the quiz score and homework score.</p>
-</section>
-<section id="printing-output" class="level2">
-<h2 class="anchored" data-anchor-id="printing-output">Printing Output</h2>
-<p>Sometimes you want to clearly print something.</p>
-<p>You can use <code>print()</code>:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(final_score)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 90</code></pre>
-</div>
-</div>
-<p>For simple work, typing the object name also shows the value:</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>final_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 90</code></pre>
-</div>
-</div>
-<p>Both are okay.</p>
-<div class="callout callout-style-default callout-tip callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Tip
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>In R, object names should not contain spaces.</p>
-<p>Use this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>quiz_score <span class="ot">&lt;-</span> <span class="dv">92</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Not this:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>quiz score <span class="ot">&lt;-</span> <span class="dv">92</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</section>
-<section id="adding-comments" class="level2">
-<h2 class="anchored" data-anchor-id="adding-comments">Adding Comments</h2>
-<p>A <strong>comment</strong> is a note to yourself or your reader.</p>
-<p>In R, comments start with <code>#</code>.</p>
-<p>R ignores comments when running code.</p>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This stores my quiz score</span></span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>quiz_score <span class="ot">&lt;-</span> <span class="dv">92</span></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="co"># This prints the quiz score</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>quiz_score</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 92</code></pre>
-</div>
-</div>
-<p>Comments are useful because they help explain what your code is doing.</p>
-</section>
-<section id="saving-your-script" class="level2">
-<h2 class="anchored" data-anchor-id="saving-your-script">Saving Your Script</h2>
-<p>To save your script:</p>
-<ol type="1">
-<li>Click <strong>File</strong>.</li>
-<li>Click <strong>Save</strong>.</li>
-<li>Name your file:</li>
-</ol>
-<pre class="text"><code>first_script.R</code></pre>
-<ol start="4" type="1">
-<li>Save it in your project folder.</li>
-</ol>
-<p><img src="img/file_save.jpg" class="img-fluid"></p>
-<p>Show the Save button and file name <code>first_script.R</code>.</p>
-<div class="callout callout-style-default callout-warning callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Warning</span>Common Mistake
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Do not save your script with a name like:</p>
-<pre class="text"><code>Untitled1.R</code></pre>
-<p>Use a clear name, such as:</p>
-<pre class="text"><code>first_script.R</code></pre>
-</div>
-</div>
-</section>
-<section id="practice-exercise" class="level2">
-<h2 class="anchored" data-anchor-id="practice-exercise">Practice Exercise</h2>
-<div class="callout callout-style-default callout-note callout-titled">
-<div class="callout-header d-flex align-content-center">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Note</span>Practice
-</div>
-</div>
-<div class="callout-body-container callout-body">
-<p>Create a new R script and write code that:</p>
-<ol type="1">
-<li>Stores your favorite number in a variable.</li>
-<li>Stores your age in another variable.</li>
-<li>Adds the two numbers together.</li>
-<li>Prints the result.</li>
-</ol>
-<p>Example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>favorite_number <span class="ot">&lt;-</span> <span class="dv">7</span></span>
-<span id="cb32-2"><a href="#cb32-2" aria-hidden="true" tabindex="-1"></a>age <span class="ot">&lt;-</span> <span class="dv">18</span></span>
-<span id="cb32-3"><a href="#cb32-3" aria-hidden="true" tabindex="-1"></a>result <span class="ot">&lt;-</span> favorite_number <span class="sc">+</span> age</span>
-<span id="cb32-4"><a href="#cb32-4" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(result)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div>
-</section>
-<section id="check-your-understanding" class="level2">
-<h2 class="anchored" data-anchor-id="check-your-understanding">Check Your Understanding</h2>
-<p>Answer these questions in your own words:</p>
-<ol type="1">
-<li>What is an R script?</li>
-<li>Why is it useful to save code in a script?</li>
-<li>What does <code>&lt;-</code> do?</li>
-<li>What is the difference between these two lines?</li>
-</ol>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>score <span class="ot">&lt;-</span> <span class="dv">90</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(score)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>In this section, you learned how to:</p>
+<hr>
+<section id="install-links" class="level2">
+<h2 class="anchored" data-anchor-id="install-links">Install Links</h2>
 <ul>
-<li>Create a new R script.</li>
-<li>Use R for basic arithmetic.</li>
-<li>Store values in variables.</li>
-<li>Print results.</li>
-<li>Add comments.</li>
-<li>Save your script.</li>
+<li><a href="https://cran.r-project.org/">R download</a> — available for Windows, Mac, and Linux</li>
+<li><a href="https://posit.co/download/rstudio-desktop">RStudio Desktop download</a> — available for Windows, Mac, and Linux</li>
 </ul>
-<p>You have now written your first R code!</p>
+<hr>
+</section>
+</section>
+<section id="install-r" class="level1">
+<h1>Install R</h1>
+<section id="mac" class="level2">
+<h2 class="anchored" data-anchor-id="mac">Mac</h2>
+<ol type="1">
+<li><p>Go to the R download page:</p>
+<p><a href="https://cran.r-project.org/">https://cran.r-project.org/</a></p></li>
+<li><p>Click:</p>
+<pre><code>Download R for macOS</code></pre></li>
+</ol>
+<p><img src="img/downloadR_mac.jpg" class="img-fluid"></p>
+<ol start="3" type="1">
+<li>Download the latest .pkg installer.</li>
+</ol>
+<p>The file name will look something like:</p>
+<pre><code>R-4.x.x-arm64.pkg</code></pre>
+<p>or</p>
+<pre><code>R-4.x.x.pkg</code></pre>
+<p><img src="img/downloadR_mac2.jpg" class="img-fluid"></p>
+<p>Choose the appropriate installer for your Mac (M1/M2 or Intel).</p>
+<ol start="4" type="1">
+<li>Open the downloaded .pkg file and follow the installation instructions.</li>
+<li>When the installation is complete, you can verify that R is installed by opening the Terminal and typing:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">R</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see the version of R that you installed.</p>
+</section>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
+<ol type="1">
+<li><p>Go to the R download page:</p>
+<p><a href="https://cran.r-project.org/">https://cran.r-project.org/</a><br>
+</p></li>
+<li><p>Click:</p>
+<pre><code>Download R for Windows</code></pre></li>
+</ol>
+<p><img src="img/downloadR_PC.jpg" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>Click:</p>
+<pre><code>base</code></pre></li>
+</ol>
+<p><img src="img/downloadR_PC2.jpg" class="img-fluid"></p>
+<ol start="4" type="1">
+<li>Click the link to download the latest version of R (e.g., R-4.x.x-win.exe).</li>
+<li>Open the downloaded .exe file and follow the installation instructions.</li>
+</ol>
+</section>
+</section>
+<section id="install-rstudio" class="level1">
+<h1>Install RStudio</h1>
+<p>After installing R, install RStudio Desktop.</p>
+<section id="mac-1" class="level2">
+<h2 class="anchored" data-anchor-id="mac-1">MAC</h2>
+<ol type="1">
+<li>Go to the RStudio Desktop download page:</li>
+</ol>
+<p><a href="https://posit.co/download/rstudio-desktop">https://posit.co/download/rstudio-desktop</a></p>
+<ol start="2" type="1">
+<li>Click <code>Install Rstudio</code> and choose the Mac version.</li>
+</ol>
+<p><img src="img/downloadRstudio_mac.jpg" class="img-fluid"></p>
+<ol start="3" type="1">
+<li><p>Click the <code>DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++</code> button. <img src="img/downloadRstudio_mac2.jpg" class="img-fluid"></p></li>
+<li><p>Open the downloaded .dmg file from your Downloads folder.</p></li>
+<li><p>Drag the RStudio icon into the Applications folder.</p></li>
+<li><p>Open RStudio from your Applications folder.</p></li>
+</ol>
+</section>
+<section id="windows-pc" class="level2">
+<h2 class="anchored" data-anchor-id="windows-pc">Windows / PC</h2>
+<ol type="1">
+<li>Go to the RStudio Desktop download page:</li>
+</ol>
+<p><a href="https://posit.co/download/rstudio-desktop">https://posit.co/download/rstudio-desktop</a></p>
+<ol start="2" type="1">
+<li>Download the Windows installer.</li>
+</ol>
+<p>The file name will look something like:</p>
+<pre><code>RStudio-202x.xx.x-xxx.exe</code></pre>
+<p>Open the downloaded .exe file.</p>
+<ol start="4" type="1">
+<li><p>Follow the installation steps using the default options.</p></li>
+<li><p>Open RStudio from the Start Menu.</p></li>
+</ol>
+<section id="alternatively-you-can-directly-download-the-windows-installer-using-this-link" class="level3">
+<h3 class="anchored" data-anchor-id="alternatively-you-can-directly-download-the-windows-installer-using-this-link">Alternatively, you can directly download the Windows installer using this link:</h3>
+<p><a href="https://download1.rstudio.org/electron/windows/RStudio-2026.05.0-218.exe">https://download1.rstudio.org/electron/windows/RStudio-2026.05.0-218.exe</a></p>
+<p>The file name will look something like:</p>
+<pre><code>RStudio-202x.xx.x-xxx.exe</code></pre>
+<ol type="1">
+<li><p>Open the downloaded .exe file.</p></li>
+<li><p>Follow the installation steps using the default options.</p></li>
+<li><p>Open RStudio from the Start Menu.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="setup-r-and-rmd-files-to-be-opened-in-rstudio" class="level1">
+<h1>Setup R and Rmd files to be opened in RStudio</h1>
+<p>After installing R and RStudio, you may want to set up your computer so that R and Rmd files automatically open in RStudio when you double-click them.</p>
+<section id="mac-2" class="level2">
+<h2 class="anchored" data-anchor-id="mac-2">Mac</h2>
+<ol type="1">
+<li>Find an R or Rmd file on your computer (e.g., in your Downloads folder).</li>
+<li>Right-click the file and select <strong>Get Info</strong>.</li>
+<li>In the “Get Info” window, find the “Open with:” section.</li>
+<li>Click the dropdown menu and select <strong>RStudio</strong>.</li>
+<li>Click the <strong>Change All…</strong> button to apply this setting to all R or Rmd files.</li>
+<li>Confirm the change when prompted.</li>
+</ol>
+</section>
+<section id="windows-1" class="level2">
+<h2 class="anchored" data-anchor-id="windows-1">Windows</h2>
+<ol type="1">
+<li>Find an R or Rmd file on your computer (e.g., in your Downloads folder).</li>
+<li>Right-click the file and select <strong>Open with &gt; Choose another app</strong>.</li>
+<li>In the “How do you want to open this file?” window, select <strong>RStudio</strong>.</li>
+<li>Check the box that says <strong>Always use this app to open .R/.Rmd files</strong>.</li>
+<li>Click <strong>OK</strong> to apply the change.</li>
+</ol>
 
 
 </section>
