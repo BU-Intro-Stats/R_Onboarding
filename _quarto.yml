@@ -30,7 +30,7 @@ website:
         href: 01-rstudio.qmd
       - text: "2. Creating Your First R Script"
         href: 02-first-script.qmd
-      - text: "3. R Markdown and Quarto"
+      - text: "3. Rmarkdown and Quarto"
         href: 03-quarto-rmarkdown.qmd
       - text: "4. Running Code in RStudio"
         href: 04-running-code.qmd
