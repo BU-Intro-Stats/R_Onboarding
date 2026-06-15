@@ -36,6 +36,12 @@ vignettes/*.pdf
 *.utf8.md
 *.knit.md
 
+# Temporary files created by LaTeX/PDF renders
+*.aux
+*.log
+*.toc
+*.tex
+
 # R Environment Variables
 .Renviron
 

@@ -2,6 +2,7 @@
 title: "R Onboarding Guide"
 subtitle: "A Beginner-Friendly Introduction to R, RStudio, and Data"
 author: "Course Team"
+output-file: R-Onboarding-Guide
 format:
   pdf:
     documentclass: scrartcl
@@ -18,6 +19,10 @@ execute:
 ---
 
 {{< include index.qmd >}}
+
+\newpage
+
+{{< include 00-Install-rstudio.qmd >}}
 
 \newpage
 
