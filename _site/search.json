@@ -846,7 +846,7 @@
     "section": "",
     "text": "So far, we have used an R script to write code.\nNow we will learn about documents that combine:\n\nRegular writing\nR code\nResults\nGraphs\n\nThese documents are useful for creating reports.\n\n\nA reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFile Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more\n\n\n\n\n\n\nR Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.\n\n\n\nQuarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.\n\n\n\n\n\n\nA simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.\n\n\n\n\nAt the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.\n\n\n\nYou can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.\n\n\n\nA code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.\n\n\n\n\n\nHere is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.\n\n\n\nTo render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.\n\n\n\nWhen you open a .Rmd or .qmd file in RStudio, you will see:\n\n\nClick Source to see the raw text and code in your document. \n\n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -856,7 +856,7 @@
     "section": "",
     "text": "A reproducible report combines your explanation and your code in one place.\nThis is helpful because someone else can see:\n\nWhat question you asked.\nWhat code you used.\nWhat results you got.\nHow you explained those results.\n\n\n\n\n\n\n\nTipTip\n\n\n\nA reproducible report helps you avoid copying and pasting results by hand.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -866,7 +866,7 @@
     "section": "",
     "text": "File Type\nName\nWhat It Is Used For\n\n\n\n\n.R\nR script\nWriting and saving R code\n\n\n.Rmd\nR Markdown document\nCombining text, R code, and output\n\n\n.qmd\nQuarto document\nA newer format for reports, websites, slides, and more",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -876,7 +876,7 @@
     "section": "",
     "text": "R Markdown is a document format that lets you combine writing, code, and results.\nR Markdown files usually end with:\n.Rmd\nR Markdown has been widely used in many statistics and data science courses.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -886,7 +886,7 @@
     "section": "",
     "text": "Quarto is a newer tool for creating documents that include code and results.\nQuarto files usually end with:\n.qmd\nWith Quarto, you can create:\n\nHTML webpages\nPDF documents\nWord documents\nSlides\nWebsites\n\nThis guide is written as a Quarto website.\n\n\n\n\n\n\nNoteBeginner Note\n\n\n\nYou do not need to memorize all the differences between R Markdown and Quarto right now.\nFor this course, focus on this idea:\n\nA Quarto document lets you write explanations, run code, and show results in one file.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -896,7 +896,7 @@
     "section": "",
     "text": "A simple Quarto document usually has:\n\nA title section at the top.\nRegular text.\nCode chunks.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -906,7 +906,7 @@
     "section": "",
     "text": "At the top of a Rmd/Quarto file, you may see something like this:\n---\ntitle: \"My First Rmd Document\"\nauthor: \"Your Name\"\nformat: html\n---\nThis part is called the YAML header.\nYou do not need to write complicated YAML right now. It simply tells Rmd basic information about the document.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -916,7 +916,7 @@
     "section": "",
     "text": "You can type normal sentences in a Rmd document.\nFor example:\nThis report shows my first analysis in R.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -926,7 +926,7 @@
     "section": "",
     "text": "A code chunk is a special section where R code can be run.\nIn a real Quarto document, an R code chunk has three parts:\n\nA starting line with three backticks followed by {r}.\nOne or more lines of R code.\nAn ending line with three backticks.\n\nFor example, a code chunk that calculates 2 + 2 would look like this in your .Rmd file:\nLine 1: three backticks followed by {r}\nLine 2: 2 + 2\nLine 3: three backticks\nWhen you render the document, Quarto runs the code and shows the result.\n\n\n\n\n\n\nTipTip\n\n\n\nCode chunks are different from regular text.\nRegular text explains your work.\nCode chunks run R code.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -936,7 +936,7 @@
     "section": "",
     "text": "Here is the structure of a small Quarto document:\n---\ntitle: \"My First Quarto Document\"\nauthor: \"Your Name\"\nformat: html\n---\n\n# My First Quarto Document\n\nThis is my first Quarto document.\n\nHere is a simple calculation.\n\nThen add an R code chunk that contains:\n\n2 + 2\n\nAfter rendering, the answer appears below the code.\nIn your actual .qmd file, the R code chunk would start with three backticks followed by {r}, and end with three backticks.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -946,7 +946,7 @@
     "section": "",
     "text": "To render a document means to turn it into a finished report.\nFor example, In Quarto and R Markdown, .qmd or .Rmd file can turn into:\n\nan HTML webpage,\na PDF document,\nor a Word document.\n\nIn RStudio, you can usually click the Render button.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -956,7 +956,7 @@
     "section": "",
     "text": "When you open a .Rmd or .qmd file in RStudio, you will see:\n\n\nClick Source to see the raw text and code in your document. \n\n\n\nClick Visual to see a more polished version of your document, with formatted text and rendered code chunks. \n\n\n\n Click Show in new window to see the rendered document in a separate window.",
     "crumbs": [
-      "3. R Markdown and Quarto"
+      "3. Rmarkdown and Quarto"
     ]
   },
   {
@@ -964,7 +964,7 @@
     "href": "05-files-folders.html",
     "title": "5. Working with Files and Folders",
     "section": "",
-    "text": "When working with data, file organization matters.\nIf your files are organized, R can find them more easily.\n\n\nThe working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.\n\n\n\n\nYou can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.\n\n\n\n\n\n\nGood file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.\n\n\n\n\n\nAnswer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?\n\n\n\n\nIn this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory. \nClear file names help prevent mistakes. `````",
+    "text": "When working with data, file organization matters.\nIf your files are organized, R can find them more easily.\n\n\nThe working directory is the folder where R is currently looking for files.\nIf you ask R to open a file, R first looks in the working directory.\nFor example:\nread.csv(\"mydata.csv\")\nThis tells R:\n\nLook in the current working directory for a file called mydata.csv.\n\n\n\n\nYou can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.\n\n\n\n\n\n\nGood file names are short and clear.\nGood examples:\nmydata.csv\nfirst_script.R\nlab_report.qmd\nLess helpful examples:\nUntitled1.R\nfinal final data copy.csv\nmy data file.csv\n\n\n\n\n\n\nTipTip\n\n\n\nAvoid spaces in file names.\nUse underscores _ instead:\nmy_data.csv\nlab_report.qmd\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\n\nCreate a folder for this course.\nInside it, create a folder for this assignment or lab.\nSave your R script in that folder.\nIn RStudio, run:\n\ngetwd()\n\nCheck whether R is working in the folder you expected.\n\n\n\n\n\n\n\n\n\n\n\n\nWarningWarning\n\n\n\nAvoid saving course files only in your Downloads folder.\nThe Downloads folder can become messy quickly, and files may be hard to find later.\n\n\n\n\n\nAnswer these questions:\n\nWhat is a working directory?\nWhy is it helpful to keep your script and data file in the same folder?\nWhat command shows the current working directory?\nWhy should you avoid unclear file names?\n\n\n\n\nIn this section, you learned that:\n\nThe working directory is where R looks for files.\ngetwd() shows your current working directory. \nClear file names help prevent mistakes. `````",
     "crumbs": [
       "5. Working with Files and Folders"
     ]
@@ -984,7 +984,7 @@
     "href": "05-files-folders.html#checking-your-working-directory",
     "title": "5. Working with Files and Folders",
     "section": "",
-    "text": "You can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.",
+    "text": "You can check your working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nThis prints the folder where R is currently working.\n\n\n\n\n\n\nTipTip\n\n\n\nIf R cannot find your file, checking getwd() is often the first thing to do.",
     "crumbs": [
       "5. Working with Files and Folders"
     ]
@@ -1154,7 +1154,7 @@
     "href": "09-common-problems.html",
     "title": "Common Problems and Solutions",
     "section": "",
-    "text": "Everyone gets errors in R. Errors are normal.\nThe important skill is learning how to read the message and try a fix.\n\n\n\n\nError in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.\n\n\n\n\n\n\nSometimes your instructor may ask you to install a package.\nExample:\ninstall.packages(\"ggplot2\")\n\n\n\nInternet connection problems.\nTyping the package name incorrectly.\nR asks you to restart.\nYou do not have permission to install software on the computer.\n\n\n\n\n\nCheck your internet connection.\nMake sure the package name is inside quotation marks.\nRestart RStudio and try again.\nAsk your instructor or campus IT for help if you are on a lab computer.\n\n\n\n\n\n\n\nTipTip\n\n\n\nYou only need to install a package once on your computer.\nBut you need to load it with library() each time you start a new R session.\n\n\n\n\n\n\nR is very picky about spelling.\nThese are all different to R:\nquiz_score\nQuiz_score\nquizscore\nquiz.score\n\n\n\n\n\n\n\n\n\n\nMistake\nExample\nFix\n\n\n\n\nMissing quote\nread.csv(mydata.csv)\nread.csv(\"mydata.csv\")\n\n\nMisspelled object\nquz_score\nquiz_score\n\n\nMissing parenthesis\nmean(data$quiz_score\nmean(data$quiz_score)\n\n\nWrong capitalization\nRead.csv()\nread.csv()\n\n\n\n\n\n\n\nIf R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.\n\n\n\n\n\nWhen rendering a Quarto document, R runs the code from top to bottom.\nA document may fail to render if:\n\nA file is missing.\nA package is not loaded.\nAn object is used before it is created.\nThere is a typing mistake in a code chunk.\n\n\n\nThis can fail:\nmean(data$quiz_score)\nif data was never created earlier in the document.\n\n\n\nMake sure this line appears first:\ndata &lt;- read.csv(\"mydata.csv\")\n\n\n\n\n\n\nError: object 'data' not found\n\n\n\nR does not know what data is.\n\n\n\nCreate the object first:\ndata &lt;- read.csv(\"mydata.csv\")\nThen run your analysis.\n\n\n\n\nThis is incorrect:\nread.csv(mydata.csv)\nThis is correct:\nread.csv(\"mydata.csv\")\nFile names must be in quotation marks.\n\n\n\nWhen something goes wrong, ask:\n\nDid I spell everything correctly?\nDid I use quotation marks around file names?\nDid I run the earlier lines of code?\nIs my file in the right folder?\nDoes file.exists(\"mydata.csv\") return TRUE?\nDid I close all parentheses?\nDid I restart RStudio and try again?\n\n\n\n\n\n\n\nNoteEncouragement\n\n\n\nErrors do not mean you are bad at R.\nErrors are part of learning. Read the message, try one fix, and run the code again.\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nFor each example, decide what the problem is.\n\n\nread.csv(mydata.csv)\nQuestion: What is missing?\n\n\n\nmean(data$quiz_score\nQuestion: What is missing?\n\n\n\nData &lt;- read.csv(\"mydata.csv\")\nhead(data)\nQuestion: Why might this fail?\n\n\n\n\n\n\n\nExample 1 is missing quotation marks around the file name.\nExample 2 is missing a closing parenthesis.\nExample 3 may fail because Data and data are different names in R.\n\n\n\n\nIn this section, you learned how to troubleshoot common problems, including:\n\nFile not found errors.\nPackage installation issues.\nTyping mistakes.\nWorking directory problems.\nRendering errors.\nObject not found errors.",
+    "text": "Everyone gets errors in R. Errors are normal.\nThe important skill is learning how to read the message and try a fix.\n\n\n\n\nError in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.\n\n\n\n\n\n\nSometimes your instructor may ask you to install a package.\nExample:\ninstall.packages(\"ggplot2\")\n\n\n\nInternet connection problems.\nTyping the package name incorrectly.\nR asks you to restart.\nYou do not have permission to install software on the computer.\n\n\n\n\n\nCheck your internet connection.\nMake sure the package name is inside quotation marks.\nRestart RStudio and try again.\nAsk your instructor or campus IT for help if you are on a lab computer.\n\n\n\n\n\n\n\nTipTip\n\n\n\nYou only need to install a package once on your computer.\nBut you need to load it with library() each time you start a new R session.\n\n\n\n\n\n\nR is very picky about spelling.\nThese are all different to R:\nquiz_score\nQuiz_score\nquizscore\nquiz.score\n\n\n\n\n\n\n\n\n\n\nMistake\nExample\nFix\n\n\n\n\nMissing quote\nread.csv(mydata.csv)\nread.csv(\"mydata.csv\")\n\n\nMisspelled object\nquz_score\nquiz_score\n\n\nMissing parenthesis\nmean(data$quiz_score\nmean(data$quiz_score)\n\n\nWrong capitalization\nRead.csv()\nread.csv()\n\n\n\n\n\n\n\nIf R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.\n\n\n\n\n\nWhen rendering a Quarto document, R runs the code from top to bottom.\nA document may fail to render if:\n\nA file is missing.\nA package is not loaded.\nAn object is used before it is created.\nThere is a typing mistake in a code chunk.\n\n\n\nThis can fail:\nmean(data$quiz_score)\nif data was never created earlier in the document.\n\n\n\nMake sure this line appears first:\ndata &lt;- read.csv(\"mydata.csv\")\n\n\n\n\n\n\nError: object 'data' not found\n\n\n\nR does not know what data is.\n\n\n\nCreate the object first:\ndata &lt;- read.csv(\"mydata.csv\")\nThen run your analysis.\n\n\n\n\nThis is incorrect:\nread.csv(mydata.csv)\nThis is correct:\nread.csv(\"mydata.csv\")\nFile names must be in quotation marks.\n\n\n\nWhen something goes wrong, ask:\n\nDid I spell everything correctly?\nDid I use quotation marks around file names?\nDid I run the earlier lines of code?\nIs my file in the right folder?\nDoes file.exists(\"mydata.csv\") return TRUE?\nDid I close all parentheses?\nDid I restart RStudio and try again?\n\n\n\n\n\n\n\nNoteEncouragement\n\n\n\nErrors do not mean you are bad at R.\nErrors are part of learning. Read the message, try one fix, and run the code again.\n\n\n\n\n\n\n\n\n\n\n\nNotePractice\n\n\n\nFor each example, decide what the problem is.\n\n\nread.csv(mydata.csv)\nQuestion: What is missing?\n\n\n\nmean(data$quiz_score\nQuestion: What is missing?\n\n\n\nData &lt;- read.csv(\"mydata.csv\")\nhead(data)\nQuestion: Why might this fail?\n\n\n\n\n\n\n\nExample 1 is missing quotation marks around the file name.\nExample 2 is missing a closing parenthesis.\nExample 3 may fail because Data and data are different names in R.\n\n\n\n\nIn this section, you learned how to troubleshoot common problems, including:\n\nFile not found errors.\nPackage installation issues.\nTyping mistakes.\nWorking directory problems.\nRendering errors.\nObject not found errors.",
     "crumbs": [
       "Common Problems and Solutions"
     ]
@@ -1164,7 +1164,7 @@
     "href": "09-common-problems.html#problem-1-file-not-found",
     "title": "Common Problems and Solutions",
     "section": "",
-    "text": "Error in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.",
+    "text": "Error in file(file, \"rt\") : cannot open the connection\nor:\nNo such file or directory\n\n\n\nR cannot find your file.\n\n\n\nRun:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nThen check whether mydata.csv is inside that folder.\nAlso run:\n\nfile.exists(\"mydata.csv\")\n\n[1] TRUE\n\n\nIf the result is FALSE, R cannot find the file.\n\n\n\n\nMove mydata.csv into your project folder.\nCheck the spelling of the file name.\nMake sure the file ends in .csv.\nMake sure you are working in the correct folder.\n\n\n\n\n\n\n\nWarningCommon Mistake\n\n\n\nmydata.csv and mydata (1).csv are different file names.",
     "crumbs": [
       "Common Problems and Solutions"
     ]
@@ -1194,7 +1194,7 @@
     "href": "09-common-problems.html#problem-4-working-directory-problems",
     "title": "Common Problems and Solutions",
     "section": "",
-    "text": "If R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/R_onboarding/R_onboarding_repo/R_Onboarding\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.",
+    "text": "If R is looking in the wrong folder, it may not find your files.\nCheck the working directory with:\n\ngetwd()\n\n[1] \"/Users/ylim2/Documents/01_Work/01_MA213/03_Ronboarding/R_Onboarding\"\n\n\nIn RStudio, using an RStudio Project can help keep your working directory organized.\n\n\n\n\n\n\nTipTip\n\n\n\nFor each assignment or project, keep your script and data file in the same folder.",
     "crumbs": [
       "Common Problems and Solutions"
     ]
