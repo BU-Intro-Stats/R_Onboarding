@@ -1,0 +1,11 @@
+student,study_hours,sleep_hours,attendance,quiz_score,major
+Student 1,5,7,Present,78,Biology
+Student 2,8,6,Present,91,Business
+Student 3,3,8,Absent,65,Psychology
+Student 4,6,7,Present,84,Biology
+Student 5,7,6,Present,88,Business
+Student 6,2,5,Absent,60,Psychology
+Student 7,9,8,Present,95,Biology
+Student 8,4,6,Present,72,Business
+Student 9,6,7,Present,83,Psychology
+Student 10,10,7,Present,98,Business
