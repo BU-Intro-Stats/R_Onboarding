@@ -43,7 +43,7 @@ or
 ```
 R-4.x.x.pkg
 ```
-![](img/downloadR_mac2.jpg)
+![](img/downloadR_mac2.jpg){width=50%}
 
 Choose the appropriate installer for your Mac (M1/M2 or Intel).
 
@@ -90,7 +90,10 @@ After installing R, install RStudio Desktop.
 ![](img/downloadRstudio_mac.jpg)
 
 3. Click the `DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++` button.
-![](img/downloadRstudio_mac2.jpg)
+```{r, echo=FALSE, out.width="70%", fig.align="center"}
+knitr::include_graphics("img/downloadRstudio_mac2.jpg")
+```
+
 
 4. Open the downloaded .dmg file from your Downloads folder.
 

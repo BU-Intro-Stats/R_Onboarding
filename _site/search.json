@@ -654,7 +654,7 @@
     "href": "00-Install-rstudio.html#mac-1",
     "title": "Install R and RStudio",
     "section": "MAC",
-    "text": "MAC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nClick Install Rstudio and choose the Mac version.\n\n\n\nClick the DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++ button. \nOpen the downloaded .dmg file from your Downloads folder.\nDrag the RStudio icon into the Applications folder.\nOpen RStudio from your Applications folder.",
+    "text": "MAC\n\nGo to the RStudio Desktop download page:\n\nhttps://posit.co/download/rstudio-desktop\n\nClick Install Rstudio and choose the Mac version.\n\n\n\nClick the DOWNLOAD RSTUDIO DESKTOP FOR MACOS ++ button.\n\n\n\n\n\n\n\n\n\n\n\nOpen the downloaded .dmg file from your Downloads folder.\nDrag the RStudio icon into the Applications folder.\nOpen RStudio from your Applications folder.",
     "crumbs": [
       "0. Installing R and RStudio"
     ]
